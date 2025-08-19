@@ -1,0 +1,42 @@
+refered topics:
+ -HTTP Status codes
+ -APIs
+ -What is GIT?
+   -GIT commands
+   -CI/CD
+   -Effective use of GIT
+   
+daily meet - discussed about updating training.log,shared basic tools for working environment
+
+Went through each each tools given
+
+meet -introduction with training team members
+     -verified each training log
+     -git intro-shared some basic git commands
+     
+Doing advised installations 
+     - vscode (already installed)
+     -sublime text
+     -Ipython
+     -git(already installed)
+     -Mongodb,mongosh,compass
+
+Reffered some basic git commands for:
+    -starting a repository
+    -checking status & history
+    -stagging & commiting
+    -branching
+    -working with remote repositories
+    -undoing & fixing
+
+Topics covered:
+   -Linux OS and basic commands
+   -Package Installers- apt-get  and pip
+   -Terminal text editor-nano and Vim
+   -IDE-Sublime text and Visual Studio Code
+   
+Task 1:
+   -created a git repo,created folder in yyyy-mm-dd format
+   -created a training.log file and updated wiith todays work updates
+   -Add, commit, and push everything with a clear and concise commit message
+   
