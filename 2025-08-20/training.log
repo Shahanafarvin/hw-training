@@ -1,0 +1,29 @@
+Topics covered: virtual environment, ipython
+
+Daily meet - shared learning topics (python basic)
+
+Topics covered (python basics):
+    - indentation
+    - python comments
+    - python variables
+    - python datatypes
+    - python Numbers
+    - python casting
+    - strings
+    - booleans
+    - operators
+    - lists, tuples, sets,dictionaries
+    - if-else
+    - match
+    - while loop,for loop
+    - functions,lambda
+    - python arrays
+    - oops- classes/objects,inheritance, practiced some questions in inheritance usage
+
+meet-shared topics from mongoDB for learning
+
+Topics coveed (mongoDB):
+    -Got familiarised with mongodb shell
+    -Tried basic MongoDB operations:insert, delete, update, bulk insert,find,
+    -Indexing
+    -What is object ID, and how to generate a timestamp from objectID?
