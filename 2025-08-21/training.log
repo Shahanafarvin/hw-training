@@ -1,0 +1,241 @@
+-Topics covered in MongoDB - exporting, importing, dumping, and restoring data, along with an introduction to sharding, clustering, and nodes.
+ Also explored the features of MongoDB Compass.
+
+-Daily meet – discussed Python basics (comments & indentation). 
+ Some tasks shared: Linux basics, Python, MongoDB Compass, PyMongo installation, Scrapy installation & usage recommendations.
+
+Python Basics – Task 2A: Student Marks & Report Generator completed
+
+Python Basics – Task 2B: Grocery Store Data Organizer completed
+
+
+
+
+
+******************************************************************************************************************************************
+
+Section 1: Basics – Database & Collection Operations
+
+Task 2: MongoDB Create and Explore
+
+
+Part 1: Insert, Update, Delete, Bulk Insert
+
+Step 1: Create and Insert - Create a database called companyDB and a collection named employees. Insert one employee document (GIVEN) manually:
+
+
+use companyDB
+
+db.employees.insertOne({empId:101,name:"Ravi",department:"IT",salary:75000,isActive:true})
+
+Step 2: Bulk Insert - Prepare and insert at least 5 more employee documents using a bulk insert (array of documents).
+
+db.employees.insertMany([
+   {empId:102,name:"Priya",department:"HR",salary:55000,isActive:true},
+   {empId:103,name:"Arun",department:"Finance",salary:65000,isActive:true},
+   {empId:104,name:"Meena",department:"IT",salary: 72000,isActive:false},
+   {empId:105,name:"Suresh",department:"Sales",salary:48000,isActive:true},
+   {empId:106,name:"Geeta",department:"IT",salary:80000,isActive:true}
+ ])
+
+
+Step 3: Update the salary of all employees in the IT department by 10%
+
+db.employees.updateMany({department:"IT"},{$mul:{salary:1.10}})
+
+Step 4: Delete the record of any employee who is marked as IsActive: false.
+
+db.employees.deleteOne({isActive:false})
+
+
+
+Part 2: Exporting, Importing, Dumping, and Restore
+
+Step 5: Export the employees collection to a JSON & CSV file using  the mongoexport command.
+
+mongoexport --db=companyDB --collection=employees --out=employees.json
+
+Step 6: Create a full database dump of companyDB using mongodump.
+
+mongodump --db=companyDB --out=companyDB_dump
+
+Step 7: Drop the companyDB database from MongoDB.
+
+db.dropDatabase()
+
+Step 8: Restore -Use mongorestore to restore the database from the dump created in Step 6.
+
+mongorestore --db=companyDB companyDB_dump/companyDB
+
+Step 9: Import a sample employee data JSON or CSV into a new collection called importedEmployees.
+
+mongoimport --db=companyDB --collection=importedEmployees --file=sample_employees.json
+
+
+
+Part 3: Indexing
+
+Step 10: Create a single field index on the department field.
+
+db.employees.createIndex({department:1})
+
+
+Step 11: Create a compound index on department and salary.
+
+db.employees.createIndex({department:1,salary:-1})
+
+
+Step 12: Validate-Use .getIndexes() to get all the indexes in a Collection
+
+db.employees.getIndexes()
+
+
+
+Part 4: Sharding, Clustering, and Nodes (Theory)
+
+Step 13: Basic Understanding - short explanation of the following:
+
+-What is sharding in MongoDB?
+
+Sharding in MongoDB is a method for distributing data across multiple servers or clusters to ensure horizontal scalability.
+It allows large datasets to be partitioned into smaller, more manageable pieces called shards, which can be stored on different nodes. 
+This improves performance and enables the database to handle large volumes of data and high throughput.
+
+
+-What is a replica set?
+
+A replica set in MongoDB is a group of MongoDB servers that maintain the same data set, providing redundancy and high availability.
+
+
+-What are a primary node and a secondary node?
+
+A primary node in a MongoDB replica set is the main server that receives all write operations.
+Secondary nodes are replicas of the primary node that can handle read operations and provide failover support in case the primary node fails.
+
+
+Part 5: Object ID & time stamp
+
+Step 13: What is objectID and timestamp from an object?
+
+An ObjectID in MongoDB is a 12-byte identifier that uniquely identifies documents within a collection. 
+It consists of a 4-byte timestamp, a 5-byte random value, and a 3-byte incrementing counter. 
+The timestamp portion of the ObjectID represents the creation time of the document, allowing for chronological sorting and retrieval.
+
+
+Get the objectId and convert into a timestamp and wise versA
+
+db.employees.findOne({empId:101})._id.getTimestamp()
+
+Convert timestamp back to ObjectId
+
+ObjectId.createFromTime(Math.floor(new Date("2025-08-21T07:32:21Z")/1000))
+
+
+*************************************************************************************************************************************
+
+
+Task 3: MongoDB Compass
+
+Part 1:install and connect to MongoDB Compass
+
+-Installed MongoDB Compass from the official MongoDB website.
+-Opened MongoDB Compass and connected to your local MongoDB instance using the connection string: mongodb://localhost:27017
+-verified the structure using documents, schema, and index tabs.
+
+
+Part 2: Search and Filtering (Querying)
+
+-Filter Data Using Query
+
+  Find all employees from the "HR" department 
+  {department:"HR"}
+
+  Find employees with salary greater than 50000.
+  {salary:{$gt:50000}}
+
+  Find employees who joined after 2022-01-01.
+  {joiningDate:{$gt:new Date("2022-01-01")}}
+
+
+-Combine Conditions
+
+  Query to find employees who are:Active (isActive: true) and Belong to either "HR" or "IT" departments.
+  {isActive:true,department:{$in:["HR","IT"]}}
+
+  Use the $or and $and operators.
+  {$or:[{inActive:true},{department:"HR"}]}
+  {$and:[{department:"HR"},{isActive:true}]}
+
+Part 3: CRUD Operations in Compass
+
+-Perform Updates
+  
+  -Change the department of one employee.
+  filter: {empId:101}
+  update: {$set:{department:"Operations"}}
+  -Increase salary of all employees in "Sales" by 10,000 using Update Many.
+  filter: {department:"Sales"}
+  update: {$inc:{salary:10000}}
+
+-Deletion
+
+  -Deleted a document using Delete button.
+  -Use Delete Many to remove all inactive employees.
+  filter: {isActive:false}   and  deleted using delete button
+
+
+
+Part 4: Aggregation Pipeline Builder
+
+-Aggregation – Department-wise Salary Stats
+stage by $group and use :
+
+  {_id: "$department",                
+avgSalary: { $avg: "$salary" },     
+maxSalary: { $max: "$salary" },     
+minSalary: { $min: "$salary" } 
+}
+
+
+- Aggregation – Filter + Sort
+  
+  -Add these stages:
+  $match employees with salary > 50000
+  stage by $match and  use { "salary": { "$gt": 50000 } }
+
+  $sort by salary descending
+  stage by $sort and  use { "salary": -1 }
+
+
+- Aggregation – Project Fields
+
+  Use $project to display:Only name, salary, and department,Add a new computed field: annualSalary = salary * 12
+  stage by $project and use:
+  {
+    name: 1,
+    salary: 1,
+    department: 1,
+    annualSalary: { $multiply: ["$salary", 12] }
+  }
+
+
+
+Part 5: Schema Analysis & Indexes
+
+
+- Analyzed Schema
+- tried - Index Management (creating index etc)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
