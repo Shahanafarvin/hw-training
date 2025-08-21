@@ -20,6 +20,7 @@ Task 2: MongoDB Create and Explore
 
 
 Part 1: Insert, Update, Delete, Bulk Insert
+--------------------------------------------
 
 Step 1: Create and Insert - Create a database called companyDB and a collection named employees. Insert one employee document (GIVEN) manually:
 
@@ -50,7 +51,7 @@ db.employees.deleteOne({isActive:false})
 
 
 Part 2: Exporting, Importing, Dumping, and Restore
-
+--------------------------------------------------------
 Step 5: Export the employees collection to a JSON & CSV file using  the mongoexport command.
 
 mongoexport --db=companyDB --collection=employees --out=employees.json
@@ -74,7 +75,7 @@ mongoimport --db=companyDB --collection=importedEmployees --file=sample_employee
 
 
 Part 3: Indexing
-
+------------------
 Step 10: Create a single field index on the department field.
 
 db.employees.createIndex({department:1})
@@ -92,7 +93,7 @@ db.employees.getIndexes()
 
 
 Part 4: Sharding, Clustering, and Nodes (Theory)
-
+-------------------------------------------------
 Step 13: Basic Understanding - short explanation of the following:
 
 -What is sharding in MongoDB?
@@ -114,7 +115,7 @@ Secondary nodes are replicas of the primary node that can handle read operations
 
 
 Part 5: Object ID & time stamp
-
+-------------------------------
 Step 13: What is objectID and timestamp from an object?
 
 An ObjectID in MongoDB is a 12-byte identifier that uniquely identifies documents within a collection. 
@@ -137,14 +138,14 @@ ObjectId.createFromTime(Math.floor(new Date("2025-08-21T07:32:21Z")/1000))
 Task 3: MongoDB Compass
 
 Part 1:install and connect to MongoDB Compass
-
+---------------------------------------------------
 -Installed MongoDB Compass from the official MongoDB website.
 -Opened MongoDB Compass and connected to your local MongoDB instance using the connection string: mongodb://localhost:27017
 -verified the structure using documents, schema, and index tabs.
 
 
 Part 2: Search and Filtering (Querying)
-
+-------------------------------------------
 -Filter Data Using Query
 
   Find all employees from the "HR" department 
@@ -167,7 +168,7 @@ Part 2: Search and Filtering (Querying)
   {$and:[{department:"HR"},{isActive:true}]}
 
 Part 3: CRUD Operations in Compass
-
+----------------------------------------
 -Perform Updates
   
   -Change the department of one employee.
@@ -186,7 +187,7 @@ Part 3: CRUD Operations in Compass
 
 
 Part 4: Aggregation Pipeline Builder
-
+----------------------------------------
 -Aggregation – Department-wise Salary Stats
 stage by $group and use :
 
@@ -221,7 +222,7 @@ minSalary: { $min: "$salary" }
 
 
 Part 5: Schema Analysis & Indexes
-
+-----------------------------------
 
 - Analyzed Schema
 - tried - Index Management (creating index etc)
