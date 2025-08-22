@@ -1,0 +1,105 @@
+Task - Linux Basics
+--------------------
+1. Basic Linux Commands & Their Uses
+
+pwd                                       Print Working Directory
+ls                                        List Directory Contents
+ls -l                                     List Directory Contents with Details
+ls -a                                     List All Files Including Hidden
+cd Documents                              Change Directory to Documents
+cd ..                                     Move Up One Directory
+cd ~                                      Change to Home Directory
+mkdir new_folder                          Create a New Directory
+rmdir old_folder                          Remove an Empty Directory
+rm file.txt                               Remove a File
+rm -r new_folder                          Remove a Directory and Its Contents
+cp file.txt backup.txt                    Copy a File
+cp -r source_folder backup_folder         Copy a Directory
+mv old_name.txt new_name.txt              Rename or Move a File
+mv file.txt /Documents/                   Move a File to Another Directory
+touch new_file.txt                        Create a New Empty File
+nano file.txt                             Edit a File Using Nano Editor
+vim file.txt                              Edit a File Using Vim Editor
+cat file.txt                              Display File Contents
+less file.txt                             View File Contents with Paging
+head file.txt                             Display First Few Lines of a File
+tail file.txt                             Display Last Few Lines of a File
+which python3                             Find the Path of an 
+man ls                                    Display Manual for a Command
+history                                   Show Command History
+clear                                     Clear the Terminal Screen            
+sudo apt update                           Update Package Lists
+sudo apt upgrade                          Upgrade Installed Packages
+sudo apt install package_name             Install a Package
+sudo apt remove package_name              Remove a Package
+df -h                                     Display Disk Usage in Human-Readable Format
+du -h folder_name                         Display Disk Usage of a Directory
+ps aux                                    Show Running Processes
+top                                       Display Real-Time System Processes
+kill PID                                  Terminate a Process by PID  
+uname -a                                  Display System Information
+chmod                                     Change File Permissions
+chown                                     Change File Ownership
+scp source_file destination_file          Securely Copy Files Between Hosts
+ssh user@host                             Securely Connect to a Remote Host
+
+2. Install/uninstall Scrapy using apt
+
+sudo apt update
+sudo apt install scrapy
+
+sudo apt remove scrapy
+sudo apt purge scrapy                    remove Scrapy and its configuration files
+
+3. Install/uninstall Scrapy using pip
+
+pip install scrapy
+pip uninstall scrapy
+
+4.scrapy shell
+
+scrapy shell 'http://example.com'                                       Start Scrapy Shell for a URL
+
+inside the shell:
+fetch('http://example.com')                                             Fetch a URL in Scrapy Shell
+response.css('selector').get()                                          Extract Data Using CSS Selectors
+response.xpath('//selector/text()').get()                               Extract Data Using XPath
+exit()                                                                  Exit Scrapy Shell
+
+
+5. edit/save a file using nano
+
+nano file.txt                                                          Open a File in Nano Editor
+Ctrl + O                                                               Save Changes in Nano
+Ctrl + X                                                               Exit Nano Editor            
+
+6. install sublime text editor
+
+sudo apt update
+sudo apt install sublime-text
+
+7. Create a Python3 virtual environment and install scrapy
+
+python3 -m venv myenv                                                   Create a Virtual Environment
+source myenv/bin/activate                                               Activate the Virtual Environment
+pip install scrapy                                                      Install Scrapy in the Virtual Environment
+deactivate                                                              Deactivate the Virtual Environment   
+
+******************************************************************************************************************************************************
+
+-Daily meet – discussed next training section, basic data formats (CSV, JSON), 
+Sublime & Chrome extensions for JSON formatting, VPN, web scraping, and grammar check.
+
+Topics covered – 
+-Data Formats: JSON, JSON Array & List, CSV/TSV, XML;
+-command-line CSV to JSON conversion using csvkit; 
+-Pandas – installation, reading, cleaning, exporting ;
+-MongoDB – exporting to CSV & JSON
+
+Referring ,Downloading & Testing – 
+-UrbanVPN, ZenMateVPN;
+- extra tools for CSV & JSON conversion - CSVJSON;
+- Sublime Text (Package Installer, Pretty JSON);
+- Chrome extensions (JSON formatting, Grammarly, WebScraper.io).
+
+Task – Web scrape a random website using WebScraper.io and export data to CSV – completed
