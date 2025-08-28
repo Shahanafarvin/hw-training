@@ -2,20 +2,17 @@ import requests
 from bs4 import BeautifulSoup
 
 class Carbon38Parser:
-    def __init__(self, start_url):
-        self.start_url = start_url
+    def __init__(self, product_url):
+        self.product_url = product_url
         self.session = requests.Session()
         self.parsed_data = []
 
     def start(self):
-        html = self.fetch_html(self.start_url)
+        html = self.fetch_html(self.product_url)
         if html:
-            product_links = self.parse_data(html)
-            for link in product_links:
-                product_html = self.fetch_html(link)
-                if product_html:
-                    product = self.parse_item(product_html)
-                    self.parsed_data.append(product)
+            soup = self.parse_data(html)
+            product = self.parse_item(soup)
+            self.parsed_data.append(product)
         self.save_to_file()
         self.close()
 
@@ -29,16 +26,9 @@ class Carbon38Parser:
         return None
 
     def parse_data(self, html):
-        soup = BeautifulSoup(html, 'html.parser')
-        links = []
-        for a in soup.select('a.ProductItem__ImageWrapper.ProductItem__ImageWrapper--withAlternateImage'):
-            href = a.get('href')
-            if href and href.startswith('/'):
-                links.append('https://carbon38.com' + href)
-        return links
+        return BeautifulSoup(html, 'html.parser')
 
-    def parse_item(self, html):
-        soup = BeautifulSoup(html, 'html.parser')
+    def parse_item(self, soup):
         title_tag = soup.find('h1', class_='ProductMeta__Title Heading u-h3')
         price_tag = soup.find('span', class_='ProductMeta__Price Price')
         return {
@@ -47,7 +37,7 @@ class Carbon38Parser:
         }
 
     def save_to_file(self):
-        with open("carbon38_products.txt", "w", encoding="utf-8") as f:
+        with open("carbon38_product.txt", "w", encoding="utf-8") as f:
             for product in self.parsed_data:
                 f.write(f"{product['title']} - {product['price']}\n")
 
@@ -56,6 +46,6 @@ class Carbon38Parser:
 
 
 if __name__ == "__main__":
-    url = "https://carbon38.com/en-in/collections/tops"
-    parser = Carbon38Parser(url)
+    product_url = "https://carbon38.com/en-in/products/double-layered-melt-tank-black-white?_pos=1&_fid=5fce5bb93&_ss=c"
+    parser = Carbon38Parser(product_url)
     parser.start()
