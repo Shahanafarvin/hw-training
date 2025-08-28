@@ -1,0 +1,28 @@
+QA- practising regex to find in sublime text.
+
+
+Daily meet – Advanced Python topics shared for learning. 
+            Discussed and shared documents on Datahut coding guidelines, code structure, and basic instructions.
+
+
+refeing and understanding documents on-Datahut Coding guidelines for trainees, and code structure & basic instructions
+
+
+Advanced Python – Covered core concepts including :
+                functions, classes, objects, OOP principles, 
+                self argument, constructors & destructors, file operations, 
+                positional arguments (*args), keyword arguments (kwargs)
+                Core functions including  generators, return & yield usage,
+                error handling (try/except), string formatting, module importing, 
+                Python memory references, list comprehensions, exceptions & errors,
+                code readability, optimization, and reliability.
+                Also Python standards (PEP8) and best coding practices.
+
+
+Advanced Python – Practical Task Set: Class-based design for a Data Miner; 
+                                    file operations & memory reference; 
+                                    generators in data streaming; 
+                                    exception handling in scraping; 
+                                    clean string formatting & imports; 
+                                    list comprehensions for data filtering; 
+                                    PEP8 standards & code optimization----in progress
