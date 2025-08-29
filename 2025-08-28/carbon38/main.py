@@ -10,10 +10,11 @@ class Carbon38Parser:
     def start(self):
         html = self.fetch_html(self.product_url)
         if html:
+            self.save_raw_html(html) 
             soup = self.parse_data(html)
             product = self.parse_item(soup)
             self.parsed_data.append(product)
-        self.save_to_file()
+        self.save_cleaned_data() 
         self.close()
 
     def fetch_html(self, url):
@@ -25,6 +26,10 @@ class Carbon38Parser:
             pass
         return None
 
+    def save_raw_html(self, html):
+        with open("raw.html", "w", encoding="utf-8") as f:
+            f.write(html)
+
     def parse_data(self, html):
         return BeautifulSoup(html, 'html.parser')
 
@@ -33,11 +38,11 @@ class Carbon38Parser:
         price_tag = soup.find('span', class_='ProductMeta__Price Price')
         return {
             'title': title_tag.text.strip() if title_tag else 'N/A',
-            'price': price_tag.text.strip() if price_tag else 'N/A'
+            'price': price_tag.text.strip().replace('Rs.','') if price_tag else 'N/A'
         }
 
-    def save_to_file(self):
-        with open("carbon38_product.txt", "w", encoding="utf-8") as f:
+    def save_cleaned_data(self):
+        with open("cleaned_data.txt", "w", encoding="utf-8") as f:
             for product in self.parsed_data:
                 f.write(f"{product['title']} - {product['price']}\n")
 
