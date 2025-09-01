@@ -1,0 +1,17 @@
+Rerefereing and understanding advanced python concepts - -coding
+
+Daily meet – reviewed previous task;
+             received detailed explanation on Datahut coding guidelines; 
+             new learning topics shared on browser analysis
+
+
+Topics Covered – Browser Analysis:
+            Inspect tabs; 
+            HTTP methods (GET, POST, PUT, DELETE, HEAD, PATCH, OPTIONS); 
+            inspecting AJAX-loaded URLs; 
+            client-side JavaScript execution; 
+            request & response headers;
+            cookies & sessions; 
+            user-agent handling;
+            API identification & data scraping;
+            sitemaps – usage, possibilities, and limitations.
