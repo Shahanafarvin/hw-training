@@ -1,0 +1,6 @@
+Daily meet – discussed progress on last scraping task; shared new learning topic: Scrapy.
+
+scraping with xpath task - parser completed
+
+Topics Covered – Scrapy: basics from official tutorial (https://docs.scrapy.org/en/latest/intro/tutorial.html),             
+        including Request, FormRequest, Response, Scrapy shell & inspect_response, and Selectors."
