@@ -1,0 +1,11 @@
+Topic Covered – Data Cleaning during extraction with XPath: 
+                handling unwanted spaces, 
+                newline characters, 
+                special symbols, and 
+                formatting issues while retrieving data
+
+
+Daily meet – discussed progress on XPath task and shared a new task to scrape data using XPath from PLP and PDP pages.
+
+Task – XPath Scraping (Next.co.uk): PLP – extract PDP URLs,pagination, category.
+      PDP – extract fields (ID, name, brand, prices, promo, breadcrumb, URL, description, currency, color, size, rating, review, material, style, care, features, images, composition)
