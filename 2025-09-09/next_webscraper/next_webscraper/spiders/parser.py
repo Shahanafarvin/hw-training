@@ -39,34 +39,34 @@ class NextProductsSpider(scrapy.Spider):
         tree = response
 
         def parse_product_code():
-            return html_content('normalize-space(//span[@data-testid="product-code"]/text())').get(default="N/A").strip()
+            return html_content('normalize-space(//span[@data-testid="product-code"]/text())').get(default="").strip()
         
         def parse_title():
-            return html_content('normalize-space(//h1[@data-testid="product-title"]/text())').get(default="N/A").strip()
+            return html_content('normalize-space(//h1[@data-testid="product-title"]/text())').get(default="").strip()
         
         def parse_price():
-            return html_content('normalize-space(//div[@data-testid="product-now-price"]/span/text())').get(default="N/A").replace("£", "").strip()
+            return html_content('normalize-space(//div[@data-testid="product-now-price"]/span/text())').get(default="").replace("£", "").strip()
         
         def parse_description():
-            return html_content('normalize-space(//p[@data-testid="item-description"]/text())').get(default="N/A").strip()
+            return html_content('normalize-space(//p[@data-testid="item-description"]/text())').get(default="").strip()
         
         def parse_sizes():
             sizes = tree.xpath('//button[@class="round pdp-css-1drodo6"]/text()').getall()
             return [s.strip() for s in sizes if s.strip()] if sizes else []
         
         def parse_colors():
-            return html_content('normalize-space(//span[@data-testid="selected-colour-label"]/text())').get(default="N/A").strip()
+            return html_content('normalize-space(//span[@data-testid="selected-colour-label"]/text())').get(default="").strip()
         
         def parse_images():
             image_urls = tree.xpath('//img[@data-testid="image-carousel-slide"]/@src').getall()
             return [url for url in image_urls if url.startswith("http")] if image_urls else []
         
         def parse_rating():
-            return html_content('normalize-space(//figure[@class="MuiBox-root pdp-css-1uitb0y"]/@aria-label)').get(default="N/A").replace("Stars", "").strip()
+            return html_content('normalize-space(//figure[@class="MuiBox-root pdp-css-1uitb0y"]/@aria-label)').get(default="").replace("Stars", "").strip()
         
         def parse_reviews_count():
             reviews = tree.xpath('//span[@data-testid="rating-style-badge"]/text()').getall()
-            return reviews[1].strip() if len(reviews) > 1 else "N/A"
+            return reviews[1].strip() if len(reviews) > 1 else ""
         
         def parse_breadcrumb():
             crumbs = tree.xpath('//span[@class="MuiChip-label MuiChip-labelMedium pdp-css-11lqbxm"]/text()').getall()
