@@ -33,44 +33,61 @@ class NextProductsSpider(scrapy.Spider):
                             },
                         )
 
+    def clean_field(self, value, replace_map=None):
+        if not value:
+            return ""
+        value = str(value).strip()
+        if replace_map:
+            for old, new in replace_map.items():
+                value = value.replace(old, new)
+        return value
 
     def parse_product_page(self, response):
-        html_content = response.xpath
-        tree = response
+        html_content = response
 
         def parse_product_code():
-            return html_content('normalize-space(//span[@data-testid="product-code"]/text())').get(default="").strip()
+            return self.clean_field(
+                html_content.xpath('normalize-space(//span[@data-testid="product-code"]/text())').get()
+            )
         
         def parse_title():
-            return html_content('normalize-space(//h1[@data-testid="product-title"]/text())').get(default="").strip()
+            return self.clean_field(
+                html_content.xpath('normalize-space(//h1[@data-testid="product-title"]/text())').get()
+            )
         
         def parse_price():
-            return html_content('normalize-space(//div[@data-testid="product-now-price"]/span/text())').get(default="").replace("£", "").strip()
+            return self.clean_field(
+                html_content.xpath('normalize-space(//div[@data-testid="product-now-price"]/span/text())').get(),
+                replace_map={"£": ""}
+            )
         
         def parse_description():
-            return html_content('normalize-space(//p[@data-testid="item-description"]/text())').get(default="").strip()
-        
-        def parse_sizes():
-            sizes = tree.xpath('//button[@class="round pdp-css-1drodo6"]/text()').getall()
-            return [s.strip() for s in sizes if s.strip()] if sizes else []
+            return self.clean_field(
+                html_content.xpath('normalize-space(//p[@data-testid="item-description"]/text())').get()
+            )
         
         def parse_colors():
-            return html_content('normalize-space(//span[@data-testid="selected-colour-label"]/text())').get(default="").strip()
+            return self.clean_field(
+                html_content.xpath('normalize-space(//span[@data-testid="selected-colour-label"]/text())').get()
+            )
         
         def parse_images():
-            image_urls = tree.xpath('//img[@data-testid="image-carousel-slide"]/@src').getall()
-            return [url for url in image_urls if url.startswith("http")] if image_urls else []
+            image_urls = html_content.xpath('//img[@data-testid="image-carousel-slide"]/@src').getall()
+            return [url for url in image_urls if url and url.startswith("http")]
         
         def parse_rating():
-            return html_content('normalize-space(//figure[@class="MuiBox-root pdp-css-1uitb0y"]/@aria-label)').get(default="").replace("Stars", "").strip()
+            return self.clean_field(
+                html_content.xpath('normalize-space(//figure[@class="MuiBox-root pdp-css-1uitb0y"]/@aria-label)').get(),
+                replace_map={"Stars": ""}
+            )
         
         def parse_reviews_count():
-            reviews = tree.xpath('//span[@data-testid="rating-style-badge"]/text()').getall()
-            return reviews[1].strip() if len(reviews) > 1 else ""
+            reviews = html_content.xpath('//span[@data-testid="rating-style-badge"]/text()').getall()
+            return self.clean_field(reviews[1]) if len(reviews) > 1 else ""
         
         def parse_breadcrumb():
-            crumbs = tree.xpath('//span[@class="MuiChip-label MuiChip-labelMedium pdp-css-11lqbxm"]/text()').getall()
-            return [c.strip() for c in crumbs if c.strip()] if crumbs else []
+            crumbs = html_content.xpath('//span[@class="MuiChip-label MuiChip-labelMedium pdp-css-11lqbxm"]/text()').getall()
+            return [self.clean_field(c) for c in crumbs if self.clean_field(c)]
 
         product_data = {
             'url': response.url,
@@ -82,7 +99,6 @@ class NextProductsSpider(scrapy.Spider):
             'brand': 'Next',
             'product_code': parse_product_code(),
             'description': parse_description(),
-            'sizes': parse_sizes(),
             'colors': parse_colors(),
             'images': parse_images(),
             'rating': parse_rating(),
