@@ -1,0 +1,13 @@
+Topics Covered – Familiarization with common Python packages and their usages: tplib, dropbox, boto3, js2py
+
+Daily meet – discussed previous task and assigned new tasks
+
+cleaning function creating task - to create common cleaning function to standardize and clean all fields during parsing.
+
+python packages usage task -completed
+    Scrape websites using Requests and Parsel, 
+    extract dress-related fields with Regex, 
+    add timestamps with datetime, 
+    handle errors with try/except and logging, 
+    insert data into MongoDB via pymongo, 
+    and export/convert it into multiple formats (JSON Line, JSON Array, CSV, Pipe-separated CSV)
