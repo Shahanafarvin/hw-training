@@ -104,7 +104,7 @@ class Carbon38ProductParser:
                 "sizes": size_list,
                 "description": editor_notes,
                 "size_and_fit": size_fit,
-                "fabric_and_care": fabric_care_text,
+                "fabric_and_care": fabric_care_text if fabric_care else "",
                 "rating": rating_text,
                 "reviews": reviews_text,
                 "images": image_urls,
