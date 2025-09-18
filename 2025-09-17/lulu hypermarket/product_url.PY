@@ -1,3 +1,28 @@
+
+"""
+Lulu Hypermarket Subcategory and Product URL Scraper
+
+This module scrapes product URLs from subcategory pages of Lulu Hypermarket.
+It handles pagination to collect all products from each subcategory and stores
+the organized data in MongoDB for further processing.
+
+The scraper reads subcategory URLs from MongoDB, visits each subcategory page,
+handles pagination, extracts all product URLs, and saves the structured data
+back to MongoDB with proper categorization.
+
+Dependencies:
+    - playwright
+    - pymongo
+    - logging (built-in)
+    - random (built-in)
+    - time (built-in)
+
+Database Collections:
+    - Input: subcategories (contains subcategory URLs to scrape)
+    - Output: categories_with_products (stores organized product URLs)
+
+"""
+
 import logging
 import random
 import time
@@ -14,7 +39,42 @@ logging.basicConfig(
 
 
 class LuluScraper:
+    """
+    A web scraper class for extracting product URLs from Lulu Hypermarket subcategories.
+    
+    This class handles the complete workflow of:
+    1. Reading subcategory URLs from MongoDB
+    2. Launching Playwright browser with user agent rotation
+    3. Scraping all product URLs from paginated subcategory pages
+    4. Organizing and storing the collected data back to MongoDB
+    
+    The scraper handles pagination automatically and deduplicates product URLs
+    to ensure clean data collection.
+    
+    Attributes:
+        mongo_uri (str): MongoDB connection string
+        db_name (str): Name of the MongoDB database
+        user_agents (list): List of user agent strings for rotation
+        headless (bool): Whether to run browser in headless mode
+        client (MongoClient): MongoDB client instance
+        db (Database): MongoDB database instance
+        subcategory_collection (Collection): Collection containing subcategory URLs
+        final_collection (Collection): Collection for storing organized product data
+    """
     def __init__(self, mongo_uri, db_name, user_agents_file, headless=False):
+        """
+        Initialize the LuluScraper with database connection and configuration.
+        
+        Args:
+            mongo_uri (str): MongoDB connection URI
+            db_name (str): Name of the MongoDB database to use
+            user_agents_file (str): Path to file containing user agent strings
+            headless (bool, optional): Run browser in headless mode. Defaults to False.
+            
+        Raises:
+            mongo_errors.PyMongoError: If MongoDB connection fails
+            Exception: If user agents file cannot be loaded
+        """
         self.mongo_uri = mongo_uri
         self.db_name = db_name
         self.user_agents = self._load_user_agents(user_agents_file)
@@ -32,6 +92,18 @@ class LuluScraper:
             raise
 
     def _load_user_agents(self, filepath):
+        """
+        Load user agent strings from a text file.
+        
+        Args:
+            filepath (str): Path to the user agents text file
+            
+        Returns:
+            list: List of user agent strings (empty lines filtered out)
+            
+        Raises:
+            Exception: If file cannot be read or parsed
+        """
         try:
             with open(filepath, "r") as f:
                 agents = [line.strip() for line in f if line.strip()]
@@ -42,10 +114,27 @@ class LuluScraper:
             raise
 
     def _get_random_ua(self):
+        """
+        Get a random user agent string from the loaded list.
+        
+        Returns:
+            str: Random user agent string
+        """
         return random.choice(self.user_agents)
 
     def _get_last_page(self, page):
-        """Extracts last page number from pagination."""
+        """
+        Extract the last page number from pagination elements.
+        
+        Searches for pagination links and determines the highest page number
+        available for the current subcategory.
+        
+        Args:
+            page: Playwright page object
+            
+        Returns:
+            int: Last page number found, defaults to 1 if no pagination or error
+        """
         try:
             pagination_numbers = page.query_selector_all("//a[contains(@class,'px-2 text-xs')]")
             if pagination_numbers:
@@ -55,7 +144,27 @@ class LuluScraper:
             return 1
 
     def scrape_subcategory(self, playwright, browser, sub_url, main_category):
-        """Scrape products for a single subcategory (all pages)."""
+        """
+        Scrape all product URLs from a single subcategory across all its pages.
+        
+        This method handles the complete scraping process for one subcategory:
+        1. Visits the subcategory page
+        2. Determines total number of pages
+        3. Iterates through all pages to collect product URLs
+        4. Handles pagination and timeouts gracefully
+        5. Deduplicates collected URLs
+        
+        Args:
+            playwright: Playwright instance (passed for context management)
+            browser: Playwright browser instance
+            sub_url (str): URL of the subcategory to scrape
+            main_category (str): Main category this subcategory belongs to
+            
+        Returns:
+            dict: Dictionary containing:
+                - subcategory_url (str): The scraped subcategory URL
+                - products (list): List of unique product URLs found
+        """
         product_urls = []
         ua = self._get_random_ua()
         context = browser.new_context(extra_http_headers={"user-agent": ua})
@@ -110,6 +219,25 @@ class LuluScraper:
         }
 
     def run(self):
+        """
+        Execute the main scraping workflow for all subcategories.
+        
+        This method orchestrates the complete scraping process:
+        1. Launches Playwright browser
+        2. Reads all main categories and their subcategories from MongoDB
+        3. Scrapes each subcategory for product URLs
+        4. Organizes the collected data by main category
+        5. Saves the structured data back to MongoDB
+        6. Handles cleanup and connection closing
+        
+        The method processes all documents in the subcategories collection,
+        organizing the results by main category with nested subcategory data.
+        
+        Raises:
+            mongo_errors.PyMongoError: If database operations fail
+            PlaywrightTimeoutError: If browser operations timeout
+            Exception: For other scraping errors
+        """
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=self.headless)
 
@@ -139,6 +267,12 @@ class LuluScraper:
 
 
 if __name__ == "__main__":
+    """
+    Entry point of the script.
+    
+    Initializes and runs the LuluScraper with default configuration
+    when the script is executed directly.
+    """
     scraper = LuluScraper(
         mongo_uri="mongodb://localhost:27017/",
         db_name="lulu_hypermarket",

@@ -1,3 +1,24 @@
+
+"""
+Lulu Hypermarket Category Scraper
+
+This module scrapes subcategory links from Lulu Hypermarket's main category pages
+and stores them in a MongoDB database. It uses Playwright for web automation with
+user agent rotation and random delays to avoid detection.
+
+Dependencies:
+    - playwright
+    - pymongo
+    - random (built-in)
+    - time (built-in)
+
+Database Structure:
+    - Database: lulu_hypermarket
+    - Collection: subcategories
+    - Document format: {"main_category": str, "subcategories": list}
+    
+"""
+
 from playwright.sync_api import sync_playwright
 import random
 import time
