@@ -7,3 +7,47 @@ Web scraping tasK - using curl on Carbon38, with a focus on evaluating efficienc
 Topics Covered – Request & response handling, POST requests & payloads
 
 web scraping using curl - Albert Heijn (development in progress)
+
+
+*************************************************************************************
+efficiency check results:
+
+Scrapy
+---------
+
+Crawler → 15.79s RT, 74 MB
+
+Parser → 1345s RT, 281 MB
+
+Playwright
+-----------
+
+Crawler → 104.12s RT, 14.0% CPU, 45.3% Memory
+
+Parser → 3340.98s RT, 45.5% CPU, 63.1% Memory
+
+Selenium
+---------
+
+Crawler → 109.98s RT, 44.0% CPU, 63.4% Memory
+
+Parser → 7994.24s RT, 12.3% CPU, 70.7% Memory
+
+curl
+------
+
+Crawler → 6.13s RT, 12.4% CPU, 66.2% Memory
+
+Parser → 503.51s RT, 48.7% CPU, 74.9% Memory
+
+Key Findings
+-------------
+
+Fastest Crawler:curl (6.13s) was the quickest to crawl pages.
+
+Lowest Memory (Absolute MB):Scrapy consumed the least memory in both crawler (74 MB) and parser (281 MB) stages.
+
+Relative CPU/Memory Usage:Playwright showed moderate resource usage compared to Selenium.
+Selenium consumed higher memory with the longest parser run time (7994.24s), making it least efficient.
+
+Balanced Framework:Scrapy offers the most efficient trade-off, with low crawling time, minimal memory usage, and a stable performance profile.
