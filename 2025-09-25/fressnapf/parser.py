@@ -86,7 +86,11 @@ class FressnapfProductDetailScraper:
 
 
             # Extract breadcrumb items
-            breadcrumbs = [ ">".join(li.xpath(".//text()")).strip() for li in tree.xpath("//ul[@class='b-items']/li") ]
+            breadcrumbs = " > ".join(
+                " ".join(li.xpath(".//text()")).strip()
+                for li in tree.xpath("//ul[@class='b-items']/li")
+                if " ".join(li.xpath(".//text()")).strip()
+            )
 
             # Assign hierarchy levels
             hierarchy = {f"producthierarchy_level{i+1}": b for i, b in enumerate(breadcrumbs)}
@@ -95,6 +99,9 @@ class FressnapfProductDetailScraper:
 
             #extracting price
             price = tree.xpath("//span[contains(@class,'p-regular-price-value')]//text()")
+            regular_price = tree.xpath("//span[contains(@class,'p-former-price-value')]//text()")
+            promotion_price = tree.xpath("//div[contains(@class,'p-savings')]//text()")
+            percentage_discount = tree.xpath("//span[@class='tag tag--discount pb-tag']//text()")
             #extrcting product description
             description=tree.xpath("//ul[@class='list list--small-bullets']")
             description=",".join(description[0].xpath(".//text()")).strip() if description else None
@@ -171,14 +178,14 @@ class FressnapfProductDetailScraper:
                 "producthierarchy_level5": hierarchy.get("producthierarchy_level5"),  
                 "producthierarchy_level6": hierarchy.get("producthierarchy_level6"), 
                 "producthierarchy_level7": hierarchy.get("producthierarchy_level7"),
-                "regular_price": price[0].replace("€","").strip() if price else None,
+                "regular_price": regular_price[0].replace("€","").strip() if regular_price else None,
                 "selling_price": price[0].replace("€","").strip() if price else None,  
-                "price_was": None,  # not available
-                "promotion_price": None,  # not available
+                "price_was": regular_price[0].replace("€","").strip() if regular_price else None,
+                "promotion_price": promotion_price[1].replace("€","").strip() if promotion_price else None,
                 "promotion_valid_from": None,  # not available
                 "promotion_valid_upto": None,  # not available
                 "promotion_type": None,  # not available
-                "percentage_discount": None,  # not available
+                "percentage_discount": percentage_discount[0].replace("%","").replace("-","").strip() if percentage_discount else None,
                 "promotion_description": None,  # not available
                 "package_sizeof_selling" : None,  # not available
                 "per_unit_sizedescription" : None,  # not available
