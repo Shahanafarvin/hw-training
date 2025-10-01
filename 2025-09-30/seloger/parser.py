@@ -36,7 +36,7 @@ class SeLogerDetailScraper:
             data = {"listing_url": url}
 
             # Seller phone
-            seller_phone = tree.xpath('//button[@class="css-1ae1y8o"]//text()')
+            seller_phone = tree.xpath('//div[@class="css-12m0k8p"]//text()')
             data["seller_phone"] = seller_phone[0].strip() if seller_phone else None
 
             # Seller email

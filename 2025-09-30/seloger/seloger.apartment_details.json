@@ -1,0 +1,2676 @@
+[{
+  "_id": {
+    "$oid": "68dcbacc8de440baced70441"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/241783713.htm",
+  "seller_phone": "0134441212",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "200 m²",
+  "property_price": "600 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbaef8de440baced70442"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/249587239.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "57 m²",
+  "property_price": "219 900",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbb118de440baced70443"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/249129449.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "77 m²",
+  "property_price": "320 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbb368de440baced70444"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/242389911.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "132 m²",
+  "property_price": "492 500",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbb408de440baced70445"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/246530775.htm",
+  "seller_phone": "0134441212",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "190 m²",
+  "property_price": "669 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbb4a8de440baced70446"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/emy-les-pres/249046267.htm",
+  "seller_phone": "07 57 91 70 93",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "60 m²",
+  "property_price": "259 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbb558de440baced70447"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/247976755.htm",
+  "seller_phone": "0621744106",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "82 m²",
+  "property_price": "273 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbb5f8de440baced70448"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/228124689.htm",
+  "seller_phone": "0159537632",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "177,7 m²",
+  "property_price": "499 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbb6a8de440baced70449"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/225227197.htm",
+  "seller_phone": "0159537632",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "150,7 m²",
+  "property_price": "499 500",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbb768de440baced7044a"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/les-champs-guillaume/245437251.htm",
+  "seller_phone": "01 71 68 70 64",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "49 m²",
+  "property_price": "210 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbb808de440baced7044b"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/246530691.htm",
+  "seller_phone": "0134441212",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "50 m²",
+  "property_price": "252 900",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbb8a8de440baced7044c"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/236951173.htm",
+  "seller_phone": "0134441212",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "83 m²",
+  "property_price": "309 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbb998de440baced7044d"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/248323997.htm",
+  "seller_phone": "0689986378",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "63,7 m²",
+  "property_price": "220 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbba28de440baced7044e"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/234823479.htm",
+  "seller_phone": "0185110333",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "76 m²",
+  "property_price": "294 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbbac8de440baced7044f"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/242536419.htm",
+  "seller_phone": "0139612500",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "67 m²",
+  "property_price": "250 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbbb78de440baced70450"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/vieux-marche-mare-des-noues/249215837.htm",
+  "seller_phone": "+33(0)130725544",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "106 m²",
+  "property_price": "315 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbbc38de440baced70451"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/177330769.htm",
+  "seller_phone": "0635292446",
+  "seller_email": null,
+  "property_type": "Appartement à vendre - Neuf",
+  "property_size": "59 m²",
+  "property_price": "224 900",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbbce8de440baced70452"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/234076133.htm",
+  "seller_phone": "01 34 18 75 55",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "130 m²",
+  "property_price": "525 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbbda8de440baced70453"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/249718849.htm",
+  "seller_phone": "0666072261",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "89 m²",
+  "property_price": "225 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbbe68de440baced70454"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/249647389.htm",
+  "seller_phone": "0624150631",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "66 m²",
+  "property_price": "286 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbbf08de440baced70455"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/247251289.htm",
+  "seller_phone": "01 30 72 10 20",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "51 m²",
+  "property_price": "205 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbbf98de440baced70456"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/248455659.htm",
+  "seller_phone": "0677686727",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "148 m²",
+  "property_price": "518 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbc188de440baced70457"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/haut-et-centre/248344001.htm",
+  "seller_phone": "0750815508",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "76 m²",
+  "property_price": "325 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbc248de440baced70458"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/carriere-bois-rochefort/247079453.htm",
+  "seller_phone": "01 71 68 70 64",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "62 m²",
+  "property_price": "249 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbc2f8de440baced70459"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/245648171.htm",
+  "seller_phone": "0611334597",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "65 m²",
+  "property_price": "229 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbc398de440baced7045a"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/248541009.htm",
+  "seller_phone": "0630893520",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "136 m²",
+  "property_price": "380 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbc438de440baced7045b"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/248880637.htm",
+  "seller_phone": "0624147391",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "86 m²",
+  "property_price": "239 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbc4f8de440baced7045c"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/250932061.htm",
+  "seller_phone": "01 30 72 10 20",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "104 m²",
+  "property_price": "263 500",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbc598de440baced7045d"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/250612621.htm",
+  "seller_phone": "01 30 72 10 20",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "75 m²",
+  "property_price": "369 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbc648de440baced7045e"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/249510687.htm",
+  "seller_phone": "0646154403",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "60 m²",
+  "property_price": "289 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbc708de440baced7045f"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/250947571.htm",
+  "seller_phone": "01 59 16 25 71",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "74,5 m²",
+  "property_price": "209 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbc7b8de440baced70460"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/250568641.htm",
+  "seller_phone": "0650707663",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "82 m²",
+  "property_price": "283 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbc868de440baced70461"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/250239151.htm",
+  "seller_phone": "0665789980",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "131 m²",
+  "property_price": "479 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbc908de440baced70462"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/243574789.htm",
+  "seller_phone": "0770621997",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "85 m²",
+  "property_price": "395 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbc9a8de440baced70463"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/250129881.htm",
+  "seller_phone": "0665285552",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "77 m²",
+  "property_price": "312 500",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbca58de440baced70464"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/stade/250006211.htm",
+  "seller_phone": "0634356739",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "58 m²",
+  "property_price": "219 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbcb08de440baced70465"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/250929323.htm",
+  "seller_phone": "01 59 16 37 28",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "63,4 m²",
+  "property_price": "297 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbcbc8de440baced70466"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/250006275.htm",
+  "seller_phone": "0665789980",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "86 m²",
+  "property_price": "280 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbcc08de440baced70467"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/cormeilles-en-parisis-95/emy-les-pres/250287581.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbccc8de440baced70468"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/249810523.htm",
+  "seller_phone": "0681496770",
+  "seller_email": null,
+  "property_type": "Duplex à vendre",
+  "property_size": "87,2 m²",
+  "property_price": "330 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbcd78de440baced70469"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/250506475.htm",
+  "seller_phone": "01 59 16 24 63",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "83,6 m²",
+  "property_price": "227 900",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbce18de440baced7046a"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/sannois-95/garonnes/244594759.htm",
+  "seller_phone": "0773861793",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "120 m²",
+  "property_price": "465 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbceb8de440baced7046b"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/250128681.htm",
+  "seller_phone": "0667115023",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "56 m²",
+  "property_price": "240 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd008de440baced7046c"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/243196921.htm",
+  "seller_phone": "0627869117",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "86 m²",
+  "property_price": "230 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd0b8de440baced7046d"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/237073829.htm",
+  "seller_phone": "01 30 72 10 20",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "66 m²",
+  "property_price": "332 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd158de440baced7046e"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/250353027.htm",
+  "seller_phone": "0619159338",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "55,2 m²",
+  "property_price": "210 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd1f8de440baced7046f"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/250246451.htm",
+  "seller_phone": "0619159338",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "55,2 m²",
+  "property_price": "210 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd298de440baced70470"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/249761451.htm",
+  "seller_phone": "0615216272",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "130 m²",
+  "property_price": "649 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd338de440baced70471"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/emy-les-pres/231371137.htm",
+  "seller_phone": "0134441269",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "53,6 m²",
+  "property_price": "224 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd3c8de440baced70472"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/249814433.htm",
+  "seller_phone": "0130111660",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "121 m²",
+  "property_price": "399 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd468de440baced70473"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/cormeilles-en-parisis-95/haut-et-centre/249291249.htm",
+  "seller_phone": "0666412517",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "130 m²",
+  "property_price": "529 990",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd518de440baced70474"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/250825851.htm",
+  "seller_phone": "0625354546",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "58 m²",
+  "property_price": "233 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd5b8de440baced70475"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/250436125.htm",
+  "seller_phone": "0763302246",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "72 m²",
+  "property_price": "305 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd648de440baced70476"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/249433257.htm",
+  "seller_phone": "0665789980",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "94 m²",
+  "property_price": "240 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd6e8de440baced70477"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/248834521.htm",
+  "seller_phone": "0159303459",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "62 m²",
+  "property_price": "249 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd788de440baced70478"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/taverny-95/244588699.htm",
+  "seller_phone": "0185110770",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "80 m²",
+  "property_price": "215 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd818de440baced70479"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/250294371.htm",
+  "seller_phone": "01 34 15 48 00",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "54 m²",
+  "property_price": "210 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd8b8de440baced7047a"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/vieux-marche-mare-des-noues/249172869.htm",
+  "seller_phone": "01 30 72 10 20",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "106 m²",
+  "property_price": "316 500",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd958de440baced7047b"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/249225873.htm",
+  "seller_phone": "0681496770",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "106,1 m²",
+  "property_price": "315 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbd9e8de440baced7047c"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/250769535.htm",
+  "seller_phone": "0682122202",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "63,7 m²",
+  "property_price": "240 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbdae8de440baced7047d"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/249554805.htm",
+  "seller_phone": "0634356739",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "64 m²",
+  "property_price": "289 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbdb98de440baced7047e"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/250068367.htm",
+  "seller_phone": "0665789980",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "85 m²",
+  "property_price": "370 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbdc38de440baced7047f"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/emy-les-pres/248707331.htm",
+  "seller_phone": "+33673604836",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "62,6 m²",
+  "property_price": "240 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbdcd8de440baced70480"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/haut-et-centre/248707329.htm",
+  "seller_phone": "+33673604836",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "59,5 m²",
+  "property_price": "240 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbdd68de440baced70481"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/249183991.htm",
+  "seller_phone": "0619159338",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "130 m²",
+  "property_price": "649 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbde08de440baced70482"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/246668395.htm",
+  "seller_phone": "0159537632",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "141,8 m²",
+  "property_price": "534 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbde98de440baced70483"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/250246445.htm",
+  "seller_phone": "0619159338",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "58,3 m²",
+  "property_price": "223 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbdf68de440baced70484"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/249622583.htm",
+  "seller_phone": "01 30 72 10 20",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "71 m²",
+  "property_price": "221 500",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe008de440baced70485"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/247204799.htm",
+  "seller_phone": "0634356739",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "65 m²",
+  "property_price": "254 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe0a8de440baced70486"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/246584315.htm",
+  "seller_phone": "0159537632",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "52,5 m²",
+  "property_price": "236 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe1c8de440baced70487"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/sequoia-de-la-gare/249828799.htm",
+  "seller_phone": "01 34 15 48 00",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "64 m²",
+  "property_price": "289 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe268de440baced70488"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/vieux-marche-mare-des-noues/249380757.htm",
+  "seller_phone": "0624415705",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "106 m²",
+  "property_price": "317 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe2f8de440baced70489"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/240851359.htm",
+  "seller_phone": "01 30 72 10 20",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "178 m²",
+  "property_price": "729 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe398de440baced7048a"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/ermont-95/gros-noyer/238200039.htm",
+  "seller_phone": "0664211298",
+  "seller_email": null,
+  "property_type": "Maison de ville à vendre",
+  "property_size": "87 m²",
+  "property_price": "347 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe428de440baced7048b"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/jean-monnet-source-bruyere/248013293.htm",
+  "seller_phone": "06 35 37 18 79",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "87,5 m²",
+  "property_price": "299 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe4b8de440baced7048c"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/244897987.htm",
+  "seller_phone": "01 30 72 10 20",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "73 m²",
+  "property_price": "349 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe558de440baced7048d"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/236680943.htm",
+  "seller_phone": "0699506315",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "77 m²",
+  "property_price": "224 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe618de440baced7048e"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/249662775.htm",
+  "seller_phone": "01 59 16 33 38",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "73,7 m²",
+  "property_price": "316 500",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe6b8de440baced7048f"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/249338511.htm",
+  "seller_phone": "06 20 18 25 87",
+  "seller_email": null,
+  "property_type": "Maison à vendre",
+  "property_size": "240 m²",
+  "property_price": "699 900",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe6f8de440baced70490"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/249679551.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe728de440baced70491"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/248233683.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe758de440baced70492"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/244848911.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe788de440baced70493"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/248691127.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe7b8de440baced70494"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/250777831.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe7e8de440baced70495"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/250050285.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe848de440baced70496"
+  },
+  "listing_url": "https://www.bellesdemeures.com/248219891/detail.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe878de440baced70497"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/242889135.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe8a8de440baced70498"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/cormeilles-en-parisis-95/carriere-bois-rochefort/249623845.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe8d8de440baced70499"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/250230349.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe908de440baced7049a"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/249287693.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe938de440baced7049b"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/250424479.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbe9e8de440baced7049c"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/245005819.htm",
+  "seller_phone": "01 30 72 37 37",
+  "seller_email": null,
+  "property_type": "Appartement à vendre",
+  "property_size": "38 m²",
+  "property_price": "211 000",
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbea18de440baced7049d"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/249071119.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbea48de440baced7049e"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/249071557.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbea78de440baced7049f"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/249071131.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbeaa8de440baced704a0"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/249071111.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbead8de440baced704a1"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/237917761.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbeb08de440baced704a2"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/stade/247480197.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbeb38de440baced704a3"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/246607915.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbeb68de440baced704a4"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/jean-monnet-source-bruyere/245451351.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbeb98de440baced704a5"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/jean-monnet-colline-saint-marc/240908607.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbebc8de440baced704a6"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/247297815.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbec08de440baced704a7"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/242113867.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbec28de440baced704a8"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/236103735.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbec58de440baced704a9"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/stade/246068585.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbec98de440baced704aa"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/cormeilles-en-parisis-95/250192075.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbecc8de440baced704ab"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/232201049.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbecf8de440baced704ac"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/246239727.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbed18de440baced704ad"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/stade/243233289.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbed48de440baced704ae"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/242901329.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbed78de440baced704af"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/249071545.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbeda8de440baced704b0"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/246409129.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbedd8de440baced704b1"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/244461707.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbee08de440baced704b2"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/stade/241949303.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbee38de440baced704b3"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/sequoia-de-la-gare/249169435.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbee68de440baced704b4"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/242420721.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbee98de440baced704b5"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/248622263.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbeec8de440baced704b6"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/vieux-marche-mare-des-noues/247684405.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbeef8de440baced704b7"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/246882989.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbef28de440baced704b8"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/230209847.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbef48de440baced704b9"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/emy-les-pres/250498999.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbef68de440baced704ba"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/237598809.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbef98de440baced704bb"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/244614281.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbefb8de440baced704bc"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/244394561.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbefd8de440baced704bd"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/les-noyers-de-saint-edme/243936593.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf008de440baced704be"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/242379107.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf028de440baced704bf"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/249272201.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf048de440baced704c0"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/233629595.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf068de440baced704c1"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/les-noyers-de-saint-edme/219550977.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf098de440baced704c2"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/249153945.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf0b8de440baced704c3"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/248783887.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf0d8de440baced704c4"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/226231779.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf0f8de440baced704c5"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/cormeilles-en-parisis-95/emy-les-pres/246800941.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf128de440baced704c6"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/250065495.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf148de440baced704c7"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/249683799.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf168de440baced704c8"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/244870947.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf188de440baced704c9"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/sannois-95/245911777.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf1b8de440baced704ca"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/haut-et-centre/244938523.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf1d8de440baced704cb"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/233666305.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf208de440baced704cc"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/emy-les-pres/248387187.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf238de440baced704cd"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/242462527.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf268de440baced704ce"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/246435579.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf298de440baced704cf"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/239356193.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf2c8de440baced704d0"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/244870697.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf2f8de440baced704d1"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/248387167.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf328de440baced704d2"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/236910991.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf358de440baced704d3"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/haut-et-centre/248387825.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf388de440baced704d4"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/emy-les-pres/248387837.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf3b8de440baced704d5"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/247480127.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf3e8de440baced704d6"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/250568945.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf418de440baced704d7"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/taverny-95/248938729.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf448de440baced704d8"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/240163955.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf478de440baced704d9"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/emy-les-pres/241548051.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf4a8de440baced704da"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/248637563.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf4d8de440baced704db"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/249548089.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf508de440baced704dc"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/245015205.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf538de440baced704dd"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/244393305.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf568de440baced704de"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/240501259.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf598de440baced704df"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/238199521.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf5c8de440baced704e0"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/245815771.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf5f8de440baced704e1"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/238365711.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf628de440baced704e2"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/248502665.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf658de440baced704e3"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/249183993.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf688de440baced704e4"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/247907557.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf6b8de440baced704e5"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/240663723.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf6d8de440baced704e6"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/246170815.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf6f8de440baced704e7"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/245718009.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf718de440baced704e8"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/245428677.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf748de440baced704e9"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/taverny-95/carre-sainte-honorine/245000457.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf768de440baced704ea"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/221522681.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf788de440baced704eb"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/246218109.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf7b8de440baced704ec"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/240410087.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf7d8de440baced704ed"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/239447535.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf7f8de440baced704ee"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/jean-monnet-colline-saint-marc/245451355.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf838de440baced704ef"
+  },
+  "listing_url": "https://www.bellesdemeures.com/235728509/detail.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf858de440baced704f0"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/248506537.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf888de440baced704f1"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/246387511.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf8a8de440baced704f2"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/249423823.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf8c8de440baced704f3"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/250804425.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf8e8de440baced704f4"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/241943417.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf918de440baced704f5"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/238968231.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf938de440baced704f6"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/236853551.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf958de440baced704f7"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/cormeilles-en-parisis-95/emy-les-pres/235304163.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf988de440baced704f8"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/245957483.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf9b8de440baced704f9"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/243612979.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbf9e8de440baced704fa"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/235081539.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfa18de440baced704fb"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/215749947.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfa48de440baced704fc"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/237044637.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfa78de440baced704fd"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/sequoia-de-la-gare/249169427.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfaa8de440baced704fe"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/247503391.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfad8de440baced704ff"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/les-noyers-de-saint-edme/243076471.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfb08de440baced70500"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/244870975.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfb38de440baced70501"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/243597947.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfb68de440baced70502"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/haut-et-centre/248387805.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfb98de440baced70503"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/218936709.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfbc8de440baced70504"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/165128569.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfbf8de440baced70505"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/25W98QGPN4AK.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfc28de440baced70506"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/2576A9717CC4.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfc58de440baced70507"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/25R1CLWMHWD2.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfc88de440baced70508"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/25M11L4N8NFK.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfcb8de440baced70509"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/la-frette-sur-seine-95/246351881.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfce8de440baced7050a"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/25W6LYDYCPD1.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfd18de440baced7050b"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/243257505.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfd58de440baced7050c"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/franconville-95/hotel-de-ville-bel-air/245968687.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfd88de440baced7050d"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/hotel-de-ville-bel-air/210370889.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfda8de440baced7050e"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/franconville-95/jean-monnet-colline-saint-marc/218268741.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfde8de440baced7050f"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/248548287.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfe18de440baced70510"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/cormeilles-en-parisis-95/emy-les-pres/248491209.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfe38de440baced70511"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/cormeilles-en-parisis-95/emy-les-pres/244820059.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfe58de440baced70512"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/emy-les-pres/250643651.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfe78de440baced70513"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/emy-les-pres/248462155.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfe98de440baced70514"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/cormeilles-en-parisis-95/emy-les-pres/247543441.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfec8de440baced70515"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/cormeilles-en-parisis-95/242772335.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbfee8de440baced70516"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/cormeilles-en-parisis-95/emy-les-pres/235988599.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbff08de440baced70517"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/249628277.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbff38de440baced70518"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/241411139.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbff58de440baced70519"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/emy-les-pres/234950409.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbff78de440baced7051a"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/cormeilles-en-parisis-95/emy-les-pres/237147167.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbff98de440baced7051b"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/cormeilles-en-parisis-95/emy-les-pres/248905569.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbffc8de440baced7051c"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/cormeilles-en-parisis-95/249240677.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcbffe8de440baced7051d"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/maison/cormeilles-en-parisis-95/emy-les-pres/25MVBPQUI56E.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcc0008de440baced7051e"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/241574505.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+},
+{
+  "_id": {
+    "$oid": "68dcc0028de440baced7051f"
+  },
+  "listing_url": "https://www.seloger.com/annonces/achat/appartement/cormeilles-en-parisis-95/249268157.htm",
+  "seller_phone": null,
+  "seller_email": null,
+  "property_type": null,
+  "property_size": null,
+  "property_price": null,
+  "city": "Franconville"
+}]
