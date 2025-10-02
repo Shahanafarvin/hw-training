@@ -5,3 +5,25 @@ Daily Meet – Discussed the progress of the current task and shared an addition
 webscraping agents details - sutton
                     -crawler development completed and extracted agent urls
                     -parser development completed and extracted deatailed information-sample
+                    -requirements-fields
+                    profile_url
+                    first_name
+                    middle_name
+                    last_name
+                    image_url
+                    office_name
+                    address
+                    description
+                    languages
+                    social
+                    website
+                    email
+                    title
+                    country
+                    city
+                    zipcode
+                    state
+                    agent_phone_numbers
+                    office_phone_numbers
+                    additional_fields
+                    
