@@ -1,0 +1,8 @@
+website dm - continuing deveelopment
+
+Daily Meet – Discussed the progress of the current task.
+
+website dm - continuing development completed,code testing and data testing (an unusual error occured)
+           - Need to generate API URLs up to the end category, as some APIs are limited to 100 pages,
+            resulting in fewer products being extracted per category.
+           - category api urls generating scripts completed (api urls generated)
