@@ -1,0 +1,4349 @@
+[
+    {
+        "category_path": "Neu",
+        "category_link": "/neu",
+        "filters": "isNew:true popularFacet:Neu",
+        "sort": "new",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Neu > Online-Exklusiv",
+        "category_link": "/neu/online-exklusiv",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Neu > Limited Editions",
+        "category_link": "/neu/limited-editions",
+        "filters": "eyecatchers.eyecatcherType:LIMITED_EDITION",
+        "sort": "new",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Neu > Marken-Highlights",
+        "category_link": "/neu/marken-highlights",
+        "filters": "",
+        "sort": "new",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Marken > Frosch",
+        "category_link": "/marken/frosch",
+        "filters": "brandName:Frosch",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Marken > Doppelherz",
+        "category_link": "/marken/doppelherz",
+        "filters": "brandName:Doppelherz",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Marken > essie",
+        "category_link": "/marken/essie",
+        "filters": "brandName:essie",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Marken > HiPP",
+        "category_link": "/marken/hipp",
+        "filters": "brandName:Hipp\nbrandName:\"Hipp Babysanft\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Marken > L'Oréal Professionnel",
+        "category_link": "/marken/l-oreal-professionnel",
+        "filters": "brandName:\"L´Oréal Professionnel\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 25
+    },
+    {
+        "category_path": "Make-up",
+        "category_link": "/make-up",
+        "filters": "allCategories.id:010000",
+        "sort": "new",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Make-up > Augen Make-up",
+        "category_link": "/make-up/augen-make-up",
+        "filters": "allCategories.id:010100",
+        "sort": "new",
+        "product_count_desktop": 60
+    },
+    {
+        "category_path": "Make-up > Augen Make-up > Lidschatten Primer & Base",
+        "category_link": "/make-up/augen-make-up/lidschatten-primer-und-base",
+        "filters": "allCategories.id:010109",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Augen Make-up > Lidschatten & Paletten",
+        "category_link": "/make-up/augen-make-up/lidschatten-paletten",
+        "filters": "allCategories.id:010102",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Augen Make-up > Mascara",
+        "category_link": "/make-up/augen-make-up/mascara",
+        "filters": "allCategories.id:010101",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Augen Make-up > Mascara > Wasserfeste Mascara",
+        "category_link": "/make-up/augen-make-up/mascara/wasserfeste-mascara",
+        "filters": "allCategories.id:010101 classifications.A0205_PRODUKTEIGENSCHAFTEN:Wasserfest",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Make-up > Augen Make-up > Augenbrauen",
+        "category_link": "/make-up/augen-make-up/augenbrauen",
+        "filters": "allCategories.id:010105",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Augen Make-up > Augenbrauen > Augenbrauengel",
+        "category_link": "/make-up/augen-make-up/augenbrauen/augenbrauengel",
+        "filters": "categoryNames:Augenbrauen",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Augen Make-up > Augenbrauen > Augenbrauenpuder",
+        "category_link": "/make-up/augen-make-up/augenbrauen/augenbrauenpuder",
+        "filters": "categoryNames:Augenbrauen",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Augen Make-up > Augenbrauen > Augenbrauenstifte",
+        "category_link": "/make-up/augen-make-up/augenbrauen/augenbrauenstifte",
+        "filters": "allCategories.id:010105 classifications.A0213_TEXTUR:Stift",
+        "sort": "new",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Make-up > Augen Make-up > Eyeliner",
+        "category_link": "/make-up/augen-make-up/eyeliner",
+        "filters": "allCategories.id:010104",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Augen Make-up > Kajal",
+        "category_link": "/make-up/augen-make-up/kajal",
+        "filters": "allCategories.id:010112",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Augen Make-up > Künstliche Wimpern",
+        "category_link": "/make-up/augen-make-up/kuenstliche-wimpern",
+        "filters": "allCategories.id:010106",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Augen Make-up > Wimpernserum & Pflege",
+        "category_link": "/make-up/augen-make-up/wimpernserum-und-pflege",
+        "filters": "allCategories.id:010110",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Augen Make-up > Wimpern- & Augenbrauenfarbe",
+        "category_link": "/make-up/augen-make-up/wimpern-augenbrauenfarbe",
+        "filters": "allCategories.id:010111",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Lippen Make-up",
+        "category_link": "/make-up/lippen-make-up",
+        "filters": "allCategories.id:010300",
+        "sort": "new",
+        "product_count_desktop": 60
+    },
+    {
+        "category_path": "Make-up > Lippen Make-up > Lippen Primer & Base",
+        "category_link": "/make-up/lippen-make-up/lippen-primer-und-base",
+        "filters": "allCategories.id:010306",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Lippen Make-up > Lippenstift",
+        "category_link": "/make-up/lippen-make-up/lippenstift",
+        "filters": "allCategories.id:010302",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Lippen Make-up > Lipgloss",
+        "category_link": "/make-up/lippen-make-up/lipgloss",
+        "filters": "allCategories.id:010301",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Lippen Make-up > Lipliner",
+        "category_link": "/make-up/lippen-make-up/lipliner",
+        "filters": "allCategories.id:010303",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Lippen Make-up > Lipbalm",
+        "category_link": "/make-up/lippen-make-up/lipbalm",
+        "filters": "allCategories.id:010307",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Lippen Make-up > Lippenöl",
+        "category_link": "/make-up/lippen-make-up/lippenoel",
+        "filters": "allCategories.id:010309",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Lippen Make-up > Lippenpeeling",
+        "category_link": "/make-up/lippen-make-up/lippenpeeling",
+        "filters": "allCategories.id:010308",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Lippen Make-up > Lip Tint & Lip Stain",
+        "category_link": "/make-up/lippen-make-up/lip-tint-lip-stain",
+        "filters": "categoryNames:\"Lippen Make-up\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Make-up > Teint",
+        "category_link": "/make-up/teint",
+        "filters": "allCategories.id:010200",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 60
+    },
+    {
+        "category_path": "Make-up > Teint > Make-up Primer",
+        "category_link": "/make-up/teint/make-up-primer",
+        "filters": "allCategories.id:010210",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Teint > Teint Fixing",
+        "category_link": "/make-up/teint/teint-fixing",
+        "filters": "allCategories.id:010213",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Teint > Foundation",
+        "category_link": "/make-up/teint/foundation",
+        "filters": "allCategories.id:010201",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Teint > Concealer",
+        "category_link": "/make-up/teint/concealer",
+        "filters": "allCategories.id:010203",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Teint > Abdeckstift",
+        "category_link": "/make-up/teint/abdeckstift",
+        "filters": "allCategories.id:010214",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Teint > Puder & Mattierung",
+        "category_link": "/make-up/teint/puder-und-mattierung",
+        "filters": "allCategories.id:010204",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Teint > BB-Cream & CC-Cream",
+        "category_link": "/make-up/teint/bb-cream-und-cc-cream",
+        "filters": "allCategories.id:010202",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Teint > Getönte Tagescreme",
+        "category_link": "/make-up/teint/getoente-tagescreme",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Teint > Highlighter",
+        "category_link": "/make-up/teint/highlighter",
+        "filters": "allCategories.id:010209",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Teint > Blush",
+        "category_link": "/make-up/teint/blush",
+        "filters": "allCategories.id:010205",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Teint > Bronzer",
+        "category_link": "/make-up/teint/bronzer",
+        "filters": "allCategories.id:010206",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Teint > Contouring",
+        "category_link": "/make-up/teint/contouring",
+        "filters": "allCategories.id:010211",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel",
+        "category_link": "/make-up/naegel",
+        "filters": "allCategories.id:010400",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 60
+    },
+    {
+        "category_path": "Make-up > Nägel > Nagellack",
+        "category_link": "/make-up/naegel/nagellack",
+        "filters": "allCategories.id:010402",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Nagellack > Veganer Nagellack",
+        "category_link": "/make-up/naegel/nagellack/veganer-nagellack",
+        "filters": "allCategories.id:010402 popularFacet:Vegan",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Nagellack > Glitzer Nagellack",
+        "category_link": "/make-up/naegel/nagellack/glitzer-nagellack",
+        "filters": "categoryNames:Nagellack",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Nagellack > Neon Nagellack",
+        "category_link": "/make-up/naegel/nagellack/neon-nagellack",
+        "filters": "allCategories.id:010402",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > UV Nagellack",
+        "category_link": "/make-up/naegel/uv-nagellack",
+        "filters": "allCategories.id:010403",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Gel-Nagellack ohne UV",
+        "category_link": "/make-up/naegel/gel-nagellack-ohne-uv",
+        "filters": "categoryNames:Nagellack",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Nagelpflege",
+        "category_link": "/make-up/naegel/nagelpflege",
+        "filters": "allCategories.id:010404",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Nagelöl",
+        "category_link": "/make-up/naegel/nageloel",
+        "filters": "categoryNames:Nagelpflege",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Top Coat & Base Coat",
+        "category_link": "/make-up/naegel/top-coat-und-base-coat",
+        "filters": "allCategories.id:010401",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Nagelscheren",
+        "category_link": "/make-up/naegel/nagelscheren",
+        "filters": "allCategories.id:010414",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Nagelfeilen",
+        "category_link": "/make-up/naegel/nagelfeilen",
+        "filters": "allCategories.id:010412",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Nagelknipser",
+        "category_link": "/make-up/naegel/nagelknipser",
+        "filters": "allCategories.id:010413",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Nagellackentferner",
+        "category_link": "/make-up/naegel/nagellackentferner",
+        "filters": "allCategories.id:010405",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Kunstnägel",
+        "category_link": "/make-up/naegel/kunstnaegel",
+        "filters": "allCategories.id:010409",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Nagelkleber",
+        "category_link": "/make-up/naegel/nagelkleber",
+        "filters": "categoryNames:Kunstnägel",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Nageldesign",
+        "category_link": "/make-up/naegel/nageldesign",
+        "filters": "allCategories.id:010410",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Nagelfolien",
+        "category_link": "/make-up/naegel/nagelfolien",
+        "filters": "allCategories.id:010411",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > UV Nagelfolien",
+        "category_link": "/make-up/naegel/uv-nagelfolien",
+        "filters": "categoryNames:Nagelfolien",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Nagelhautentferner",
+        "category_link": "/make-up/naegel/nagelhautentferner",
+        "filters": "categoryNames:Nagelpflege",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Nagelhärter",
+        "category_link": "/make-up/naegel/nagelhaerter",
+        "filters": "categoryNames:Nägel",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Nägel > Nagelbürsten",
+        "category_link": "/make-up/naegel/nagelbuersten",
+        "filters": "categoryNames:Nagelpflege",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Make-up Zubehör",
+        "category_link": "/make-up/make-up-zubehoer",
+        "filters": "allCategories.id:010600",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 60
+    },
+    {
+        "category_path": "Make-up > Make-up Zubehör > Make-up Pinsel",
+        "category_link": "/make-up/make-up-zubehoer/make-up-pinsel",
+        "filters": "allCategories.id:010604",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Make-up Zubehör > Make-up Schwämme & Applikatoren",
+        "category_link": "/make-up/make-up-zubehoer/make-up-schwaemme-und-applikatoren",
+        "filters": "allCategories.id:010603",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Make-up Zubehör > Beautyhelfer",
+        "category_link": "/make-up/make-up-zubehoer/beautyhelfer",
+        "filters": "allCategories.id:010607",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Make-up > Make-up Zubehör > Bad & Make-up Organizer ",
+        "category_link": "/make-up/make-up-zubehoer/bad-make-up-organizer",
+        "filters": "allCategories.id:010611",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum",
+        "category_link": "/pflege-und-parfum",
+        "filters": "allCategories.id:020000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtsreinigung",
+        "category_link": "/pflege-und-parfum/gesichtsreinigung",
+        "filters": "allCategories.id:020201",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtsreinigung > Abschminkprodukte",
+        "category_link": "/pflege-und-parfum/gesichtsreinigung/abschminkprodukte",
+        "filters": "allCategories.id:121415",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtsreinigung > Abschminkprodukte > Abschminktücher & Kosmetiktücher",
+        "category_link": "/pflege-und-parfum/gesichtsreinigung/abschminkprodukte/abschminktuecher-kosmetiktuecher",
+        "filters": "categoryNames:Abschminkprodukte categoryNames:\"Kosmetiktücher & Wattepads\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtsreinigung > Abschminkprodukte > Waschbare Abschminkpads",
+        "category_link": "/pflege-und-parfum/gesichtsreinigung/abschminkprodukte/waschbare-abschminkpads",
+        "filters": "categoryNames:Gesichtsreinigung",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtsreinigung > Abschminkprodukte > Wattepads",
+        "category_link": "/pflege-und-parfum/gesichtsreinigung/abschminkprodukte/wattepads",
+        "filters": "categoryNames:Gesichtsreinigung",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtsreinigung > Abschminkprodukte > Wattestäbchen ",
+        "category_link": "/pflege-und-parfum/gesichtsreinigung/abschminkprodukte/wattestaebchen",
+        "filters": "categoryNames:Gesichtsreinigung",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtsreinigung > Make-up Entferner",
+        "category_link": "/pflege-und-parfum/gesichtsreinigung/make-up-entferner",
+        "filters": "allCategories.id:010602",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtsreinigung > Gesichtswasser",
+        "category_link": "/pflege-und-parfum/gesichtsreinigung/gesichtswasser",
+        "filters": "allCategories.id:121409",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtsreinigung > Gesichtspeeling",
+        "category_link": "/pflege-und-parfum/gesichtsreinigung/gesichtspeeling",
+        "filters": "allCategories.id:121410",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtsreinigung > Gesichtsreinigungsbürste & Co.",
+        "category_link": "/pflege-und-parfum/gesichtsreinigung/gesichtsreinigungsbuerste-und-co",
+        "filters": "allCategories.id:020210",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtsreinigung > Mizellenwasser",
+        "category_link": "/pflege-und-parfum/gesichtsreinigung/mizellenwasser",
+        "filters": "allCategories.id:121417",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtsreinigung > Reinigungsmilch",
+        "category_link": "/pflege-und-parfum/gesichtsreinigung/reinigungsmilch",
+        "filters": "allCategories.id:121416",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtsreinigung > Reinigungsschaum",
+        "category_link": "/pflege-und-parfum/gesichtsreinigung/reinigungsschaum",
+        "filters": "allCategories.id:121412",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtsreinigung > Reinigungsöl",
+        "category_link": "/pflege-und-parfum/gesichtsreinigung/reinigungsoel",
+        "filters": "allCategories.id:121414",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtsreinigung > Toner fürs Gesicht",
+        "category_link": "/pflege-und-parfum/gesichtsreinigung/toner-fuers-gesicht",
+        "filters": "allCategories.id:121413",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtsreinigung > Waschgel",
+        "category_link": "/pflege-und-parfum/gesichtsreinigung/waschgel",
+        "filters": "allCategories.id:121411",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege",
+        "category_link": "/pflege-und-parfum/gesichtspflege",
+        "filters": "allCategories.id:020200",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Gesichtsroller",
+        "category_link": "/pflege-und-parfum/gesichtspflege/gesichtsroller",
+        "filters": "allCategories.id:020212",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Gesichtscreme",
+        "category_link": "/pflege-und-parfum/gesichtspflege/gesichtscreme",
+        "filters": "allCategories.id:020202 allCategories.id:020203",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Gesichtscreme > Creme für trockene Haut",
+        "category_link": "/pflege-und-parfum/gesichtspflege/gesichtscreme/creme-fuer-trockene-haut",
+        "filters": "allCategories.id:020202 allCategories.id:020203 classifications.A0204_HAUTTYP:Trocken",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Gesichtscreme > Creme für fettige Haut",
+        "category_link": "/pflege-und-parfum/gesichtspflege/gesichtscreme/creme-fuer-fettige-haut",
+        "filters": "allCategories.id:020202 allCategories.id:020203 classifications.A0204_HAUTTYP:\"Fettig / Ölig\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Gesichtscreme > Creme für empfindliche & sensible Haut",
+        "category_link": "/pflege-und-parfum/gesichtspflege/gesichtscreme/creme-fuer-empfindliche-sensible-haut",
+        "filters": "allCategories.id:020202 allCategories.id:020203 classifications.A0204_HAUTTYP:\"Sensibel / Empfindlich\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Gesichtscreme > Creme für reife Haut",
+        "category_link": "/pflege-und-parfum/gesichtspflege/gesichtscreme/creme-fuer-reife-haut",
+        "filters": "allCategories.id:020202 allCategories.id:020203 classifications.A0204_HAUTTYP:Reif",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Gesichtscreme > Creme für Mischhaut",
+        "category_link": "/pflege-und-parfum/gesichtspflege/gesichtscreme/creme-fuer-mischhaut",
+        "filters": "allCategories.id:020202 allCategories.id:020203 classifications.A0204_HAUTTYP:Mischhaut",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Gesichtscreme > Creme gegen Pigmentflecken",
+        "category_link": "/pflege-und-parfum/gesichtspflege/gesichtscreme/creme-gegen-pigmentflecken",
+        "filters": "categoryNames:Tagescreme",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Tagescreme",
+        "category_link": "/pflege-und-parfum/gesichtspflege/tagescreme",
+        "filters": "allCategories.id:020202",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Tagescreme > Tagescreme mit Lichtschutzfaktor",
+        "category_link": "/pflege-und-parfum/gesichtspflege/tagescreme/gesichtscreme-mit-lichtschutzfaktor",
+        "filters": "allCategories.id:020202 sunProtectionFactorRange:\"Hoher Schutz (30-50)\" sunProtectionFactorRange:\"Mittlerer Schutz (15-25)\" sunProtectionFactorRange:\"Niedriger Schutz (6-10)\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Nachtcreme",
+        "category_link": "/pflege-und-parfum/gesichtspflege/nachtcreme",
+        "filters": "allCategories.id:020203",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Augenpflege",
+        "category_link": "/pflege-und-parfum/gesichtspflege/augenpflege",
+        "filters": "allCategories.id:020209",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Augenpflege > Augencreme",
+        "category_link": "/pflege-und-parfum/gesichtspflege/augenpflege/augencreme",
+        "filters": "categoryNames:Augenpflege",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Augenpflege > Augenserum",
+        "category_link": "/pflege-und-parfum/gesichtspflege/augenpflege/augenserum",
+        "filters": "categoryNames:\"Serum & Kur\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Gesichtsmaske",
+        "category_link": "/pflege-und-parfum/gesichtspflege/gesichtsmaske",
+        "filters": "allCategories.id:020207",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Gesichtsmaske > Augenmasken",
+        "category_link": "/pflege-und-parfum/gesichtspflege/gesichtsmaske/augenmasken",
+        "filters": "categoryNames:Gesicht",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Serum & Kur",
+        "category_link": "/pflege-und-parfum/gesichtspflege/serum-und-kur",
+        "filters": "allCategories.id:020211",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Serum & Kur > Hyaluron Serum",
+        "category_link": "/pflege-und-parfum/gesichtspflege/serum-und-kur/hyaluron-serum",
+        "filters": "allCategories.id:020211",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Serum & Kur > Retinol Serum",
+        "category_link": "/pflege-und-parfum/gesichtspflege/serum-und-kur/retinol-serum",
+        "filters": "allCategories.id:020211 classifications.A0205_PRODUKTEIGENSCHAFTEN:\"Mit Retinol (Vitamin A)\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Serum & Kur > Vitamin C Serum",
+        "category_link": "/pflege-und-parfum/gesichtspflege/serum-und-kur/vitamin-c-serum",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Anti Aging",
+        "category_link": "/pflege-und-parfum/gesichtspflege/anti-aging",
+        "filters": "allCategories.id:020204",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Anti Pickel & Mitesser",
+        "category_link": "/pflege-und-parfum/gesichtspflege/anti-pickel-und-mitesser",
+        "filters": "allCategories.id:020205",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Anti Pickel & Mitesser > Pickel Patches",
+        "category_link": "/pflege-und-parfum/gesichtspflege/anti-pickel-und-mitesser/pickel-patches",
+        "filters": "categoryNames:\"Anti Pickel & Mitesser\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Gesichtspflege > Lippenpflege",
+        "category_link": "/pflege-und-parfum/gesichtspflege/lippenpflege",
+        "filters": "allCategories.id:020206",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Medizinische Pflege",
+        "category_link": "/pflege-und-parfum/medizinische-pflege",
+        "filters": "allCategories.id:021600",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Medizinische Pflege > Medizinisches Duschgel & Deo",
+        "category_link": "/pflege-und-parfum/medizinische-pflege/medizinisches-duschgel-deo",
+        "filters": "(categoryNames:\"Duschgel, Duschschaum & Co.\" OR categoryNames:Deo) AND allCategories.id:021600",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Medizinische Pflege > Medizinische Seife & Handpflege",
+        "category_link": "/pflege-und-parfum/medizinische-pflege/medizinische-seife-handpflege",
+        "filters": "(categoryNames:\"Handpflege & Seife\") AND allCategories.id:021600",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Medizinische Pflege > Medizinische Hautcreme & Bodylotion",
+        "category_link": "/pflege-und-parfum/medizinische-pflege/medizinische-hautcreme-bodylotion",
+        "filters": "(categoryNames:\"Bodylotion & Hautcreme\") AND allCategories.id:021600",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Medizinische Pflege > Medizinische Gesichtspflege",
+        "category_link": "/pflege-und-parfum/medizinische-pflege/medizinische-gesichtspflege",
+        "filters": "(categoryNames:Gesicht) AND allCategories.id:021600",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Naturkosmetik",
+        "category_link": "/pflege-und-parfum/naturkosmetik",
+        "filters": "popularFacet:Naturkosmetik",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Naturkosmetik > Naturkosmetik Make-up",
+        "category_link": "/pflege-und-parfum/naturkosmetik/naturkosmetik-make-up",
+        "filters": "allCategories.id:010000 classifications.A0205_PRODUKTEIGENSCHAFTEN:Naturkosmetik",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Naturkosmetik > Naturkosmetik Gesichtspflege",
+        "category_link": "/pflege-und-parfum/naturkosmetik/naturkosmetik-gesichtspflege",
+        "filters": "allCategories.id:020200 classifications.A0205_PRODUKTEIGENSCHAFTEN:Naturkosmetik",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Naturkosmetik > Naturkosmetik Gesichtspflege > Naturkosmetik Gesichtscreme",
+        "category_link": "/pflege-und-parfum/naturkosmetik/naturkosmetik-gesichtspflege/naturkosmetik-gesichtscreme",
+        "filters": "allCategories.id:020200 classifications.A0205_PRODUKTEIGENSCHAFTEN:Naturkosmetik classifications.A0213_TEXTUR:\"Creme / Mousse\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Naturkosmetik > Naturkosmetik Shampoos",
+        "category_link": "/pflege-und-parfum/naturkosmetik/naturkosmetik-shampoos",
+        "filters": "allCategories.id:110100 classifications.A0205_PRODUKTEIGENSCHAFTEN:Naturkosmetik",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Naturkosmetik > Naturseifen",
+        "category_link": "/pflege-und-parfum/naturkosmetik/naturseifen",
+        "filters": "allCategories.id:021803 allCategories.id:021804 classifications.A0205_PRODUKTEIGENSCHAFTEN:Naturkosmetik classifications.A0205_PRODUKTEIGENSCHAFTEN:Naturkosmetik",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Naturkosmetik > Naturkosmetik Sonne",
+        "category_link": "/pflege-und-parfum/naturkosmetik/naturkosmetik-sonne",
+        "filters": "allCategories.id:020401 classifications.A0205_PRODUKTEIGENSCHAFTEN:Naturkosmetik",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Naturkosmetik > Naturkosmetik Körperpflege",
+        "category_link": "/pflege-und-parfum/naturkosmetik/naturkosmetik-koerperpflege",
+        "filters": "allCategories.id:020100 classifications.A0205_PRODUKTEIGENSCHAFTEN:Naturkosmetik",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Naturkosmetik > Naturkosmetik Deos",
+        "category_link": "/pflege-und-parfum/naturkosmetik/naturkosmetik-deo",
+        "filters": "allCategories.id:020106 classifications.A0205_PRODUKTEIGENSCHAFTEN:Naturkosmetik",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Naturkosmetik > Naturkosmetik Männerpflege",
+        "category_link": "/pflege-und-parfum/naturkosmetik/naturkosmetik-meanner",
+        "filters": "allCategories.id:021400 classifications.A0205_PRODUKTEIGENSCHAFTEN:Naturkosmetik",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Naturkosmetik > Naturkosmetik Babypflege",
+        "category_link": "/pflege-und-parfum/naturkosmetik/naturkosmetik-baby",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Handpflege",
+        "category_link": "/pflege-und-parfum/handpflege",
+        "filters": "allCategories.id:021800",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Handpflege > Handcreme & Handmasken",
+        "category_link": "/pflege-und-parfum/handpflege/handcreme-handmasken",
+        "filters": "allCategories.id:021801",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Handpflege > Händedesinfektion",
+        "category_link": "/pflege-und-parfum/handpflege/haendedesinfektion",
+        "filters": "allCategories.id:021802",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Fußcreme & Fußpflege",
+        "category_link": "/pflege-und-parfum/fusscreme-fusspflege",
+        "filters": "allCategories.id:021900",
+        "sort": "new",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Fußcreme & Fußpflege > Fußcreme & Schrundensalbe",
+        "category_link": "/pflege-und-parfum/fusscreme-fusspflege/fusscreme-schrundensalbe",
+        "filters": "allCategories.id:021901",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Fußcreme & Fußpflege > Fußmasken",
+        "category_link": "/pflege-und-parfum/fusscreme-fusspflege/fussmasken",
+        "filters": "allCategories.id:021902",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Fußcreme & Fußpflege > Fußpeeling",
+        "category_link": "/pflege-und-parfum/fusscreme-fusspflege/fusspeeling",
+        "filters": "categoryNames:\"Fußcreme & Fußpflege\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Fußcreme & Fußpflege > Fußbad",
+        "category_link": "/pflege-und-parfum/fusscreme-fusspflege/fussbad",
+        "filters": "allCategories.id:021903",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Fußcreme & Fußpflege > Nagelknipser & Co.",
+        "category_link": "/pflege-und-parfum/fusscreme-fusspflege/nagelknipser-co",
+        "filters": "allCategories.id:021908",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Fußcreme & Fußpflege > Hornhaut",
+        "category_link": "/pflege-und-parfum/fusscreme-fusspflege/hornhaut",
+        "filters": "allCategories.id:021904",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Fußcreme & Fußpflege > Blasenpflaster & Druckstellen",
+        "category_link": "/pflege-und-parfum/fusscreme-fusspflege/blasenpflaster-druckstellen",
+        "filters": "allCategories.id:021906",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Fußcreme & Fußpflege > Hilfe bei Fußpilz, Warzen & Co.",
+        "category_link": "/pflege-und-parfum/fusscreme-fusspflege/hilfe-bei-fusspilz-warzen-und-co",
+        "filters": "allCategories.id:021905",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Fußcreme & Fußpflege > Hilfe bei Fußpilz, Warzen & Co. > Warzenmittel",
+        "category_link": "/pflege-und-parfum/fusscreme-fusspflege/hilfe-bei-fusspilz-warzen-und-co/warzenmittel",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Fußcreme & Fußpflege > Hilfe bei Fußpilz, Warzen & Co. > Mittel gegen Nagelpilz",
+        "category_link": "/pflege-und-parfum/fusscreme-fusspflege/hilfe-bei-fusspilz-warzen-und-co/mittel-gegen-nagelpilz",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Fußcreme & Fußpflege > Einlegesohlen",
+        "category_link": "/pflege-und-parfum/fusscreme-fusspflege/einlegesohlen",
+        "filters": "allCategories.id:021907",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Körperpflege",
+        "category_link": "/pflege-und-parfum/koerperpflege",
+        "filters": "allCategories.id:020100",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Körperpflege > Deo",
+        "category_link": "/pflege-und-parfum/koerperpflege/deo",
+        "filters": "allCategories.id:020106",
+        "sort": "new",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Körperpflege > Deo > Antitranspirant",
+        "category_link": "/pflege-und-parfum/koerperpflege/deo/antitranspirant",
+        "filters": "categoryNames:Deo",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Körperpflege > Deo > Deo ohne Aluminium",
+        "category_link": "/pflege-und-parfum/koerperpflege/deo/deo-ohne-aluminium",
+        "filters": "categoryNames:Deo classifications.A0205_PRODUKTEIGENSCHAFTEN:\"Ohne Aluminiumsalze\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Körperpflege > Duschgel, Duschschaum & Co.",
+        "category_link": "/pflege-und-parfum/koerperpflege/duschgel-duschschaum-und-co",
+        "filters": "allCategories.id:020108",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Körperpflege > Duschgel, Duschschaum & Co. > Duschschaum",
+        "category_link": "/pflege-und-parfum/koerperpflege/duschgel-duschschaum-und-co/duschschaum",
+        "filters": "allCategories.id:020108 classifications.A0213_TEXTUR:Schaum",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Körperpflege > Duschgel, Duschschaum & Co. > Duschseife",
+        "category_link": "/pflege-und-parfum/koerperpflege/duschgel-duschschaum-und-co/duschseife",
+        "filters": "categoryNames:\"Duschgel, Duschschaum & Co.\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Körperpflege > Körperpeeling & Body Scrub",
+        "category_link": "/pflege-und-parfum/koerperpflege/koerperpeeling-und-body-scrub",
+        "filters": "allCategories.id:020110",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Körperpflege > Badezusatz & Badesalz",
+        "category_link": "/pflege-und-parfum/koerperpflege/badezusatz-und-badesalz",
+        "filters": "allCategories.id:020101",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Körperpflege > Badezusatz & Badesalz > Badekugeln",
+        "category_link": "/pflege-und-parfum/koerperpflege/badezusatz-und-badesalz/badekugeln",
+        "filters": "categoryNames:\"Badezusatz & Badesalz\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Körperpflege > Bodylotion & Hautcreme",
+        "category_link": "/pflege-und-parfum/koerperpflege/bodylotion-und-hautcreme",
+        "filters": "allCategories.id:020102",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Körperpflege > Körperöl",
+        "category_link": "/pflege-und-parfum/koerperpflege/koerperoel",
+        "filters": "allCategories.id:020103",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Körperpflege > Anti Cellulite",
+        "category_link": "/pflege-und-parfum/koerperpflege/anti-cellulite",
+        "filters": "allCategories.id:020109",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Körperpflege > Schwämme & Massagezubehör",
+        "category_link": "/pflege-und-parfum/koerperpflege/schwaemme-und-massagezubehoer",
+        "filters": "allCategories.id:020111",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Parfum",
+        "category_link": "/pflege-und-parfum/parfum",
+        "filters": "allCategories.id:020300",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Parfum > Damen Parfum",
+        "category_link": "/pflege-und-parfum/parfum/damen-parfum",
+        "filters": "allCategories.id:020301",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Parfum > Herren Parfum",
+        "category_link": "/pflege-und-parfum/parfum/herren-parfum",
+        "filters": "allCategories.id:020302",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Parfum > Parfum-Geschenksets ",
+        "category_link": "/pflege-und-parfum/parfum/parfum-geschenksets-produktwelt",
+        "filters": ":relevance dan:1900320 dan:1906417 dan:1908489 dan:1903545 dan:1907720 dan:1418235 dan:1911673 dan:1898913 dan:1900206 dan:1886260 dan:1617541 dan:1617539 dan:1922171 dan:1815058 dan:1883570 dan:1582762 dan:1606509 dan:1386722 dan:1906406 dan:1504818 dan:1662107 dan:1519784 dan:1910228 dan:1895389 dan:1921496 dan:1607505 dan:1892400 dan:1800093 dan:1697909 dan:1895438 dan:1910139 dan:1910150 dan:1723801 dan:1723802 dan:1917118 dan:1807703 dan:1905653 dan:1898179 dan:1479588 dan:1725623 dan:1921466 dan:1662657 dan:1664280 dan:1724627 dan:1904650 dan:1896151 dan:1904640 dan:1723046 dan:1714282 dan:1841078 dan:1841079 dan:1606723 dan:1893371 dan:1726225 dan:1896152 dan:1892662 dan:1902730 dan:1909249 dan:1897924 dan:1906416 dan:1697901 dan:1906414 dan:1911672 dan:1763795 dan:1725632 dan:1896241 dan:1893396 dan:1907788 dan:1858349 dan:1731437 dan:1905870 dan:1723104 dan:1894552 dan:1894560 dan:1908121 dan:1896155 dan:1724522 dan:1906412 dan:1606710 dan:1604979 dan:1894176 dan:1894177 dan:1907791 dan:1697403 dan:1667535 dan:1695354 dan:1664279 dan:1924304 dan:1723849 dan:1602781 dan:1714280 dan:1617543 dan:1911331 dan:1724334 dan:1692687 dan:1724325 dan:1908789 dan:1899026 dan:1919787 dan:1917689 dan:1602523 dan:1697403 dan:1695356 dan:1714282 dan:1479588 dan:1723077 dan:1840744 dan:1714363 dan:1714377 dan:1714376",
+        "sort": "new",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Pflege & Parfum > Parfum > Parfum-Geschenksets ",
+        "category_link": "/pflege-und-parfum/parfum/parfum-geschenksets-produktwelt",
+        "filters": ":relevance dan:1900335 dan:1662942 dan:1886259 dan:1898912 dan:1697436 dan:1606511 dan:1617538 dan:1582763 dan:1724341 dan:1714362 dan:1724547 dan:1519785 dan:1896240 dan:1904785 dan:1887756 dan:1892401 dan:1910138 dan:1723320 dan:1910127 dan:1604971 dan:1911602 dan:1907719 dan:1911153 dan:1912528 dan:1724819 dan:1892594 dan:1908725 dan:1592899 dan:1892654 dan:1910124 dan:1896153 dan:1723848 dan:1886903 dan:1892661 dan:1721214 dan:1892567 dan:1724478 dan:1720938 dan:1909403 dan:1909405 dan:1724332 dan:1904775 dan:1724333 dan:1692337 dan:1662944 dan:1725627 dan:1892601 dan:1919761 dan:1915124 dan:1662943 dan:1724324 dan:1894565 dan:1892415 dan:1602778 dan:1909400 dan:1909399 dan:1602656 dan:1692689 dan:1692688 dan:1724315 dan:1714303 dan:1714337 dan:1873293",
+        "sort": "new",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Pflege & Parfum > Haarentfernung & Rasur",
+        "category_link": "/pflege-und-parfum/haarentfernung-und-rasur",
+        "filters": "allCategories.id:020700",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Haarentfernung & Rasur > Nassrasierer",
+        "category_link": "/pflege-und-parfum/haarentfernung-und-rasur/nassrasierer",
+        "filters": "allCategories.id:020701",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Haarentfernung & Rasur > Elektrorasierer",
+        "category_link": "/pflege-und-parfum/haarentfernung-und-rasur/elektrorasierer",
+        "filters": "allCategories.id:020711",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Haarentfernung & Rasur > Epilierer & IPL-Haarentferner",
+        "category_link": "/pflege-und-parfum/haarentfernung-und-rasur/epilierer-ipl-haarentferner",
+        "filters": "allCategories.id:020704",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Haarentfernung & Rasur > Enthaarungscreme & Waxing",
+        "category_link": "/pflege-und-parfum/haarentfernung-und-rasur/enthaarungscreme-und-waxing",
+        "filters": "allCategories.id:020706",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Haarentfernung & Rasur > Enthaarungscreme & Waxing > Waxing ",
+        "category_link": "/pflege-und-parfum/haarentfernung-und-rasur/enthaarungscreme-und-waxing/waxing",
+        "filters": "categoryNames:\"Haarentfernung & Rasur\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Haarentfernung & Rasur > After Shave & Rasurpflege",
+        "category_link": "/pflege-und-parfum/haarentfernung-und-rasur/after-shave-und-rasurpflege",
+        "filters": "allCategories.id:020708",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Haarentfernung & Rasur > Rasierklingen",
+        "category_link": "/pflege-und-parfum/haarentfernung-und-rasur/rasierklingen",
+        "filters": "allCategories.id:020702",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Haarentfernung & Rasur > Rasierschaum & Rasiergel",
+        "category_link": "/pflege-und-parfum/haarentfernung-und-rasur/rasierschaum-und-rasiergel",
+        "filters": "allCategories.id:020703",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Haarentfernung & Rasur > Rasierhobel ",
+        "category_link": "/pflege-und-parfum/haarentfernung-und-rasur/rasierhobel",
+        "filters": "categoryNames:\"Haarentfernung & Rasur\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Periodenprodukte & Intimhygiene",
+        "category_link": "/pflege-und-parfum/periodenprodukte-und-intimhygiene",
+        "filters": "allCategories.id:020800",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Periodenprodukte & Intimhygiene > Tampons",
+        "category_link": "/pflege-und-parfum/periodenprodukte-und-intimhygiene/tampons",
+        "filters": "allCategories.id:020801",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Periodenprodukte & Intimhygiene > Binden",
+        "category_link": "/pflege-und-parfum/periodenprodukte-und-intimhygiene/binden",
+        "filters": "allCategories.id:020802",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Periodenprodukte & Intimhygiene > Slipeinlagen",
+        "category_link": "/pflege-und-parfum/periodenprodukte-und-intimhygiene/slipeinlagen",
+        "filters": "allCategories.id:020803",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Periodenprodukte & Intimhygiene > Menstruationstassen",
+        "category_link": "/pflege-und-parfum/periodenprodukte-und-intimhygiene/menstruationstassen",
+        "filters": "allCategories.id:020806",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Periodenprodukte & Intimhygiene > Periodenunterwäsche",
+        "category_link": "/pflege-und-parfum/periodenprodukte-und-intimhygiene/periodenunterwaesche",
+        "filters": "allCategories.id:\"020807 \"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Periodenprodukte & Intimhygiene > Blasenschwäche & Inkontinenz",
+        "category_link": "/pflege-und-parfum/periodenprodukte-und-intimhygiene/blasenschwaeche-inkontinenz",
+        "filters": "allCategories.id:020805",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Periodenprodukte & Intimhygiene > Blasenschwäche & Inkontinenz > Inkontinenzeinlagen",
+        "category_link": "/pflege-und-parfum/periodenprodukte-und-intimhygiene/blasenschwaeche-inkontinenz/inkontinenzeinlagen",
+        "filters": "categoryNames:\"Blasenschwäche / Inkontinenz\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Periodenprodukte & Intimhygiene > Blasenschwäche & Inkontinenz > Erwachsenenwindeln & Inkontinenz Pants ",
+        "category_link": "/pflege-und-parfum/periodenprodukte-und-intimhygiene/blasenschwaeche-inkontinenz/erwachsenenwindeln-inkontinenz-pants",
+        "filters": "categoryNames:\"Blasenschwäche / Inkontinenz\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Periodenprodukte & Intimhygiene > Intimpflege",
+        "category_link": "/pflege-und-parfum/periodenprodukte-und-intimhygiene/intimpflege",
+        "filters": "allCategories.id:020804",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Seife",
+        "category_link": "/pflege-und-parfum/seife",
+        "filters": "allCategories.id:121408",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Seife > Flüssigseife",
+        "category_link": "/pflege-und-parfum/seife/fluessigseife",
+        "filters": "allCategories.id:021803",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Seife > Feste Seife",
+        "category_link": "/pflege-und-parfum/seife/feste-seife",
+        "filters": "allCategories.id:021804",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Sonne",
+        "category_link": "/pflege-und-parfum/sonne",
+        "filters": "allCategories.id:020400",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Sonne > Sonnenschutz",
+        "category_link": "/pflege-und-parfum/sonne/sonnenschutz",
+        "filters": "allCategories.id:020401",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Sonne > Sonnenschutz > Mineralische Sonnencreme",
+        "category_link": "/pflege-und-parfum/sonne/sonnenschutz/mineralische-sonnencreme",
+        "filters": "",
+        "sort": "new",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Pflege & Parfum > Sonne > Sonnenschutz > Sonnencreme fürs Gesicht",
+        "category_link": "/pflege-und-parfum/sonne/sonnenschutz/sonnencreme-fuers-gesicht",
+        "filters": "categoryNames:Sonnenschutz",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Sonne > Sonnenschutz > Sonnenspray",
+        "category_link": "/pflege-und-parfum/sonne/sonnenschutz/sonnenspray",
+        "filters": "categoryNames:Sonnenschutz",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Sonne > After Sun",
+        "category_link": "/pflege-und-parfum/sonne/after-sun",
+        "filters": "allCategories.id:020403",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Sonne > Selbstbräuner & Bräunungsbeschleuniger",
+        "category_link": "/pflege-und-parfum/sonne/selbstbraeuner-und-braeunungsbeschleuniger",
+        "filters": "allCategories.id:020402",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Sonne > Selbstbräuner & Bräunungsbeschleuniger > Selbstbräuner fürs Gesicht",
+        "category_link": "/pflege-und-parfum/sonne/selbstbraeuner-und-braeunungsbeschleuniger/selbstbraeuner-fuers-gesicht",
+        "filters": "categoryNames:\"Selbstbräuner & Bräunungsbeschleuniger\" classifications.A0210_ANWENDUNGSBEREICH:Gesicht",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Sonne > Sonnenbrillen",
+        "category_link": "/pflege-und-parfum/sonne/sonnenbrillen",
+        "filters": "allCategories.id:020405",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Sonne > Strandtaschen",
+        "category_link": "/pflege-und-parfum/sonne/strandtaschen",
+        "filters": "allCategories.id:020406",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Socken, Strumpfhosen & Co.",
+        "category_link": "/pflege-und-parfum/socken-strumpfhosen-und-co",
+        "filters": "allCategories.id:021300",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Socken, Strumpfhosen & Co. > Socken & Sportsocken",
+        "category_link": "/pflege-und-parfum/socken-strumpfhosen-und-co/socken-und-sportsocken",
+        "filters": "allCategories.id:021302",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 35
+    },
+    {
+        "category_path": "Pflege & Parfum > Socken, Strumpfhosen & Co. > Fein- & Kniestrümpfe",
+        "category_link": "/pflege-und-parfum/socken-strumpfhosen-und-co/fein-kniestruempfe",
+        "filters": "allCategories.id:021303",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Socken, Strumpfhosen & Co. > Strumpfhosen & Leggings",
+        "category_link": "/pflege-und-parfum/socken-strumpfhosen-und-co/strumpfhosen-und-leggings",
+        "filters": "allCategories.id:021304",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Socken, Strumpfhosen & Co. > Stützstrumpfhosen & Stützstrümpfe",
+        "category_link": "/pflege-und-parfum/socken-strumpfhosen-und-co/stuetzstrumpfhosen-und-stuetzstruempfe",
+        "filters": "allCategories.id:021305",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Socken, Strumpfhosen & Co. > Sneakersocken & Füßlinge",
+        "category_link": "/pflege-und-parfum/socken-strumpfhosen-und-co/sneakersocken-und-fuesslinge",
+        "filters": "allCategories.id:021301",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Socken, Strumpfhosen & Co. > Strumpfhosen große Größen",
+        "category_link": "/pflege-und-parfum/socken-strumpfhosen-und-co/strumpfhosen-grosse-groessen",
+        "filters": "allCategories.id:021306",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Socken, Strumpfhosen & Co. > Shapewear",
+        "category_link": "/pflege-und-parfum/socken-strumpfhosen-und-co/shapeware",
+        "filters": "allCategories.id:021307",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Socken, Strumpfhosen & Co. > Feinstrumpfhosen ",
+        "category_link": "/pflege-und-parfum/socken-strumpfhosen-und-co/feinstrumpfhosen",
+        "filters": "allCategories.id:021304",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Mückenschutz",
+        "category_link": "/pflege-und-parfum/mueckenschutz",
+        "filters": "allCategories.id:021500",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Badaccessoires",
+        "category_link": "/pflege-und-parfum/badaccessoires",
+        "filters": "allCategories.id:020900",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Badaccessoires > Handtücher & Waschlappen",
+        "category_link": "/pflege-und-parfum/badaccessoires/handtuecher-und-waschlappen",
+        "filters": "allCategories.id:020902",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Badaccessoires > Spiegel",
+        "category_link": "/pflege-und-parfum/badaccessoires/spiegel",
+        "filters": "allCategories.id:020903",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Badaccessoires > Seifenspender, Zahnputzbecher & Co.",
+        "category_link": "/pflege-und-parfum/badaccessoires/seifenspender-zahnputzbecher-und-co",
+        "filters": "allCategories.id:020905",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Kulturbeutel & Kosmetiktaschen",
+        "category_link": "/pflege-und-parfum/kulturbeutel-kosmetiktaschen",
+        "filters": "allCategories.id:021000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Kulturbeutel & Kosmetiktaschen > Schminktaschen",
+        "category_link": "/pflege-und-parfum/kulturbeutel-kosmetiktaschen/schminktaschen",
+        "filters": "categoryNames:\"Kulturbeutel & Kosmetiktaschen\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Kulturbeutel & Kosmetiktaschen > Kosmetik in Reisegröße",
+        "category_link": "/pflege-und-parfum/kulturbeutel-kosmetiktaschen/kosmetik-in-reisegroesse",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Geschenksets",
+        "category_link": "/pflege-und-parfum/geschenksets",
+        "filters": "allCategories.id:022000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Pflege & Parfum > Geschenksets > Geschenksets Damen",
+        "category_link": "/pflege-und-parfum/geschenksets/geschenksets-fuer-damen",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Geschenksets > Geschenksets Männer",
+        "category_link": "/pflege-und-parfum/geschenksets/geschenksets-fuer-maenner",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Pflege & Parfum > Taschen & Rucksäcke",
+        "category_link": "/pflege-und-parfum/taschen-und-rucksaecke",
+        "filters": "allCategories.id:021700",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Pflege & Parfum > Koreanische Kosmetik",
+        "category_link": "/pflege-und-parfum/k-beauty",
+        "filters": "categoryNames:\"Serum & Kur\" categoryNames:Tagescreme categoryNames:Nachtcreme categoryNames:Teint categoryNames:\"Anti Aging\" categoryNames:\"BB-Cream & CC-Cream\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Pflege & Parfum > Koreanische Kosmetik",
+        "category_link": "/pflege-und-parfum/k-beauty",
+        "filters": "dan:1917499 dan:1904265 dan:1904267 dan:1904266 dan:1709917 dan:1531341",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Pflege & Parfum > Koreanische Kosmetik",
+        "category_link": "/pflege-und-parfum/k-beauty",
+        "filters": "categoryNames:\"Koreanische Kosmetik\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Haare",
+        "category_link": "/haare",
+        "filters": "allCategories.id:110000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Haare > Haarpflege",
+        "category_link": "/haare/haarpflege",
+        "filters": "allCategories.id:110100",
+        "sort": "new",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haarpflege > Shampoo",
+        "category_link": "/haare/haarpflege/shampoo",
+        "filters": "allCategories.id:110101",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Haare > Haarpflege > Shampoo > Anti-Schuppen Shampoo",
+        "category_link": "/haare/haarpflege/shampoo/anti-schuppen-shampoo",
+        "filters": "allCategories.id:110101 classifications.A0216_WIRKUNG:Anti-Schuppen",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Haare > Haarpflege > Conditioner",
+        "category_link": "/haare/haarpflege/conditioner",
+        "filters": "allCategories.id:110102",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haarpflege > Haarkur",
+        "category_link": "/haare/haarpflege/haarkur",
+        "filters": "allCategories.id:110103",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Haare > Haarpflege > Haaröl",
+        "category_link": "/haare/haarpflege/haaroel",
+        "filters": "allCategories.id:110105",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Haare > Haarpflege > Trockenshampoo",
+        "category_link": "/haare/haarpflege/trockenshampoo",
+        "filters": "allCategories.id:110104",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Haare > Haarpflege > Haarseife, festes Shampoo & Conditioner",
+        "category_link": "/haare/haarpflege/haarseife-festes-shampoo-conditioner",
+        "filters": "allCategories.id:110106",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Haare > Haarstyling",
+        "category_link": "/haare/haarstyling",
+        "filters": "allCategories.id:110200",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haarstyling > Haarspray & Haarlack",
+        "category_link": "/haare/haarstyling/haarspray-und-haarlack",
+        "filters": "allCategories.id:110201",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haarstyling > Schaumfestiger",
+        "category_link": "/haare/haarstyling/schaumfestiger",
+        "filters": "allCategories.id:110202",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haarstyling > Haargel & Haarwachs",
+        "category_link": "/haare/haarstyling/haargel-und-haarwachs",
+        "filters": "allCategories.id:110203",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haarstyling > Styling Spray & Creme",
+        "category_link": "/haare/haarstyling/styling-spray-creme",
+        "filters": "allCategories.id:110204",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haarstyling > Hitzeschutzspray & Co.",
+        "category_link": "/haare/haarstyling/hitzeschutzspray-und-co",
+        "filters": "allCategories.id:110205",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haarstyling > Haarparfum & Haarpuder",
+        "category_link": "/haare/haarstyling/haarparfum-und-haarpuder",
+        "filters": "allCategories.id:110206",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haarbürsten & Kämme",
+        "category_link": "/haare/haarbuersten-und-kaemme",
+        "filters": "allCategories.id:110700",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haarfarben",
+        "category_link": "/haare/haarfarben",
+        "filters": "allCategories.id:110300",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haarfarben > Haartönung",
+        "category_link": "/haare/haarfarben/haartoenung",
+        "filters": "allCategories.id:110301",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haarfarben > Dauerhafte Haarfarben",
+        "category_link": "/haare/haarfarben/dauerhafte-haarfarben",
+        "filters": "allCategories.id:110302",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haarfarben > Dauerhafte Haarfarben > Haarfarbe ohne Ammoniak ",
+        "category_link": "/haare/haarfarben/dauerhafte-haarfarben/haarfarbe-ohne-ammoniak",
+        "filters": "categoryNames:\"Dauerhafte Haarfarben\" classifications.A0205_PRODUKTEIGENSCHAFTEN:\"Ohne Ammoniak\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haarfarben > Aufheller & Blondierungen",
+        "category_link": "/haare/haarfarben/aufheller-und-blondierungen",
+        "filters": "allCategories.id:110303",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haarfarben > Ansatzspray & Ansatzprodukte",
+        "category_link": "/haare/haarfarben/ansatzspray-ansatzprodukte",
+        "filters": "allCategories.id:110306",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haar-Accessoires",
+        "category_link": "/haare/haar-accessoires",
+        "filters": "allCategories.id:110400",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haar-Accessoires > Haarschmuck, Accessoires & Co.",
+        "category_link": "/haare/haar-accessoires/haarschmuck-accessoires-co",
+        "filters": "allCategories.id:110402",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haar-Accessoires > Haargummi",
+        "category_link": "/haare/haar-accessoires/haargummi",
+        "filters": "allCategories.id:110405",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haar-Accessoires > Haarspangen",
+        "category_link": "/haare/haar-accessoires/haarspangen",
+        "filters": "allCategories.id:110406",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Haar-Accessoires > Haarbänder ",
+        "category_link": "/haare/haar-accessoires/haarbaender",
+        "filters": "categoryNames:\"Haarschmuck, Accessoires & Co.\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Haare > Haar-Accessoires > Haarklammern",
+        "category_link": "/haare/haar-accessoires/haarklammern",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Haare > Haar-Accessoires > Haarreifen",
+        "category_link": "/haare/haar-accessoires/haarreifen",
+        "filters": "categoryNames:\"Haarschmuck, Accessoires & Co.\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Haare > Professionelle Haarpflege",
+        "category_link": "/haare/professionelle-haarpflege",
+        "filters": "allCategories.id:110500 AND NOT brandName:\"balea professional\" AND NOT brandName:\"kristin ess\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Alles für Locken",
+        "category_link": "/haare/alles-fuer-locken",
+        "filters": "allCategories.id:110800",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Föhn, Glätteisen, Lockenstab & Co.",
+        "category_link": "/haare/foehn-glaetteisen-lockenstab-und-co",
+        "filters": "allCategories.id:110900",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Schmuck",
+        "category_link": "/haare/schmuck",
+        "filters": "allCategories.id:111000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haare > Mode Accessoires",
+        "category_link": "/haare/mode-accessoires",
+        "filters": "allCategories.id:111100",
+        "sort": "new",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege",
+        "category_link": "/maennerpflege",
+        "filters": "additionalDistributionChannels:SEINZ",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Männerpflege > Gesicht",
+        "category_link": "/maennerpflege/gesicht-produkte-fuer-maenner",
+        "filters": "allCategories.id:021401",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Gesicht > Gesichtsreinigung",
+        "category_link": "/maennerpflege/gesicht-produkte-fuer-maenner/gesichtsreinigung",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:020201",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Gesicht > Gesichtspflege",
+        "category_link": "/maennerpflege/gesicht-produkte-fuer-maenner/gesichtspflege-fuer-maenner",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:020202 allCategories.id:020203 allCategories.id:020204 allCategories.id:020205 allCategories.id:020206 allCategories.id:020207 allCategories.id:020209",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Gesicht > Gesichtspflege > Gesichtsmaske für Männer",
+        "category_link": "/maennerpflege/gesicht-produkte-fuer-maenner/gesichtspflege-fuer-maenner/gesichtsmaske-fuer-maenner",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:020202 allCategories.id:020203 allCategories.id:020204 allCategories.id:020205 allCategories.id:020206 allCategories.id:020207 allCategories.id:020209 popularFacet:\"Für Männer\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Männerpflege > Körper",
+        "category_link": "/maennerpflege/koerper",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:020100",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Körper > Duschen",
+        "category_link": "/maennerpflege/koerper/duschen",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:020108",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Körper > Bodylotion",
+        "category_link": "/maennerpflege/koerper/bodylotion",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:020102",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Körper > Deo",
+        "category_link": "/maennerpflege/koerper/deo",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:020106",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Körper > Handcreme",
+        "category_link": "/maennerpflege/koerper/handcreme",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:021801",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Herrendüfte",
+        "category_link": "/maennerpflege/herrenduefte",
+        "filters": "allCategories.id:020302",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Haarentfernung & Rasur",
+        "category_link": "/maennerpflege/rasur",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:020700",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Haarentfernung & Rasur > Rasierer & Rasierapparate",
+        "category_link": "/maennerpflege/rasur/rasierer-rasierapparate",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:020701 allCategories.id:020704",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Haarentfernung & Rasur > Rasierer & Rasierapparate > Intimrasierer für Männer",
+        "category_link": "/maennerpflege/rasur/rasierer-rasierapparate/intimrasierer-fuer-maenner",
+        "filters": "allCategories.id:020701 popularFacet:\"Für Männer\" classifications.A0210_ANWENDUNGSBEREICH:Körper",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Haarentfernung & Rasur > After Shaves",
+        "category_link": "/maennerpflege/rasur/after-shaves",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:020708",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Haarentfernung & Rasur > Rasierklingen",
+        "category_link": "/maennerpflege/rasur/rasierklingen",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:020702",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Haarentfernung & Rasur > Rasierschaum & Rasierseife",
+        "category_link": "/maennerpflege/rasur/rasierschaum-rasierseife",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:020703",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Haarentfernung & Rasur > Enthaarung",
+        "category_link": "/maennerpflege/rasur/enthaarung",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:020706",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Bart",
+        "category_link": "/maennerpflege/bart",
+        "filters": "allCategories.id:021407 allCategories.id:021408",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Bart > Bartpflege",
+        "category_link": "/maennerpflege/bart/bartpflege",
+        "filters": "allCategories.id:021407",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Bart > Bartstyling",
+        "category_link": "/maennerpflege/bart/bartstyling",
+        "filters": "allCategories.id:021408",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Haarprodukte für Männer",
+        "category_link": "/maennerpflege/haare",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:110000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Haarprodukte für Männer > Haarpflege",
+        "category_link": "/maennerpflege/haare/haarpflege",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:110100",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Haarprodukte für Männer > Haarpflege > Männershampoo",
+        "category_link": "/maennerpflege/haare/haarpflege/maennershampoo",
+        "filters": "categoryNames:Shampoo",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Haarprodukte für Männer > Haarstyling",
+        "category_link": "/maennerpflege/haare/haarstyling",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:110200",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Haarprodukte für Männer > Haarstyling > Pomade",
+        "category_link": "/maennerpflege/haare/haarstyling/pomade",
+        "filters": "categoryNames:Männerpflege",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Männerpflege > Haarprodukte für Männer > Haarfarbe",
+        "category_link": "/maennerpflege/haare/haarfarbe",
+        "filters": "additionalDistributionChannels:SEINZ allCategories.id:110300",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit",
+        "category_link": "/gesundheit",
+        "filters": "allCategories.id:030000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege",
+        "category_link": "/gesundheit/zahnpflege",
+        "filters": "allCategories.id:030600",
+        "sort": "new",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Zahnpasta",
+        "category_link": "/gesundheit/zahnpflege/zahnpasta",
+        "filters": "allCategories.id:030601",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Zahnpasta > Zahnpasta ohne Fluorid ",
+        "category_link": "/gesundheit/zahnpflege/zahnpasta/zahnpasta-ohne-fluorid",
+        "filters": "allCategories.id:030601 classifications.A0205_PRODUKTEIGENSCHAFTEN:\"ohne Fluorid\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Zahnpasta > Natürliche Zahnpasta ",
+        "category_link": "/gesundheit/zahnpflege/zahnpasta/natuerliche-zahnpasta",
+        "filters": "allCategories.id:030601 classifications.A0205_PRODUKTEIGENSCHAFTEN:Naturkosmetik",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Zahnpasta > Zahnpasta ohne Mikroplastik ",
+        "category_link": "/gesundheit/zahnpflege/zahnpasta/zahnpasta-ohne-mikroplastik",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Zahnpasta > Vegane Zahnpasta ",
+        "category_link": "/gesundheit/zahnpflege/zahnpasta/vegane-zahnpasta",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Zahnpasta > Zahnpasta mit Fluorid ",
+        "category_link": "/gesundheit/zahnpflege/zahnpasta/zahnpasta-mit-fluorid",
+        "filters": "categoryNames:Zahnpasta classifications.A0205_PRODUKTEIGENSCHAFTEN:\"mit Fluorid\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Zahnpasta > Zahnpasta für weiße Zähne",
+        "category_link": "/gesundheit/zahnpflege/zahnpasta/zahnpasta-fuer-weisse-zaehne",
+        "filters": "categoryNames:Zahnpasta classifications.A0210_ANWENDUNGSBEREICH:Zahnweiß",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Zahnpasta > Zahnschmelz-Zahnpasta",
+        "category_link": "/gesundheit/zahnpflege/zahnpasta/zahnschmelz-zahnpasta",
+        "filters": "allCategories.id:030601 classifications.A0210_ANWENDUNGSBEREICH:Zahnschmelzschutz",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Zahnbürste",
+        "category_link": "/gesundheit/zahnpflege/zahnbuerste",
+        "filters": "allCategories.id:030602",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Elektrische Zahnbürste",
+        "category_link": "/gesundheit/zahnpflege/elektrische-zahnbuerste",
+        "filters": "allCategories.id:030603",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Elektrische Zahnbürste > Schallzahnbürsten",
+        "category_link": "/gesundheit/zahnpflege/elektrische-zahnbuerste/schallzahnbuersten",
+        "filters": "categoryNames:\"Elektrische Zahnbürste\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Aufsteckbürsten & Wechselköpfe",
+        "category_link": "/gesundheit/zahnpflege/aufsteckbuersten-wechselkoepfe",
+        "filters": "allCategories.id:030613",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Zahnzwischenraumpflege",
+        "category_link": "/gesundheit/zahnpflege/zahnzwischenraumpflege",
+        "filters": "allCategories.id:030606",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Zahnzwischenraumpflege > Zahnseide",
+        "category_link": "/gesundheit/zahnpflege/zahnzwischenraumpflege/zahnseide",
+        "filters": "categoryNames:Zahnzwischenraumpflege",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Zahnzwischenraumpflege > Interdentalbürsten",
+        "category_link": "/gesundheit/zahnpflege/zahnzwischenraumpflege/interdentalbuerste",
+        "filters": "categoryNames:Zahnzwischenraumpflege",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Zungenreiniger",
+        "category_link": "/gesundheit/zahnpflege/zungenreiniger",
+        "filters": "allCategories.id:030611",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Mundspülung, Mundwasser & Co.",
+        "category_link": "/gesundheit/zahnpflege/mundspuelung-mundwasser-und-co",
+        "filters": "allCategories.id:030605",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Gebissreiniger",
+        "category_link": "/gesundheit/zahnpflege/gebissreiniger",
+        "filters": "allCategories.id:030604",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Haftcreme",
+        "category_link": "/gesundheit/zahnpflege/haftcreme",
+        "filters": "allCategories.id:121419",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Kinderprodukte",
+        "category_link": "/gesundheit/zahnpflege/kinderprodukte",
+        "filters": "allCategories.id:030610",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Kinderprodukte > Elektrische Zahnbürsten für Kinder",
+        "category_link": "/gesundheit/zahnpflege/kinderprodukte/elektrische-zahnbuersten-fuer-kinder",
+        "filters": "categoryNames:\"Elektrische Zahnbürste\" categoryNames:Kinderprodukte",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Kinderprodukte > Kinderzahnpasta",
+        "category_link": "/gesundheit/zahnpflege/kinderprodukte/kinderzahnpasta",
+        "filters": "categoryNames:Kinderprodukte categoryNames:Zahnpasta",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Kinderprodukte > Kinderzahnbürsten",
+        "category_link": "/gesundheit/zahnpflege/kinderprodukte/kinderzahnbuerste",
+        "filters": "categoryNames:Zahnbürste",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Zahnpflege > Bleaching",
+        "category_link": "/gesundheit/zahnpflege/bleaching",
+        "filters": "allCategories.id:030612",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Erkältung",
+        "category_link": "/gesundheit/erkaeltung",
+        "filters": "allCategories.id:030100",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Erkältung > Immunsystem unterstützen",
+        "category_link": "/gesundheit/erkaeltung/immunsystem-unterstuetzen",
+        "filters": "allCategories.id:030101",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Erkältung > Halsschmerzen & Schluckbeschwerden",
+        "category_link": "/gesundheit/erkaeltung/halsschmerzen-schluckbeschwerden",
+        "filters": "allCategories.id:030102",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Erkältung > Husten",
+        "category_link": "/gesundheit/erkaeltung/husten",
+        "filters": "allCategories.id:030105",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Erkältung > Fieberthermometer",
+        "category_link": "/gesundheit/erkaeltung/fieberthermometer",
+        "filters": "allCategories.id:030108",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Erkältung > Schnupfen",
+        "category_link": "/gesundheit/erkaeltung/schnupfen",
+        "filters": "allCategories.id:030104",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Vitamine",
+        "category_link": "/gesundheit/vitamine",
+        "filters": "allCategories.id:030300",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Vitamine > Vitamin A",
+        "category_link": "/gesundheit/vitamine/vitamin-a",
+        "filters": "allCategories.id:030301",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Vitamine > Vitamin B",
+        "category_link": "/gesundheit/vitamine/vitamin-b",
+        "filters": "allCategories.id:030302",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Vitamine > Vitamin C",
+        "category_link": "/gesundheit/vitamine/vitamin-c",
+        "filters": "allCategories.id:030303",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Vitamine > Vitamin D",
+        "category_link": "/gesundheit/vitamine/vitamin-d",
+        "filters": "allCategories.id:030304",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Vitamine > Vitamin E",
+        "category_link": "/gesundheit/vitamine/vitamin-e",
+        "filters": "allCategories.id:030305",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Vitamine > Multivitamine",
+        "category_link": "/gesundheit/vitamine/multivitamine",
+        "filters": "allCategories.id:030306",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Mineralstoffe",
+        "category_link": "/gesundheit/mineralstoffe",
+        "filters": "allCategories.id:030200",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Mineralstoffe > Calcium",
+        "category_link": "/gesundheit/mineralstoffe/calcium",
+        "filters": "allCategories.id:030201",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Mineralstoffe > Eisen",
+        "category_link": "/gesundheit/mineralstoffe/eisen",
+        "filters": "allCategories.id:030204",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Mineralstoffe > Magnesium",
+        "category_link": "/gesundheit/mineralstoffe/magnesium",
+        "filters": "allCategories.id:030207",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Mineralstoffe > Zink",
+        "category_link": "/gesundheit/mineralstoffe/zink",
+        "filters": "allCategories.id:030205",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Mineralstoffe > Sonstige Mineralstoffe",
+        "category_link": "/gesundheit/mineralstoffe/sonstige-mineralstoffe",
+        "filters": "allCategories.id:030206",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Abnehmprodukte",
+        "category_link": "/gesundheit/abnehmprodukte",
+        "filters": "allCategories.id:031300",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wohlbefinden & Stärkung",
+        "category_link": "/gesundheit/wohlbefinden-und-staerkung",
+        "filters": "allCategories.id:030500",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wohlbefinden & Stärkung > Gedächtnis & Konzentration",
+        "category_link": "/gesundheit/wohlbefinden-und-staerkung/gedaechtnis-und-konzentration",
+        "filters": "allCategories.id:030506",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wohlbefinden & Stärkung > Herz, Kreislauf & Cholesterin",
+        "category_link": "/gesundheit/wohlbefinden-und-staerkung/herz-kreislauf-und-cholesterin",
+        "filters": "allCategories.id:030503",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wohlbefinden & Stärkung > Leber & Galle",
+        "category_link": "/gesundheit/wohlbefinden-und-staerkung/leber-und-galle",
+        "filters": "allCategories.id:030507",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wohlbefinden & Stärkung > Magen & Verdauung",
+        "category_link": "/gesundheit/wohlbefinden-und-staerkung/magen-und-verdauung",
+        "filters": "allCategories.id:030508",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wohlbefinden & Stärkung > Muskeln & Gelenke",
+        "category_link": "/gesundheit/wohlbefinden-und-staerkung/muskeln-und-gelenke",
+        "filters": "allCategories.id:030509",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wohlbefinden & Stärkung > Prostata & Blase",
+        "category_link": "/gesundheit/wohlbefinden-und-staerkung/prostata-und-blase",
+        "filters": "allCategories.id:030504",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wohlbefinden & Stärkung > Hautbild",
+        "category_link": "/gesundheit/wohlbefinden-und-staerkung/hautbild",
+        "filters": "allCategories.id:030401",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wohlbefinden & Stärkung > Venen",
+        "category_link": "/gesundheit/wohlbefinden-und-staerkung/venen",
+        "filters": "allCategories.id:030510",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wohlbefinden & Stärkung > Stärkung fürs Haar",
+        "category_link": "/gesundheit/wohlbefinden-und-staerkung/staerkung-fuers-haar",
+        "filters": "allCategories.id:030402",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wohlbefinden & Stärkung > Starke Nägel",
+        "category_link": "/gesundheit/wohlbefinden-und-staerkung/starke-naegel",
+        "filters": "allCategories.id:030403",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wohlbefinden & Stärkung > Schlafen & Nerven",
+        "category_link": "/gesundheit/wohlbefinden-und-staerkung/schlafen-und-nerven",
+        "filters": "allCategories.id:030502",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Selbsttests",
+        "category_link": "/gesundheit/selbsttests",
+        "filters": "allCategories.id:121422",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Selbsttests > Selbsttests für Zuhause",
+        "category_link": "/gesundheit/selbsttests/selbsttests-fuer-zuhause",
+        "filters": "allCategories.id:121426",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Selbsttests > Schwangerschaftstests",
+        "category_link": "/gesundheit/selbsttests/schwangerschaftstests",
+        "filters": "allCategories.id:031600",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Selbsttests > Ovulationstests",
+        "category_link": "/gesundheit/selbsttests/ovulationstests",
+        "filters": "allCategories.id:121424",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Selbsttests > Corona Schnell- & Antikörpertest",
+        "category_link": "/gesundheit/selbsttests/corona-schnell-antikoerpertest",
+        "filters": "allCategories.id:031500",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Hausapotheke",
+        "category_link": "/gesundheit/hausapotheke",
+        "filters": "allCategories.id:030700",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Hausapotheke > Blutdruckmessgeräte",
+        "category_link": "/gesundheit/hausapotheke/blutdruckmessgeraete",
+        "filters": "allCategories.id:030706",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Hausapotheke > Ohrstöpsel & Nasenstrips",
+        "category_link": "/gesundheit/hausapotheke/ohrstoepsel-und-nasenstrips",
+        "filters": "allCategories.id:030704",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Hausapotheke > Kältespray & Kühlgel",
+        "category_link": "/gesundheit/hausapotheke/kaeltespray-und-kuehlgel",
+        "filters": "categoryNames:\"Muskeln & Gelenke\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Hausapotheke > Medizinische & FFP2-Masken",
+        "category_link": "/gesundheit/hausapotheke/medizinische-ffp2-masken",
+        "filters": "allCategories.id:031400",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Bandagen & Tape",
+        "category_link": "/gesundheit/bandagen-und-tape",
+        "filters": "allCategories.id:031200",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Kontaktlinsen, Lesebrillen & Zubehör",
+        "category_link": "/gesundheit/kontaktlinsen-lesebrillen-und-zubehoer",
+        "filters": "allCategories.id:031100",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Kontaktlinsen, Lesebrillen & Zubehör > Kontaktlinsenflüssigkeit & Augentropfen",
+        "category_link": "/gesundheit/kontaktlinsen-lesebrillen-und-zubehoer/kontaktlinsenfluessigkeit-und-augentropfen",
+        "filters": "allCategories.id:031103",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Kontaktlinsen, Lesebrillen & Zubehör > Lesebrillen",
+        "category_link": "/gesundheit/kontaktlinsen-lesebrillen-und-zubehoer/lesebrillen",
+        "filters": "allCategories.id:031104",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Kontaktlinsen, Lesebrillen & Zubehör > Brillenetui & Brillenputztuch",
+        "category_link": "/gesundheit/kontaktlinsen-lesebrillen-und-zubehoer/brillenetuis-und-brillenputztuch",
+        "filters": "allCategories.id:031105",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Liebesspiel & Verhütung",
+        "category_link": "/gesundheit/liebesspiel-verhuetung",
+        "filters": "allCategories.id:030800",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Liebesspiel & Verhütung > Gleitgel",
+        "category_link": "/gesundheit/liebesspiel-verhuetung/gleitgel",
+        "filters": "allCategories.id:030802",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Liebesspiel & Verhütung > Kondome",
+        "category_link": "/gesundheit/liebesspiel-verhuetung/kondome",
+        "filters": "allCategories.id:030801",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Liebesspiel & Verhütung > Sextoys",
+        "category_link": "/gesundheit/liebesspiel-verhuetung/sextoys",
+        "filters": "allCategories.id:030803",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Liebesspiel & Verhütung > Sextoys > Vibrator",
+        "category_link": "/gesundheit/liebesspiel-verhuetung/sextoys/vibrator",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Gesundheit > Liebesspiel & Verhütung > Sextoys > Sexspielzeug für Männer > Penisring & Pleasure Ring",
+        "category_link": "/gesundheit/liebesspiel-verhuetung/sextoys/sexspielzeug-fuer-maenner/penisring-pleasure-ring",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 15
+    },
+    {
+        "category_path": "Gesundheit > Wärmetherapie",
+        "category_link": "/gesundheit/waermetherapie",
+        "filters": "allCategories.id:031000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wärmetherapie > Wärmepflaster",
+        "category_link": "/gesundheit/waermetherapie/waermepflaster",
+        "filters": "allCategories.id:121421",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wärmetherapie > Wärmflaschen & Co.",
+        "category_link": "/gesundheit/waermetherapie/waermflaschen-und-co",
+        "filters": "allCategories.id:121420",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wärmetherapie > Wärmflaschen & Co. > Kirschkernkissen",
+        "category_link": "/gesundheit/waermetherapie/waermflaschen-und-co/kirschkernkissen",
+        "filters": "categoryNames:Wärmetherapie",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wundversorgung",
+        "category_link": "/gesundheit/wundversorgung",
+        "filters": "allCategories.id:121423",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wundversorgung > Verbandsmaterial",
+        "category_link": "/gesundheit/wundversorgung/verbandsmaterial",
+        "filters": "allCategories.id:030702",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wundversorgung > Wundheilung",
+        "category_link": "/gesundheit/wundversorgung/wundheilung",
+        "filters": "allCategories.id:030703",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Gesundheit > Wundversorgung > Wundpflaster",
+        "category_link": "/gesundheit/wundversorgung/wundpflaster",
+        "filters": "allCategories.id:030701",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung",
+        "category_link": "/ernaehrung",
+        "filters": "allCategories.id:040000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Ernährung > Backen",
+        "category_link": "/ernaehrung/backen",
+        "filters": "allCategories.id:041600",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Backen > Backzutaten",
+        "category_link": "/ernaehrung/backen/backzutaten",
+        "filters": "allCategories.id:041601",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Backen > Backmischungen",
+        "category_link": "/ernaehrung/backen/backmischungen",
+        "filters": "allCategories.id:041606",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Backen > Mehl & Grieß",
+        "category_link": "/ernaehrung/backen/mehl-griess",
+        "filters": "allCategories.id:041602",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Backen > Fruchtmark & Obstkonserven",
+        "category_link": "/ernaehrung/backen/fruchtmark-und-obstkonserven",
+        "filters": "allCategories.id:041605",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Backen > Saaten & Körner",
+        "category_link": "/ernaehrung/backen/saaten-koerner",
+        "filters": "allCategories.id:041613",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Backen > Getreide",
+        "category_link": "/ernaehrung/backen/getreide",
+        "filters": "allCategories.id:041607",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Backen > Puddingpulver",
+        "category_link": "/ernaehrung/backen/puddingpulver",
+        "filters": "allCategories.id:041608",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Backen > Zucker",
+        "category_link": "/ernaehrung/backen/zucker",
+        "filters": "allCategories.id:041611",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Backen > Zuckeralternativen & Sirup",
+        "category_link": "/ernaehrung/backen/zuckeralternativen-sirup",
+        "filters": "allCategories.id:041612",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Soße und Gewürze",
+        "category_link": "/ernaehrung/sosse-gewuerze",
+        "filters": "allCategories.id:041700",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Soße und Gewürze > Soßen",
+        "category_link": "/ernaehrung/sosse-gewuerze/sossen",
+        "filters": "allCategories.id:041702",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Soße und Gewürze > Salz & Pfeffer",
+        "category_link": "/ernaehrung/sosse-gewuerze/salz-pfeffer",
+        "filters": "allCategories.id:041713",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Soße und Gewürze > Gewürze",
+        "category_link": "/ernaehrung/sosse-gewuerze/gewuerze",
+        "filters": "allCategories.id:041708",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Soße und Gewürze > Essig & Öl",
+        "category_link": "/ernaehrung/sosse-gewuerze/oel-und-essig",
+        "filters": "allCategories.id:041701",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Soße und Gewürze > Senf, Ketchup & Co.",
+        "category_link": "/ernaehrung/sosse-gewuerze/senf-ketchup-co",
+        "filters": "allCategories.id:041712",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Soße und Gewürze > vegane Sahnealternativen",
+        "category_link": "/ernaehrung/sosse-gewuerze/vegane-sahnealternativen",
+        "filters": "allCategories.id:041709",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Soße und Gewürze > Pesto",
+        "category_link": "/ernaehrung/sosse-gewuerze/pesto",
+        "filters": "allCategories.id:041714",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Frühstück",
+        "category_link": "/ernaehrung/fruehstueck",
+        "filters": "allCategories.id:041200",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Frühstück > Müsli & Granola",
+        "category_link": "/ernaehrung/fruehstueck/muesli-und-granola",
+        "filters": "allCategories.id:041201",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Frühstück > Flocken & Flakes",
+        "category_link": "/ernaehrung/fruehstueck/flocken-und-flakes",
+        "filters": "allCategories.id:041202",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Frühstück > Porridge & Frühstücksbrei",
+        "category_link": "/ernaehrung/fruehstueck/porridge-und-fruechstuecksbrei",
+        "filters": "allCategories.id:041203",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Frühstück > Brot & Brötchen",
+        "category_link": "/ernaehrung/fruehstueck/brot-broetchen",
+        "filters": "allCategories.id:041204",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Frühstück > Herzhafte Brotaufstriche",
+        "category_link": "/ernaehrung/fruehstueck/herzhafte-brotaufstriche",
+        "filters": "allCategories.id:041205",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Frühstück > Marmelade, Fruchtaufstrich & Honig",
+        "category_link": "/ernaehrung/fruehstueck/marmelade-fruchtaufstrich-honig",
+        "filters": "allCategories.id:041206",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Frühstück > Nuss- & Schokocreme",
+        "category_link": "/ernaehrung/fruehstueck/nuss-schokocreme",
+        "filters": "allCategories.id:041207",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Snacks & Süßigkeiten",
+        "category_link": "/ernaehrung/snacks-und-suessigkeiten",
+        "filters": "allCategories.id:041500",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Snacks & Süßigkeiten > Müsliriegel & Fruchtriegel",
+        "category_link": "/ernaehrung/snacks-und-suessigkeiten/muesliriegel-und-fruchtriegel",
+        "filters": "allCategories.id:041501",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Snacks & Süßigkeiten > Schokolade & Schokoriegel",
+        "category_link": "/ernaehrung/snacks-und-suessigkeiten/schokolade-und-schokoriegel",
+        "filters": "allCategories.id:041502",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Snacks & Süßigkeiten > Kekse, Waffeln & Cookies",
+        "category_link": "/ernaehrung/snacks-und-suessigkeiten/kekse-waffeln-und-cookies",
+        "filters": "allCategories.id:041503",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Snacks & Süßigkeiten > Knabberzeug",
+        "category_link": "/ernaehrung/snacks-und-suessigkeiten/knabberzeug",
+        "filters": "allCategories.id:041504",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Snacks & Süßigkeiten > Bonbons & Fruchtgummi",
+        "category_link": "/ernaehrung/snacks-und-suessigkeiten/bonbons-fruchtgummi",
+        "filters": "allCategories.id:041505",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Snacks & Süßigkeiten > Kaugummi",
+        "category_link": "/ernaehrung/snacks-und-suessigkeiten/kaugummi",
+        "filters": "allCategories.id:041506",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Snacks & Süßigkeiten > Traubenzucker",
+        "category_link": "/ernaehrung/snacks-und-suessigkeiten/traubenzucker",
+        "filters": "allCategories.id:041507",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Snacks & Süßigkeiten > Studentenfutter",
+        "category_link": "/ernaehrung/snacks-und-suessigkeiten/studentenfutter",
+        "filters": "allCategories.id:041508",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Snacks & Süßigkeiten > Nüsse",
+        "category_link": "/ernaehrung/snacks-und-suessigkeiten/nuesse",
+        "filters": "allCategories.id:041509",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Snacks & Süßigkeiten > Trockenfrüchte",
+        "category_link": "/ernaehrung/snacks-und-suessigkeiten/trockenfruechte",
+        "filters": "allCategories.id:041510",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Sportnahrung",
+        "category_link": "/ernaehrung/sportnahrung",
+        "filters": "allCategories.id:040700",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Sportnahrung > Energie-Produkte",
+        "category_link": "/ernaehrung/sportnahrung/energie-produkte",
+        "filters": "allCategories.id:040701",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Sportnahrung > Protein Riegel",
+        "category_link": "/ernaehrung/sportnahrung/protein-riegel",
+        "filters": "allCategories.id:040702",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Sportnahrung > Protein Shakes & Pulver",
+        "category_link": "/ernaehrung/sportnahrung/protein-shakes-und-pulver",
+        "filters": "allCategories.id:040705",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Sportnahrung > Isotonische Produkte",
+        "category_link": "/ernaehrung/sportnahrung/isotonische-produkte",
+        "filters": "allCategories.id:040704",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Getränke",
+        "category_link": "/ernaehrung/getraenke",
+        "filters": "allCategories.id:041300",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Getränke > Erfrischung",
+        "category_link": "/ernaehrung/getraenke/erfrischung",
+        "filters": "allCategories.id:041305",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Getränke > Fruchtsäfte",
+        "category_link": "/ernaehrung/getraenke/fruchtsaefte",
+        "filters": "allCategories.id:041308",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Getränke > Smoothies",
+        "category_link": "/ernaehrung/getraenke/smoothies",
+        "filters": "allCategories.id:041301",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Getränke > Gemüsesäfte & Ingwershots",
+        "category_link": "/ernaehrung/getraenke/gemuesesaefte-ingwershots",
+        "filters": "allCategories.id:041309",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Getränke > Wasser & Mineralwasser",
+        "category_link": "/ernaehrung/getraenke/wasser-und-mineralwasser",
+        "filters": "allCategories.id:041304",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Milch & Milchalternativen",
+        "category_link": "/ernaehrung/milch-milchalternativen",
+        "filters": "allCategories.id:041400",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Milch & Milchalternativen > Milch",
+        "category_link": "/ernaehrung/milch-milchalternativen/milch",
+        "filters": "allCategories.id:041401",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Milch & Milchalternativen > Pflanzendrinks",
+        "category_link": "/ernaehrung/milch-milchalternativen/pflanzendrinks",
+        "filters": "allCategories.id:041402",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Milch & Milchalternativen > Pflanzendrinks > Kokosmilch",
+        "category_link": "/ernaehrung/milch-milchalternativen/pflanzendrinks/kokosmilch",
+        "filters": "categoryNames:\"Milch & Milchalternativen\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Ernährung > Milch & Milchalternativen > Pflanzendrinks > Haferdrink",
+        "category_link": "/ernaehrung/milch-milchalternativen/pflanzendrinks/haferdrink",
+        "filters": "categoryNames:\"Milch & Milchalternativen\" categoryNames:Pflanzendrinks",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Ernährung > Milch & Milchalternativen > Pflanzendrinks > Reisdrink",
+        "category_link": "/ernaehrung/milch-milchalternativen/pflanzendrinks/reisdrink",
+        "filters": "categoryNames:\"Milch & Milchalternativen\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Ernährung > Milch & Milchalternativen > Pflanzendrinks > Erbsendrink",
+        "category_link": "/ernaehrung/milch-milchalternativen/pflanzendrinks/erbsendrink",
+        "filters": "categoryNames:\"Milch & Milchalternativen\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Ernährung > Milch & Milchalternativen > Pflanzendrinks > Mandelmilch",
+        "category_link": "/ernaehrung/milch-milchalternativen/pflanzendrinks/mandeldrink",
+        "filters": "categoryNames:\"Milch & Milchalternativen\" categoryNames:Pflanzendrinks",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Ernährung > Milch & Milchalternativen > Pflanzendrinks > Sojadrink",
+        "category_link": "/ernaehrung/milch-milchalternativen/pflanzendrinks/sojadrink",
+        "filters": "categoryNames:Pflanzendrinks",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Ernährung > Kaffee, Tee & Kakao",
+        "category_link": "/ernaehrung/kaffee-tee-kakao",
+        "filters": "allCategories.id:042200",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Kaffee, Tee & Kakao > Kaffee & Kaffeeersatz",
+        "category_link": "/ernaehrung/kaffee-tee-kakao/kaffee-kaffeeersatz",
+        "filters": "allCategories.id:042201",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Kaffee, Tee & Kakao > Tee",
+        "category_link": "/ernaehrung/kaffee-tee-kakao/tee",
+        "filters": "allCategories.id:042202",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Kaffee, Tee & Kakao > Trinkschokolade",
+        "category_link": "/ernaehrung/kaffee-tee-kakao/trinkschokolade",
+        "filters": "allCategories.id:042203",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Beilagen",
+        "category_link": "/ernaehrung/beilagen",
+        "filters": "allCategories.id:042300",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Beilagen > Nudeln",
+        "category_link": "/ernaehrung/beilagen/nudeln",
+        "filters": "allCategories.id:042301",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Beilagen > Reis",
+        "category_link": "/ernaehrung/beilagen/reis",
+        "filters": "allCategories.id:042302",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Beilagen > Bulgur, Quinoa & Co.",
+        "category_link": "/ernaehrung/beilagen/bulgur-quinoa-co",
+        "filters": "allCategories.id:042303",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Beilagen > Linsen & Bohnen",
+        "category_link": "/ernaehrung/beilagen/linsen-bohnen",
+        "filters": "allCategories.id:042304",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Fertiggerichte & Konserven",
+        "category_link": "/ernaehrung/fertiggerichte-konserven",
+        "filters": "allCategories.id:042400",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Fertiggerichte & Konserven > Konserven",
+        "category_link": "/ernaehrung/fertiggerichte-konserven/konserven",
+        "filters": "allCategories.id:042401",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Fertiggerichte & Konserven > Schnelle Gerichte",
+        "category_link": "/ernaehrung/fertiggerichte-konserven/schnelle-gerichte",
+        "filters": "allCategories.id:042402",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Fertiggerichte & Konserven > Suppen & Eintöpfe",
+        "category_link": "/ernaehrung/fertiggerichte-konserven/suppen-eintoepfe",
+        "filters": "allCategories.id:042403",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Tofu & Fleischersatz",
+        "category_link": "/ernaehrung/tofu-fleischersatz",
+        "filters": "allCategories.id:042500",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ernährung > Regionale Bio Produkte",
+        "category_link": "/ernaehrung/regionale-produkte",
+        "filters": "",
+        "sort": "new",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Baby & Kind",
+        "category_link": "/baby-und-kind",
+        "filters": "allCategories.id:050000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Baby & Kind > Windeln",
+        "category_link": "/baby-und-kind/windeln",
+        "filters": "allCategories.id:050100",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Windeln > Einwegwindeln",
+        "category_link": "/baby-und-kind/windeln/einwegwindeln",
+        "filters": "allCategories.id:050101",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Windeln > Stoffwindeln",
+        "category_link": "/baby-und-kind/windeln/stoffwindeln",
+        "filters": "allCategories.id:050106",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Windeln > Schwimmwindeln",
+        "category_link": "/baby-und-kind/windeln/schwimmwindeln",
+        "filters": "allCategories.id:050102",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Windeln > Windel Pants",
+        "category_link": "/baby-und-kind/windeln/windel-pants",
+        "filters": "allCategories.id:050104",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Windeln > Windeleimer & Zubehör",
+        "category_link": "/baby-und-kind/windeln/windeleimer-zubehoer",
+        "filters": "allCategories.id:051002",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Babypflege",
+        "category_link": "/baby-und-kind/babypflege",
+        "filters": "allCategories.id:050400",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Babypflege > Babyshampoo, Badezusätze & Co.",
+        "category_link": "/baby-und-kind/babypflege/babyshampoo-badezusaetze-und-co",
+        "filters": "allCategories.id:050402",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Babypflege > Wundschutzcreme & Babypuder",
+        "category_link": "/baby-und-kind/babypflege/wundschutzcreme-und-babypuder",
+        "filters": "allCategories.id:050403",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Babypflege > Babyöl & Babycreme",
+        "category_link": "/baby-und-kind/babypflege/babyoel-babycreme",
+        "filters": "allCategories.id:050404",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Babypflege > Babypflege Zubehör",
+        "category_link": "/baby-und-kind/babypflege/babypflege-zubehoer",
+        "filters": "allCategories.id:050405",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Babypflege > Zahnpflege & Zahnungshilfen",
+        "category_link": "/baby-und-kind/babypflege/zahnpflege-und-zahnungshilfen",
+        "filters": "allCategories.id:050406",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Fläschchen & Schnuller",
+        "category_link": "/baby-und-kind/flaeschchen-und-schnuller",
+        "filters": "allCategories.id:050600",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Fläschchen & Schnuller > Babyflaschen & Kinderflaschen",
+        "category_link": "/baby-und-kind/flaeschchen-und-schnuller/babyflasche-kinderflasche",
+        "filters": "allCategories.id:050601",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Fläschchen & Schnuller > Schnuller",
+        "category_link": "/baby-und-kind/flaeschchen-und-schnuller/schnuller",
+        "filters": "allCategories.id:050603",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Fläschchen & Schnuller > Schnullerketten & Zubehör",
+        "category_link": "/baby-und-kind/flaeschchen-und-schnuller/schnullerkette-zubehoer",
+        "filters": "allCategories.id:050604",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Babynahrung & Getränke",
+        "category_link": "/baby-und-kind/babynahrung-getraenke",
+        "filters": "allCategories.id:050500",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Babynahrung & Getränke > Babygläschen & Co.",
+        "category_link": "/baby-und-kind/babynahrung-getraenke/babyglaeschen-und-co",
+        "filters": "allCategories.id:050501",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Babynahrung & Getränke > Babymilch",
+        "category_link": "/baby-und-kind/babynahrung-getraenke/babymilch",
+        "filters": "allCategories.id:050502",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Babynahrung & Getränke > Babymilch > Pre Nahrung",
+        "category_link": "/baby-und-kind/babynahrung-getraenke/babymilch/pre-nahrung",
+        "filters": "allCategories.id:050502 classifications.A0207_PRODUKTTYP:Anfangsmilch",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Babynahrung & Getränke > Babybrei",
+        "category_link": "/baby-und-kind/babynahrung-getraenke/babybrei",
+        "filters": "allCategories.id:050503",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Babynahrung & Getränke > Snacks für Kinder",
+        "category_link": "/baby-und-kind/babynahrung-getraenke/snacks-fuer-kinder",
+        "filters": "allCategories.id:050504",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Babynahrung & Getränke > Quetschies",
+        "category_link": "/baby-und-kind/babynahrung-getraenke/quetschies",
+        "filters": "allCategories.id:050505",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Babynahrung & Getränke > Getränke für Kinder",
+        "category_link": "/baby-und-kind/babynahrung-getraenke/getraenke-fuer-kinder",
+        "filters": "allCategories.id:050506",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Babynahrung & Getränke > Riegel für Kinder",
+        "category_link": "/baby-und-kind/babynahrung-getraenke/riegel-fuer-kinder",
+        "filters": "allCategories.id:050507",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Babynahrung & Getränke > Kinderkekse",
+        "category_link": "/baby-und-kind/babynahrung-getraenke/kinderkekse",
+        "filters": "allCategories.id:050508",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Ausstattung für Baby & Kind",
+        "category_link": "/baby-und-kind/ausstattung-fuer-baby-kind",
+        "filters": "allCategories.id:050700",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Ausstattung für Baby & Kind > Kinderbesteck & -geschirr",
+        "category_link": "/baby-und-kind/ausstattung-fuer-baby-kind/kinderbesteck-und-geschirr",
+        "filters": "allCategories.id:050706",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Ausstattung für Baby & Kind > Kinderwagenzubehör",
+        "category_link": "/baby-und-kind/ausstattung-fuer-baby-kind/kinderwagenzubehoer",
+        "filters": "allCategories.id:050702",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Ausstattung für Baby & Kind > Kindersicherungen",
+        "category_link": "/baby-und-kind/ausstattung-fuer-baby-kind/kindersicherungen",
+        "filters": "allCategories.id:050703",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Ausstattung für Baby & Kind > Bade- & Schwimmzubehör",
+        "category_link": "/baby-und-kind/ausstattung-fuer-baby-kind/bade-und-schwimmzubehoer",
+        "filters": "allCategories.id:050704",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Ausstattung für Baby & Kind > Mull- & Moltontücher",
+        "category_link": "/baby-und-kind/ausstattung-fuer-baby-kind/mull-moltontuecher",
+        "filters": "allCategories.id:050718",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Ausstattung für Baby & Kind > Töpfchen & Toilettentrainer",
+        "category_link": "/baby-und-kind/ausstattung-fuer-baby-kind/toepfchen-und-toilettentrainer",
+        "filters": "allCategories.id:050716",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Ausstattung für Baby & Kind > Lätzchen",
+        "category_link": "/baby-und-kind/ausstattung-fuer-baby-kind/laetzchen",
+        "filters": "categoryid:050717",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Baby & Kind > Für die Mama",
+        "category_link": "/baby-und-kind/fuer-die-mama",
+        "filters": "allCategories.id:050800",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Für die Mama > Pflege für Schwangere & Mamas",
+        "category_link": "/baby-und-kind/fuer-die-mama/pflege-fuer-schwangere-und-mamas",
+        "filters": "allCategories.id:050804",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Für die Mama > Ernährung für Schwangerschaft & Stillzeit",
+        "category_link": "/baby-und-kind/fuer-die-mama/ernaehrung-fuer-schwangerschaft-und-stillzeit",
+        "filters": "allCategories.id:050806",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Für die Mama > Ernährung für Schwangerschaft & Stillzeit > Stilltee",
+        "category_link": "/baby-und-kind/fuer-die-mama/ernaehrung-fuer-schwangerschaft-und-stillzeit/stilltee",
+        "filters": "categoryNames:\"Ernährung für Schwangerschaft & Stillzeit\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Für die Mama > Kleidung für die Mama",
+        "category_link": "/baby-und-kind/fuer-die-mama/kleidung-fuer-die-mama",
+        "filters": "allCategories.id:050807",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kinderbücher & Ratgeber",
+        "category_link": "/baby-und-kind/kinderbuecher-ratgeber",
+        "filters": "allCategories.id:050900",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kinderbücher & Ratgeber > Babybücher",
+        "category_link": "/baby-und-kind/kinderbuecher-ratgeber/babybuecher",
+        "filters": "allCategories.id:050904",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kinderbücher & Ratgeber > Kinderbücher ab 2 Jahre",
+        "category_link": "/baby-und-kind/kinderbuecher-ratgeber/kinderbuecher-ab-2-jahre",
+        "filters": "allCategories.id:050905",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Spielzeug",
+        "category_link": "/baby-und-kind/spielzeug",
+        "filters": "allCategories.id:052000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Spielzeug > Rasseln & Greiflinge",
+        "category_link": "/baby-und-kind/spielzeug/rasseln-und-greiflinge",
+        "filters": "allCategories.id:052001",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Spielzeug > Spieluhren & Mobiles",
+        "category_link": "/baby-und-kind/spielzeug/spieluhren-und-mobiles",
+        "filters": "allCategories.id:052002",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Spielzeug > Kuscheltiere & Schmusetücher",
+        "category_link": "/baby-und-kind/spielzeug/kuscheltiere-und-schmusetuecher",
+        "filters": "allCategories.id:052003",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Spielzeug > Puzzle & Spiele",
+        "category_link": "/baby-und-kind/spielzeug/puzzle-und-spiele",
+        "filters": "allCategories.id:052004",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Spielzeug > Basteln & Kneten",
+        "category_link": "/baby-und-kind/spielzeug/basteln-und-kneten",
+        "filters": "allCategories.id:052005",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Spielzeug > Holzspielzeug",
+        "category_link": "/baby-und-kind/spielzeug/holzspielzeug",
+        "filters": "allCategories.id:052006",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Spielzeug > Stapeltürme & Steckspiele",
+        "category_link": "/baby-und-kind/spielzeug/stapeltuerme-und-steckspiele",
+        "filters": "allCategories.id:052008",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Spielzeug > Badespielzeug",
+        "category_link": "/baby-und-kind/spielzeug/badespielzeug",
+        "filters": "allCategories.id:052009",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kinderzimmer",
+        "category_link": "/baby-und-kind/kinderzimmer",
+        "filters": "allCategories.id:055000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kinderzimmer > Nachtlichter",
+        "category_link": "/baby-und-kind/kinderzimmer/nachtlichter",
+        "filters": "allCategories.id:055001",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kinderzimmer > Kinderbettausstattung",
+        "category_link": "/baby-und-kind/kinderzimmer/kinderbettausstattung",
+        "filters": "allCategories.id:055002",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kinderzimmer > Kinderzimmerdeko",
+        "category_link": "/baby-und-kind/kinderzimmer/kinderzimmerdeko",
+        "filters": "allCategories.id:055004",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Stillen",
+        "category_link": "/baby-und-kind/stillen",
+        "filters": "allCategories.id:055100",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Stillen > Stilleinlagen",
+        "category_link": "/baby-und-kind/stillen/stilleinlagen",
+        "filters": "allCategories.id:055102",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Stillen > Milchpumpen & Zubehör",
+        "category_link": "/baby-und-kind/stillen/milchpumpen-zubehoer",
+        "filters": "allCategories.id:055103",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Stillen > Still-BHs",
+        "category_link": "/baby-und-kind/stillen/still-bhs",
+        "filters": "allCategories.id:055104",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Stillen > Stillpflege",
+        "category_link": "/baby-und-kind/stillen/stillpflege",
+        "filters": "allCategories.id:055105",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Wickelzubehör",
+        "category_link": "/baby-und-kind/wickelzubehoer",
+        "filters": "allCategories.id:051000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Wickelzubehör > Wickelauflagen & Wickelunterlagen",
+        "category_link": "/baby-und-kind/wickelzubehoer/wickelauflagen-und-wickelunterlagen",
+        "filters": "allCategories.id:051003",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Wickelzubehör > Windeleimer & Zubehör",
+        "category_link": "/baby-und-kind/wickelzubehoer/windeleimer-und-zubehoer",
+        "filters": "allCategories.id:051002",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Wickelzubehör > Feuchttücher & Co.",
+        "category_link": "/baby-und-kind/wickelzubehoer/feuchttuecher-und-co",
+        "filters": "allCategories.id:051001",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kleinkindpflege",
+        "category_link": "/baby-und-kind/kleinkindpflege",
+        "filters": "allCategories.id:051100",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kleinkindpflege > Kinderbadezusätze",
+        "category_link": "/baby-und-kind/kleinkindpflege/kinderbadezusaetze",
+        "filters": "allCategories.id:050402",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kleinkindpflege > Kinderduschgel",
+        "category_link": "/baby-und-kind/kleinkindpflege/kinderduschgel",
+        "filters": "allCategories.id:051102",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kleinkindpflege > Kindershampoo",
+        "category_link": "/baby-und-kind/kleinkindpflege/kindershampoo",
+        "filters": "allCategories.id:051103",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kleinkindpflege > Kinderseifen",
+        "category_link": "/baby-und-kind/kleinkindpflege/kinderseifen",
+        "filters": "allCategories.id:051104",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kleinkindpflege > Kinderpflegezubehör",
+        "category_link": "/baby-und-kind/kleinkindpflege/kinderpflegezubehoer",
+        "filters": "allCategories.id:051105",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kinderkleidung",
+        "category_link": "/baby-und-kind/kinderkleidung",
+        "filters": "allCategories.id:053000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kinderkleidung > Kinderhandschuhe, -mützen & -schals",
+        "category_link": "/baby-und-kind/kinderkleidung/kinderhandschuhe-muetzen-schals",
+        "filters": "allCategories.id:053200",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kinderkleidung > Kinderrucksäcke & -taschen",
+        "category_link": "/baby-und-kind/kinderkleidung/kinderrucksaecke-taschen",
+        "filters": "allCategories.id:053940",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Kinderkleidung > Kinder Outdoor- & Regenbekleidung",
+        "category_link": "/baby-und-kind/kinderkleidung/kinder-outdoor-regenbekleidung",
+        "filters": "allCategories.id:053930",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Baby & Kind > Baby- & Kindergesundheit",
+        "category_link": "/baby-und-kind/baby-und-kindergesundheit",
+        "filters": "allCategories.id:051200",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt",
+        "category_link": "/haushalt",
+        "filters": "allCategories.id:060000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Haushalt > Waschen",
+        "category_link": "/haushalt/waschen",
+        "filters": "allCategories.id:060500",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Waschen > Waschmittel",
+        "category_link": "/haushalt/waschen/waschmittel",
+        "filters": "allCategories.id:060501",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Haushalt > Waschen > Weichspüler",
+        "category_link": "/haushalt/waschen/weichspueler",
+        "filters": "allCategories.id:060502",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Waschen > Waschzusatz",
+        "category_link": "/haushalt/waschen/waschzusatz",
+        "filters": "allCategories.id:060507",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Waschen > Fleckenentferner",
+        "category_link": "/haushalt/waschen/fleckenentferner",
+        "filters": "allCategories.id:060504",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Waschen > Textilfarbe",
+        "category_link": "/haushalt/waschen/textilfarbe",
+        "filters": "allCategories.id:060505",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Waschen > Stärke & Bügelhilfe",
+        "category_link": "/haushalt/waschen/staerke-und-buegelhilfe",
+        "filters": "allCategories.id:060506",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Waschen > Wasserenthärter",
+        "category_link": "/haushalt/waschen/wasserenthaerter",
+        "filters": "allCategories.id:060503",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Waschen > Textilerfrischer",
+        "category_link": "/haushalt/waschen/textilerfrischer",
+        "filters": "allCategories.id:060508",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Putzen & Reinigen",
+        "category_link": "/haushalt/putzen-und-reinigen",
+        "filters": "allCategories.id:060300",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Putzen & Reinigen > Besen, Toilettenbürste & Co.",
+        "category_link": "/haushalt/putzen-und-reinigen/besen-toilettenbuerste-und-co",
+        "filters": "allCategories.id:060310",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Putzen & Reinigen > Putztücher, Schwämme & Co.",
+        "category_link": "/haushalt/putzen-und-reinigen/putztuecher-schwaemme-und-co",
+        "filters": "allCategories.id:060311",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Putzen & Reinigen > Bodenwischer",
+        "category_link": "/haushalt/putzen-und-reinigen/bodenwischer",
+        "filters": "allCategories.id:060312",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Putzen & Reinigen > Allzweckreiniger",
+        "category_link": "/haushalt/putzen-und-reinigen/allzweckreiniger",
+        "filters": "allCategories.id:060301",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Putzen & Reinigen > Spezialreiniger",
+        "category_link": "/haushalt/putzen-und-reinigen/spezialreiniger",
+        "filters": "allCategories.id:060308",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Putzen & Reinigen > Bad- & Kalkreiniger",
+        "category_link": "/haushalt/putzen-und-reinigen/bad-und-kalkreiniger",
+        "filters": "allCategories.id:060302",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Putzen & Reinigen > WC-Reiniger & -Steine",
+        "category_link": "/haushalt/putzen-und-reinigen/wc-reiniger-und-steine",
+        "filters": "allCategories.id:060309",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Putzen & Reinigen > Bodenreiniger",
+        "category_link": "/haushalt/putzen-und-reinigen/bodenreiniger",
+        "filters": "allCategories.id:060305",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Putzen & Reinigen > Küchenreiniger",
+        "category_link": "/haushalt/putzen-und-reinigen/kuechenreiniger",
+        "filters": "allCategories.id:060304",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Putzen & Reinigen > Glasreiniger",
+        "category_link": "/haushalt/putzen-und-reinigen/glasreiniger",
+        "filters": "allCategories.id:060303",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Putzen & Reinigen > Desinfektionssprays & Desinfektionstücher",
+        "category_link": "/haushalt/putzen-und-reinigen/desinfektionssprays-und-desinfektionstuecher",
+        "filters": "allCategories.id:060306",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Putzen & Reinigen > Möbelpflege",
+        "category_link": "/haushalt/putzen-und-reinigen/moebelpflege",
+        "filters": "allCategories.id:060307",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Spülen",
+        "category_link": "/haushalt/spuelen",
+        "filters": "allCategories.id:060400",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Spülen > Geschirrspülmittel, -Tabs, -Salz & Co.",
+        "category_link": "/haushalt/spuelen/geschirrspuelmittel-tabs-salz-und-co",
+        "filters": "allCategories.id:060402",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Spülen > Spülbürsten & Spülschwämme",
+        "category_link": "/haushalt/spuelen/spuelbuersten-und-spuelschwaemme",
+        "filters": "allCategories.id:060403",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Spülen > Spülmittel",
+        "category_link": "/haushalt/spuelen/spuelmittel",
+        "filters": "allCategories.id:060401",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Spülen > Klarspüler",
+        "category_link": "/haushalt/spuelen/klarspueler",
+        "filters": "allCategories.id:060400 classifications.A0213_TEXTUR:Flüssig",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltsartikel",
+        "category_link": "/haushalt/haushaltsartikel",
+        "filters": "allCategories.id:060100",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltsartikel > Alu- & Frischhaltefolie",
+        "category_link": "/haushalt/haushaltsartikel/alu-frischhaltefolie",
+        "filters": "allCategories.id:060104",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltsartikel > Gefrierbeutel",
+        "category_link": "/haushalt/haushaltsartikel/gefrierbeutel",
+        "filters": "allCategories.id:060107",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltsartikel > Müllbeutel",
+        "category_link": "/haushalt/haushaltsartikel/muellbeutel",
+        "filters": "allCategories.id:060102",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltsartikel > Aufbewahren & To Go",
+        "category_link": "/haushalt/haushaltsartikel/aufbewahren-to-go",
+        "filters": "allCategories.id:060108",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Haushalt > Haushaltsartikel > Staubsaugerbeutel",
+        "category_link": "/haushalt/haushaltsartikel/staubsaugerbeutel",
+        "filters": "allCategories.id:060111",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltsartikel > Schuhpflege",
+        "category_link": "/haushalt/haushaltsartikel/schuhpflege",
+        "filters": "allCategories.id:060116",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltsartikel > Anzünder, Waschbenzin & Co.",
+        "category_link": "/haushalt/haushaltsartikel/anzuender-waschbenzin-und-co",
+        "filters": "allCategories.id:060101",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltsartikel > Haushaltshandschuhe",
+        "category_link": "/haushalt/haushaltsartikel/haushaltshandschuhe",
+        "filters": "allCategories.id:060114",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltsartikel > Tee-, Kaffee- & Wasserfilter",
+        "category_link": "/haushalt/haushaltsartikel/tee-kaffee-wasserfilter",
+        "filters": "allCategories.id:060103",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltsartikel > Backen & Kochen",
+        "category_link": "/haushalt/haushaltsartikel/backen-kochen",
+        "filters": "allCategories.id:060105",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltsartikel > Leuchtmittel & Glühbirnen",
+        "category_link": "/haushalt/haushaltsartikel/leuchtmittel-und-gluehbirnen",
+        "filters": "allCategories.id:060106",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltsartikel > Partyzubehör",
+        "category_link": "/haushalt/haushaltsartikel/partyzubehoer",
+        "filters": "allCategories.id:060109",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltspapier",
+        "category_link": "/haushalt/haushaltspapier",
+        "filters": "allCategories.id:060200",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltspapier > Toilettenpapier",
+        "category_link": "/haushalt/haushaltspapier/toilettenpapier",
+        "filters": "allCategories.id:060201",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltspapier > Toilettenpapier > Feuchtes Toilettenpapier",
+        "category_link": "/haushalt/haushaltspapier/toilettenpapier/feuchtes-toilettenpapier",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltspapier > Toilettenpapier > Nachhaltiges Toilettenpapier",
+        "category_link": "/haushalt/haushaltspapier/toilettenpapier/nachhaltiges-toilettenpapier",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltspapier > Taschentücher",
+        "category_link": "/haushalt/haushaltspapier/taschentuecher",
+        "filters": "allCategories.id:060203",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltspapier > Küchenrollen",
+        "category_link": "/haushalt/haushaltspapier/kuechenrollen",
+        "filters": "allCategories.id:060202",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Haushaltspapier > Servietten",
+        "category_link": "/haushalt/haushaltspapier/servietten",
+        "filters": "allCategories.id:060204",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Kerzen & Raumduft",
+        "category_link": "/haushalt/kerzen-raumduft",
+        "filters": "allCategories.id:061100",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Kerzen & Raumduft > Lufterfrischer & Raumduft",
+        "category_link": "/haushalt/kerzen-raumduft/lufterfrischer-raumduft",
+        "filters": "allCategories.id:061101",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Kerzen & Raumduft > Lufterfrischer & Raumduft > Ätherische Öle",
+        "category_link": "/haushalt/kerzen-raumduft/lufterfrischer-raumduft/aetherische-oele",
+        "filters": "categoryNames:\"Kerzen & Raumduft\"",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Kerzen & Raumduft > Diffuser für ätherische Öle",
+        "category_link": "/haushalt/kerzen-raumduft/diffuser-fuer-aetherische-oele",
+        "filters": "",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Kerzen & Raumduft > Teelichter",
+        "category_link": "/haushalt/kerzen-raumduft/teelichter",
+        "filters": "allCategories.id:061102",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Kerzen & Raumduft > Duftkerzen",
+        "category_link": "/haushalt/kerzen-raumduft/duftkerzen",
+        "filters": "allCategories.id:061103",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Kerzen & Raumduft > Stab- & Stumpenkerzen",
+        "category_link": "/haushalt/kerzen-raumduft/stab-und-stumpenkerzen",
+        "filters": "allCategories.id:061104",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Kerzen & Raumduft > Grabkerzen & Grablichter",
+        "category_link": "/haushalt/kerzen-raumduft/grabkerzen-und-grablichter",
+        "filters": "allCategories.id:061105",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Kerzen & Raumduft > Kerzenhalter",
+        "category_link": "/haushalt/kerzen-raumduft/kerzenhalter",
+        "filters": "allCategories.id:061106",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Dekorieren & Einrichten",
+        "category_link": "/haushalt/dekorieren-einrichten",
+        "filters": "allCategories.id:060900",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Dekorieren & Einrichten > Weihnachtsdeko",
+        "category_link": "/haushalt/dekorieren-einrichten/weihnachtsdekoration",
+        "filters": "allCategories.id:060903",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 25
+    },
+    {
+        "category_path": "Haushalt > Dekorieren & Einrichten > Silvesterdeko",
+        "category_link": "/haushalt/dekorieren-einrichten/silvesterdeko",
+        "filters": "allCategories.id:060905",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Dekorieren & Einrichten > Herbstdeko",
+        "category_link": "/haushalt/dekorieren-einrichten/herbstdeko",
+        "filters": "allCategories.id:060902",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Dekorieren & Einrichten > Sommerdeko",
+        "category_link": "/haushalt/dekorieren-einrichten/sommerdeko",
+        "filters": "allCategories.id:060906",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Dekorieren & Einrichten > Ostern",
+        "category_link": "/haushalt/dekorieren-einrichten/ostern",
+        "filters": "allCategories.id:060901",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Geschenke verpacken & Basteln",
+        "category_link": "/haushalt/geschenke-verpacken-und-basteln",
+        "filters": "allCategories.id:060800",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Geschenke verpacken & Basteln > Geschenkverpackungen",
+        "category_link": "/haushalt/geschenke-verpacken-und-basteln/geschenkverpackungen",
+        "filters": "allCategories.id:060806",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Geschenke verpacken & Basteln > Geschenkband & Washi Tape",
+        "category_link": "/haushalt/geschenke-verpacken-und-basteln/geschenkband-und-washi-tape",
+        "filters": "allCategories.id:060803",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Geschenke verpacken & Basteln > Klebstoff",
+        "category_link": "/haushalt/geschenke-verpacken-und-basteln/klebstoff",
+        "filters": "allCategories.id:060802",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Geschenke verpacken & Basteln > Stifte, Scheren & Schreibwaren",
+        "category_link": "/haushalt/geschenke-verpacken-und-basteln/stifte-und-marker",
+        "filters": "allCategories.id:060801",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Batterien & Akkus",
+        "category_link": "/haushalt/batterien-und-akkus",
+        "filters": "allCategories.id:060600",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Insektenabwehr & Dünger",
+        "category_link": "/haushalt/insektenabwehr-und-duenger",
+        "filters": "allCategories.id:061200",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Insektenabwehr & Dünger > Ameisenköder",
+        "category_link": "/haushalt/insektenabwehr-und-duenger/ameisenkoeder",
+        "filters": "allCategories.id:061201",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Insektenabwehr & Dünger > Mottenfallen",
+        "category_link": "/haushalt/insektenabwehr-und-duenger/mottenfallen",
+        "filters": "allCategories.id:061202",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Insektenabwehr & Dünger > Fruchtfliegenfallen",
+        "category_link": "/haushalt/insektenabwehr-und-duenger/fruchtfliegenfallen",
+        "filters": "allCategories.id:061203",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Insektenabwehr & Dünger > Stechmückenabwehr",
+        "category_link": "/haushalt/insektenabwehr-und-duenger/stechmueckenabwehr",
+        "filters": "allCategories.id:061204",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Insektenabwehr & Dünger > Fliegenfänger & Fliegengitter",
+        "category_link": "/haushalt/insektenabwehr-und-duenger/fliegenfaenger-fliegengitter",
+        "filters": "allCategories.id:061205",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Insektenabwehr & Dünger > Mittel gegen Silberfischchen & sonstiges Ungeziefer",
+        "category_link": "/haushalt/insektenabwehr-und-duenger/mittel-gegen-silberfischchen-sonstiges-ungeziefer",
+        "filters": "allCategories.id:061206",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Insektenabwehr & Dünger > Dünger",
+        "category_link": "/haushalt/insektenabwehr-und-duenger/duenger",
+        "filters": "allCategories.id:061207",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Haushalt > Wassersprudler & Zubehör",
+        "category_link": "/haushalt/wassersprudler-und-zubehoer",
+        "filters": "allCategories.id:062100",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 20
+    },
+    {
+        "category_path": "Haushalt > Regenschirme",
+        "category_link": "/haushalt/regenschirme",
+        "filters": "allCategories.id:061000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Tier",
+        "category_link": "/tier",
+        "filters": "allCategories.id:070000",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Tier > Katze",
+        "category_link": "/tier/katze",
+        "filters": "allCategories.id:070100",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Tier > Katze > Trockenfutter Katze",
+        "category_link": "/tier/katze/trockenfutter-katze",
+        "filters": "allCategories.id:070101",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Tier > Katze > Nassfutter Katze",
+        "category_link": "/tier/katze/nassfutter-katze",
+        "filters": "allCategories.id:070102",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Tier > Katze > Snacks für Katzen",
+        "category_link": "/tier/katze/snacks-fuer-katzen",
+        "filters": "allCategories.id:070103",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Tier > Katze > Katzenstreu",
+        "category_link": "/tier/katze/katzenstreu",
+        "filters": "allCategories.id:070104",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Tier > Katze > Katzenspielzeug & Zubehör",
+        "category_link": "/tier/katze/katzenspielzeug-und-zubehoer",
+        "filters": "allCategories.id:070105",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Tier > Hund",
+        "category_link": "/tier/hund",
+        "filters": "allCategories.id:070200",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Tier > Hund > Trockenfutter Hund",
+        "category_link": "/tier/hund/trockenfutter-hund",
+        "filters": "allCategories.id:070201",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Tier > Hund > Nassfutter Hund",
+        "category_link": "/tier/hund/nassfutter-hund",
+        "filters": "allCategories.id:070202",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Tier > Hund > Leckerlis für Hunde",
+        "category_link": "/tier/hund/leckerlis-fuer-hunde",
+        "filters": "allCategories.id:070203",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Tier > Hund > Nahrungsergänzung & Diätfutter Hund",
+        "category_link": "/tier/hund/nahrungsergaenzung-hund",
+        "filters": "allCategories.id:070205",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Tier > Hund > Hundepflege",
+        "category_link": "/tier/hund/hundepflege",
+        "filters": "NOT gtin:9003200415002",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Tier > Schutz vor Zecken & Ungeziefer",
+        "category_link": "/tier/schutz-vor-zecken-und-ungeziefer",
+        "filters": "allCategories.id:070500",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Foto",
+        "category_link": "/foto",
+        "filters": "allCategories.id:100300",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Foto > Fotozubehör",
+        "category_link": "/foto/fotozubehoer",
+        "filters": "allCategories.id:100300",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 10
+    },
+    {
+        "category_path": "Foto > Fotozubehör > Kreative Fotoideen",
+        "category_link": "/foto/fotozubehoer/kreative-fotoideen",
+        "filters": "allCategories.id:100303",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Foto > Fotozubehör > Bilderrahmen",
+        "category_link": "/foto/fotozubehoer/bilderrahmen",
+        "filters": "allCategories.id:100301",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Foto > Fotozubehör > Einwegkameras & analoge Filme",
+        "category_link": "/foto/fotozubehoer/einwegkameras-und-analoge-filme",
+        "filters": "allCategories.id:100305",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Foto > Fotozubehör > Fotoalben & Sticker",
+        "category_link": "/foto/fotozubehoer/fotoalben-sticker",
+        "filters": "allCategories.id:100302",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Foto > Fotozubehör > USB-Sticks, Ladekabel & Co.",
+        "category_link": "/foto/fotozubehoer/usb-sticks-ladekabel-und-co",
+        "filters": "allCategories.id:100304",
+        "sort": "editorial_relevance",
+        "product_count_desktop": 30
+    },
+    {
+        "category_path": "Ausverkauf",
+        "category_link": "/ausverkauf",
+        "filters": "isSellout:true",
+        "sort": "rating",
+        "product_count_desktop": 10
+    }
+]
