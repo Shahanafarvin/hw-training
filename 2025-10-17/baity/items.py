@@ -1,6 +1,6 @@
 # items.py
 from mongoengine import Document, StringField, FloatField, IntField, ListField, DictField, connect
-from settings import MONGO_DB, MONGO_COLLECTION_URL, MONGO_COLLECTION_DATA, MONGO_COLLECTION_FAILED
+from settings import MONGO_DB, MONGO_COLLECTION_URL
 
 # Establish Mongo connection
 connect(db=MONGO_DB, host="mongodb://localhost:27017/")
