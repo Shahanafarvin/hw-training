@@ -1,18 +1,15 @@
 import logging
-import json
 import requests
-from pymongo import MongoClient, errors
-from settings import HEADERS, MONGO_COLLECTION_CATEGORY, MONGO_DB
+from mongoengine import connect, errors
+from items import ProductCategoryUrlItem, ProductUrlItem
+from settings import HEADERS, MONGO_DB
 
 class Crawler:
-    """Crawling product URLs from DM Austria"""
+    """Crawling product URLs from DM Austria using MongoEngine"""
 
     def __init__(self):
-        # MongoDB connection
-        self.mongo = MongoClient("mongodb://localhost:27017/")
-        self.db = self.mongo[MONGO_DB]
-        self.collection = self.db[MONGO_COLLECTION_CATEGORY]
-        self.collection.create_index("product_url", unique=True)
+        # MongoEngine connection
+        connect(db=MONGO_DB, alias="default", host="localhost", port=27017)
 
         # Base URLs
         self.base_url = "https://www.dm.at"
@@ -22,33 +19,26 @@ class Crawler:
         self.skipped_count = 0
 
     def start(self):
-        """Start crawling"""
-        JSON_FILE = "/home/shahana/datahut-training/hw-training/2025-10-10/dm/dm_category_filters_sort.json"
-
-        try:
-            with open(JSON_FILE, "r", encoding="utf-8") as f:
-                categories = json.load(f)
-            logging.info(f"Loaded {len(categories)} categories from {JSON_FILE}")
-        except FileNotFoundError:
-            logging.error(f"Category file {JSON_FILE} not found.")
-            return
+        """Start crawling categories from MongoDB"""
+        categories = ProductCategoryUrlItem.objects()  # fetch all categories from MongoDB
+        logging.info(f"Loaded {categories.count()} categories from MongoDB")
 
         for cat in categories:
-            filters = cat.get("filters")
-            sort = cat.get("sort", "editorial_relevance")
-
-            if not filters:
+            if not cat.filters:
                 continue
 
-            filter_param = filters.replace(":", "=").replace(" ", "&")
+            filter_param = cat.filters.replace(":", "=").replace(" ", "&")
+            sort = cat.sort or "editorial_relevance"
             api = f"{self.api_base}?{filter_param}&pageSize=30&searchType=editorial-search&sort={sort}&type=search-static"
 
-            logging.info(f"Processing category: {cat.get('category_path', '')}")
+            logging.info(f"Processing category: {cat.category_path}")
             logging.info(f"API: {api}")
 
-            first_response = requests.get(f"{api}", headers=HEADERS)
-            if first_response.status_code != 200:
-                logging.warning(f"Failed initial page ({first_response.status_code}) → skipping category")
+            try:
+                first_response = requests.get(api, headers=HEADERS)
+                first_response.raise_for_status()
+            except requests.RequestException as e:
+                logging.warning(f"Failed initial request → skipping category: {e}")
                 continue
 
             first_json = first_response.json()
@@ -58,7 +48,8 @@ class Crawler:
 
             self.process_pages(api, total_pages, cat)
 
-        self.summary()
+        logging.info(f"Total Inserted: {self.inserted_count}")
+        logging.info(f"Total Skipped (Duplicates): {self.skipped_count}")
 
     def process_pages(self, api, total_pages, cat):
         """Iterate through category pages and store product URLs"""
@@ -67,10 +58,11 @@ class Crawler:
 
         for page in range(0, total_pages + 1):
             paginated_url = f"{api}&currentPage={page}"
-            response = requests.get(paginated_url, headers=HEADERS)
-
-            if response.status_code != 200:
-                logging.warning(f"Failed page {page} ({response.status_code})")
+            try:
+                response = requests.get(paginated_url, headers=HEADERS)
+                response.raise_for_status()
+            except requests.RequestException:
+                logging.warning(f"Failed page {page} → skipping")
                 continue
 
             data = response.json()
@@ -80,44 +72,27 @@ class Crawler:
                 gtin = product.get("gtin") or product.get("tileData", {}).get("gtin")
                 product_path = product.get("tileData", {}).get("self")
 
-                if gtin and product_path:
-                    product_url = self.base_url + product_path
-                    product_doc = {
-                        "gtin": gtin,
-                        "product_url": product_url,
-                        "category_path": cat.get("category_path", "")
-                    }
+                if not (gtin and product_path):
+                    continue
 
-                    try:
-                        result = self.collection.update_one(
-                            {"product_url": product_url},
-                            {"$setOnInsert": product_doc},
-                            upsert=True
-                        )
-                        if result.upserted_id:
-                            self.inserted_count += 1
-                            category_inserted += 1
-                        else:
-                            self.skipped_count += 1
-                            category_skipped += 1
-                    except errors.DuplicateKeyError:
-                        self.skipped_count += 1
-                        category_skipped += 1
+                product_url = self.base_url + product_path
+                product_doc = ProductUrlItem(
+                    url=product_url,
+                    gtin=int(gtin),
+                    category_path=cat.category_path
+                )
 
-        logging.info(f"{cat.get('category_path', '')}: Inserted={category_inserted}, Skipped={category_skipped}")
+                try:
+                    product_doc.save(force_insert=True)  # raises NotUniqueError if duplicate
+                    self.inserted_count += 1
+                    category_inserted += 1
+                except errors.NotUniqueError:
+                    self.skipped_count += 1
+                    category_skipped += 1
 
-    def summary(self):
-        """Final summary of crawl results"""
-        logging.info("Crawling completed successfully.")
-        logging.info(f"Total Inserted: {self.inserted_count}")
-        logging.info(f"Total Skipped (Duplicates): {self.skipped_count}")
-
-    def close(self):
-        """Close database connections"""
-        self.mongo.close()
+        logging.info(f"{cat.category_path}: Inserted={category_inserted}, Skipped={category_skipped}")
 
 
 if __name__ == "__main__":
     crawler = Crawler()
     crawler.start()
-    crawler.close()

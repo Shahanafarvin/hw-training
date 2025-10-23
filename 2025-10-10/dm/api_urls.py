@@ -1,87 +1,106 @@
 import requests
-import json
 from urllib.parse import urljoin
+from mongoengine import connect, errors
+from settings import CATEGORY_HEADERS, MONGO_DB, logging
+from items import ProductCategoryUrlItem
 
-# Base URL for DM Austria content API
+
+# ==========================
+# MongoEngine Connection
+# ==========================
+MONGO_URI = "mongodb://localhost:27017/"
+connect(
+    db=MONGO_DB,
+    host=MONGO_URI,
+    alias="default"
+)
+
+# ==========================
+# Base URL
+# ==========================
 BASE_URL = "https://content.services.dmtech.com/rootpage-dm-shop-de-at"
 
-# Headers to mimic browser
-HEADERS = {
-    "accept": "application/json",
-    "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
-    "cache-control": "no-cache",
-    "origin": "https://www.dm.at",
-    "pragma": "no-cache",
-    "referer": "https://www.dm.at/",
-    "sec-ch-ua": '"Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"',
-    "sec-ch-ua-mobile": "?0",
-    "sec-ch-ua-platform": '"Linux"',
-    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
-}
+# ==========================
+# Fetch Root Navigation
+# ==========================
+root_url = f"{BASE_URL}?view=navigation&mrclx=false"
+response = requests.get(root_url, headers=CATEGORY_HEADERS)
 
+if response.status_code != 200:
+    logging.error(f"Failed to fetch root navigation: {response.status_code}")
+    exit()
 
-# Recursive extraction of visible categories
-def extract_categories(categories, parent_path=""):
-    results = []
+data = response.json()
+root_categories = data.get("navigation", {}).get("children", [])
+all_categories = []
+
+# ==========================
+# Extract Visible Categories
+# ==========================
+stack = [(root_categories, "")]
+while stack:
+    categories, parent_path = stack.pop()
     for cat in categories:
         if not cat.get("hidden", False):
             name = cat.get("title", "Unknown")
-            link = cat.get("link", None)
+            link = cat.get("link")
             full_path = f"{parent_path} > {name}" if parent_path else name
-            results.append({"path": full_path, "link": link})
+            all_categories.append({"path": full_path, "link": link})
             if "children" in cat and isinstance(cat["children"], list):
-                results.extend(extract_categories(cat["children"], full_path))
-    return results
+                stack.append((cat["children"], full_path))
 
-# Fetch main navigation
-root_url = f"{BASE_URL}?view=navigation&mrclx=false"
-response = requests.get(root_url, headers=HEADERS)
-data = response.json()
+logging.info(f"Total Categories Found: {len(all_categories)}")
 
-root_categories = data.get("navigation", {}).get("children", [])
+# ==========================
+# Extract Filters & Sort Info
+# ==========================
+inserted_count = 0
+skipped_count = 0
 
-all_categories = extract_categories(root_categories)
-print(all_categories)
-
-output_data = []
-
-# Loop each category and extract DMSearchProductGrid data
 for cat in all_categories:
     link = cat["link"]
     if not link:
         continue
 
     cat_url = urljoin(BASE_URL + "/", link.lstrip("/") + "?mrclx=false")
-    print(cat_url)
+    logging.info(f"Fetching: {cat_url}")
 
     try:
-        resp = requests.get(cat_url, headers=HEADERS)
+        resp = requests.get(cat_url, headers=CATEGORY_HEADERS)
         if resp.status_code == 200:
             cat_json = resp.json()
-
             main_data = cat_json.get("mainData", [])
+
             for item in main_data:
                 if item.get("type") == "DMSearchProductGrid":
                     query = item.get("query", {})
-                    filters = query.get("filters", "")
-                    sort = query.get("sort", "")
+                    filters = query.get("filters", {})
+                    sort = query.get("sort", {})
                     num_products = query.get("numberOfProducts", {}).get("desktop", 0)
 
-                    output_data.append({
-                        "category_path": cat["path"],
-                        "category_link": link,
-                        "filters": filters,
-                        "sort": sort,
-                        "product_count_desktop": num_products
-                    })
+                    # Create MongoEngine document
+                    category_doc = ProductCategoryUrlItem(
+                        category_path=cat["path"],
+                        category_link=link,
+                        filters=filters if filters else "",
+                        sort=sort if sort else "",
+                        product_count_desktop=num_products if num_products else 0
+                    )
+
+                    try:
+                        category_doc.save()
+                        inserted_count += 1
+                    except errors.NotUniqueError:
+                        skipped_count += 1
+                        continue
+
         else:
-            print(f"Failed: {cat_url} ({resp.status_code})")
+            logging.warning(f"Failed: {cat_url} ({resp.status_code})")
 
     except Exception as e:
-        print(f"Error fetching {link}: {e}")
+        logging.error(f"Error fetching {link}: {e}")
 
-# Save to JSON
-with open("dm_category_filters_sort.json", "w", encoding="utf-8") as f:
-    json.dump(output_data, f, ensure_ascii=False, indent=4)
-
-print(f" Saved details for {len(output_data)} categories.")
+logging.info(
+    f"Inserted {inserted_count} new records, skipped {skipped_count} duplicates "
+    f"into collection '{ProductCategoryUrlItem._get_collection_name()}'."
+)
