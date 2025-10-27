@@ -37,6 +37,9 @@ class ProductItem(DynamicDocument):
     product_id = IntField()
     selectvalue = IntField()
     details = ListField()
+    rating = FloatField()
+    review = IntField()
+
 
     # --- Parser-collected details ---
     description = StringField()

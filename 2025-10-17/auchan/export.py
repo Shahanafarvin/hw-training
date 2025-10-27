@@ -45,7 +45,7 @@ class Export:
 
                 # === BASIC FIELDS ===
                 unique_id = str(item.get("sku"))
-                competitor_name = "auchan.hu"
+                competitor_name = "auchan"
                 product_name = clean_text(item.get("title"))
                 brand = clean_text(item.get("brand"))
                 grammage_quantity = clean_text(item.get("grammage_quantity"))
@@ -88,8 +88,6 @@ class Export:
                 image_data = {}
                 for i in range(1, 8):
                     url = images[i - 1] if len(images) >= i else ""
-                    fname = f"{unique_id}_{i}.PNG" if url else ""
-                    image_data[f"file_name_{i}"] = fname
                     image_data[f"image_url_{i}"] = url
 
                
@@ -122,8 +120,8 @@ class Export:
                     **hierarchy_levels,
                     "regular_price": regular_price,
                     "selling_price": regular_price,
-                    "price_was": regular_price,
-                    "promotion_price": regular_price,
+                    "price_was": "",
+                    "promotion_price": "",
                     "promotion_valid_from": "",
                     "promotion_valid_upto": "",
                     "promotion_type": "",
@@ -174,7 +172,7 @@ class Export:
                     "color": "",
                     "model_number": "",
                     "material": "",
-                    "usp": upc,
+                    "usp": "",
                     "dosage_recommendation": "",
                     "tasting_note": "",
                     "food_preservation": "",

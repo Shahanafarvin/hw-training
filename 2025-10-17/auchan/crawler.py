@@ -84,6 +84,8 @@ class AuchanCrawler:
                 "product_id": variant.get("productId"),
                 "selectvalue": variant.get("selectValue"),
                 "details": variant.get("details", []),
+                "rating" : item.get("reviewSum",{}).get("average"),
+                "review": item.get("reviewSum",{}).get("sumCount"),
                 "product_url": product_url,
             }
 
@@ -102,6 +104,8 @@ class AuchanCrawler:
                     set__product_id=product_data["product_id"],
                     set__selectvalue=product_data["selectvalue"],
                     set__details=product_data["details"],
+                    set__rating=product_data["rating"],
+                    set__review=product_data["review"],
                     upsert=True,
                 )
                 logging.info(f"Saved/Updated product: {name} → {product_url}")
