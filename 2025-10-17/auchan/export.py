@@ -51,13 +51,21 @@ class Export:
                 grammage_quantity = clean_text(item.get("grammage_quantity"))
                 grammage_unit = clean_text(item.get("grammage_unit"))
                 regular_price = format_price(item.get("regular_price"))
+                selling_price = format_price(item.get("discounted_price"))
+                if regular_price != selling_price: 
+                    price_was=regular_price
+                    promotion_price=regular_price
+                else:
+                    price_was=""
+                    promotion_price="" 
+                percentage_discount = format_price(item.get("discount"))
                 currency = clean_text(item.get("currency"))
                 pdp_url = clean_text(item.get("product_url"))
                 breadcrumb = clean_text(item.get("breadcrumbs"))
                 allergens = clean_text(item.get("allergens"))
                 description = clean_text(item.get("description"))
                 ingredients = clean_text(item.get("ingredients"))
-                upc =clean_text(item.get("product_id"))
+                
 
                 # === PARAMETERS CLEANING ===
                 parameters = item.get("parameters", [])
@@ -119,13 +127,13 @@ class Export:
                     "drained_weight": "",
                     **hierarchy_levels,
                     "regular_price": regular_price,
-                    "selling_price": regular_price,
-                    "price_was": "",
-                    "promotion_price": "",
+                    "selling_price": selling_price,
+                    "price_was":price_was,
+                    "promotion_price": promotion_price,
                     "promotion_valid_from": "",
                     "promotion_valid_upto": "",
                     "promotion_type": "",
-                    "percentage_discount": "",
+                    "percentage_discount": percentage_discount,
                     "promotion_description": "",
                     "package_sizeof_sellingprice": "",
                     "per_unit_sizedescription": "",
