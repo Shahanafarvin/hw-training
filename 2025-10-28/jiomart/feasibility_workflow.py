@@ -137,7 +137,7 @@ description = sel.xpath('//div[@id="pdp_description"]//text()').getall()
 info=sel.xpath('//div[@id="pdp_product_information"]//text()').getall()#need to clean and extract as dictionary
 
 #--------------------------price extraction----------------------------------------------
-url = "https://www.jiomart.com/catalog/productdetails/get/590033333"  #url need to be gebnerated dynamically using product id
+url = "https://www.jiomart.com/catalog/productdetails/get/590033333"  #url need to be generated dynamically using product id
 
 headers = {
     "accept": "application/json, text/javascript, */*; q=0.01",
@@ -219,3 +219,7 @@ review_info = {
 # Category API URLs need to be generated.
 
 # Parsing can be done through HTML, but additional API requests are required for price and review details.
+
+# The crawler is omitting 502 and 503 errors, and rate limiting has been detected
+#curl_cffi with browser impersonation (impersonate="chrome120") and a retry-with-random-delay mechanism to handle 502 and 503 errors, 
+# effectively bypassing rate limits and TLS fingerprinting blocks.
