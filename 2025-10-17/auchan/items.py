@@ -40,6 +40,11 @@ class ProductItem(DynamicDocument):
     details = ListField()
     rating = FloatField()
     review = IntField()
+    availability = StringField()
+    flags = StringField()
+    offer_type = StringField()
+    discoutvalidfrom = StringField()
+    discoutvalidto = StringField()  
 
 
     # --- Parser-collected details ---

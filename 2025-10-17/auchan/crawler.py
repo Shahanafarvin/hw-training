@@ -88,6 +88,11 @@ class AuchanCrawler:
                 "rating" : item.get("reviewSum",{}).get("average"),
                 "review": item.get("reviewSum",{}).get("sumCount"),
                 "product_url": product_url,
+                "availability": variant.get("cartInfo", {}).get("availability"),
+                "flags":",".join(flag.get("name") for flag in variant.get("flags", [])),
+                "offer_type": variant.get("offerType"),
+                "discoutvalidfrom": variant.get("price", {}).get("discountValidFrom"),
+                "discoutvalidto": variant.get("price", {}).get("discountValidTo"),
             }
 
             try:
@@ -108,6 +113,11 @@ class AuchanCrawler:
                     set__details=product_data["details"],
                     set__rating=product_data["rating"],
                     set__review=product_data["review"],
+                    set__availability=product_data["availability"],
+                    set__flags=product_data["flags"],
+                    set__offer_type=product_data["offer_type"],
+                    set__discoutvalidfrom=product_data["discoutvalidfrom"],
+                    set__discoutvalidto=product_data["discoutvalidto"],
                     upsert=True,
                 )
                 logging.info(f"Saved/Updated product: {name} → {product_url}")

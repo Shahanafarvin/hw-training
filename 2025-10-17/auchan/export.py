@@ -1,4 +1,5 @@
 import csv
+import re
 from pymongo import MongoClient
 from datetime import datetime
 from settings import (
@@ -65,6 +66,11 @@ class Export:
                 allergens = clean_text(item.get("allergens"))
                 description = clean_text(item.get("description"))
                 ingredients = clean_text(item.get("ingredients"))
+                availability = clean_text(item.get("availability"))
+                offer_type = clean_text(item.get("offer_type"))
+                flags = clean_text(item.get("flags"))
+                discountvalidfrom = clean_text(item.get("discoutvalidfrom")).split("T")[0]
+                discountvalidto = clean_text(item.get("discoutvalidto")).split("T")[0]
                 
 
                 # === PARAMETERS CLEANING ===
@@ -130,11 +136,11 @@ class Export:
                     "selling_price": selling_price,
                     "price_was":price_was,
                     "promotion_price": promotion_price,
-                    "promotion_valid_from": "",
-                    "promotion_valid_upto": "",
-                    "promotion_type": "",
-                    "percentage_discount": percentage_discount,
-                    "promotion_description": "",
+                    "promotion_valid_from": discountvalidfrom,
+                    "promotion_valid_upto": discountvalidto,
+                    "promotion_type": offer_type,
+                    "percentage_discount": percentage_discount if float(percentage_discount) > 0 else "",
+                    "promotion_description": f"{percentage_discount}% discount" if float(percentage_discount) > 0 else "",
                     "package_sizeof_sellingprice": "",
                     "per_unit_sizedescription": "",
                     "price_valid_from": "",
@@ -158,7 +164,7 @@ class Export:
                     "nutritions": nutritions,
                     "nutritional_information": nutritions,
                     "vitamins": "",
-                    "labelling": "",
+                    "labelling": flags,
                     "grade": "",
                     "region": "",
                     "packaging": "",
@@ -197,7 +203,7 @@ class Export:
                     "heel_type": "",
                     "heel_height": "",
                     "upc": "",
-                    "features": all_parameters_str,
+                    "features": re.sub(r"<.*?>", "", all_parameters_str).strip(),
                     "dietary_lifestyle": "",
                     "manufacturer_address": manufacturer_address,
                     "importer_address": "",
@@ -209,10 +215,10 @@ class Export:
                     "beer_deg": "",
                     "netcontent": "",
                     "netweight": "",
-                    "site_shown_uom": "",
-                    "ingredients": ingredients,
+                    "site_shown_uom": product_name,
+                    "ingredients": re.sub(r"<.*?>", "", ingredients).strip(),
                     "random_weight_flag": "",
-                    "instock": "1",
+                    "instock": True if availability.lower() == "available" else False,
                     "promo_limit": "",
                     "product_unique_key": str(unique_id) + "P",
                     "multibuy_items_pricesingle": "",
