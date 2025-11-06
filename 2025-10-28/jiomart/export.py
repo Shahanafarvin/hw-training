@@ -63,7 +63,7 @@ class Export:
                 promotion_price = selling_price
             
                     
-                currency = "₹"
+                currency = "INR"
                 pdp_url = item.get("pdp_url", "")
 
                 product_description= clean_text(item.get("description", ""))
