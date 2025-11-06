@@ -54,7 +54,7 @@ class Parser:
 
                 if jd.get("brand"):
                     item_data["Brand_Name"] = jd["brand"].get("name")
-
+                    item_data["Manufacturer_Name"] = jd["brand"].get("name")
                 offers = jd.get("offers")
                 offer = offers[0] if isinstance(offers, list) else offers
                 if offer:
@@ -66,7 +66,6 @@ class Parser:
                     )
                     seller = offer.get("seller")
                     if seller:
-                        item_data["Manufacturer_Name"] = seller.get("name")
                         item_data["Vendor_Seller_Part_Number"] = offer.get("sku")
                     item_data["Manufacturer_Part_Number"] = offer.get("mpn")
                 item_data["QTY_Per_UOI"] = jd.get("weight")
@@ -86,15 +85,24 @@ class Parser:
             )
         else:
             item_data["Full_Product_Description"] = " ".join(
-                sel.xpath('//div[@id="additionalDescription"]/div//text()').getall()
+                sel.xpath('//div[@id="additionalDescription"]/div/p//text()').getall()
             ).strip()
+
+
+        for div in sel.xpath("//div[@class='flex-table--item']"):
+            headtext=div.xpath("./div[@class='flex-table--head']/p/text()").get()
+           
+            if headtext == "UOM":
+                item_data["Unit_of_issue"]=div.xpath("./div[@class='flex-table--body']/p/text()").get()
+            if headtext == "UPC":
+                item_data["Upc"]=div.xpath("./div[@class='flex-table--body']/p/text()").get()
+        
 
         item_data["Model_Number"] = item_data.get("Manufacturer_Part_Number")
         item_data["Company_Name"] = "MRO Supply"
         item_data["URL"] = url
-       
-
-        # Save using .save()
+        
+        
         try:
             product_item = ProductDetailItem(**item_data)
             product_item.save()

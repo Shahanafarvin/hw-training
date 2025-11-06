@@ -36,3 +36,5 @@ class ProductDetailItem(Document):
     URL = StringField(required=True, unique=True)
     Full_Product_Description = StringField()
     Model_Number = StringField()
+    Unit_of_issue=StringField()
+    Upc=IntField()

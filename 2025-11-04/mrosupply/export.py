@@ -49,14 +49,14 @@ class Export:
                     "Item Name": clean_text(item.get("Item_Name", "")),
                     "Full Product Description": clean_text(item.get("Full_Product_Description", "")),
                     "Price": format_price(item.get("Price", "")),
-                    "Unit of Issue": "",
+                    "Unit of Issue":clean_text(item.get("Unit_of_issue","")),
                     "QTY Per UOI": clean_text(item.get("QTY_Per_UOI", "")),
                     "Product Category": clean_text(item.get("Product_Category", "")).replace(",", " > "),
                     "URL": clean_text(item.get("URL", "")),
                     "Availability": clean_text(item.get("Availability", "")),
                     "Manufacturer Part Number": clean_text(item.get("Manufacturer_Part_Number", "")),
                     "Country of Origin": "",
-                    "UPC": "",
+                    "UPC": clean_text(item.get("Upc","")),
                     "Model Number": clean_text(item.get("Model_Number", "")),
                 }
 
