@@ -70,7 +70,7 @@ class Export:
 
             
             if isinstance(image_urls, list):
-                image_urls = ", ".join(image_urls)
+                image_urls = ", ".join(["https:" + url for url in image_urls])
             # Clean description and extract equivalents if missing
             description, equivalent_part_numbers = self.clean_description_and_equivalents(
                 description, equivalent_part_numbers

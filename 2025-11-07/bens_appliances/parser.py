@@ -35,28 +35,26 @@ class Parser:
     def parse_item(self, url, response):
         """Extract and save product details"""
         sel = Selector(response.text)
-
-        item = {
-            "url": url,
-            "title": sel.xpath('//h1/text()').get(),
-            "manufacturer": sel.xpath(
-                '//a[@class="product-meta__vendor link link--accented"]/text()'
-            ).get(),
-            "price": "".join(sel.xpath(
-                '//span[@class="price price--highlight"]//text() | //span[@class="price"]//text()'
-            ).getall()),
-            "description": " ".join(sel.xpath('//div[@class="rte text--pull"]//text()').getall()),
-            "equivalent_part_numbers": ",".join(
-                sel.xpath('//div[@class="col-md-4"]//text()').getall()
-            ),
-            "availability": True
-            if sel.xpath('//button[@data-action="add-to-cart"]')
-            else False,
-            "image_urls": [
-                img.strip() for img in sel.xpath(
+        title=sel.xpath('//h1/text()').get()
+        manufacturer=sel.xpath('//a[@class="product-meta__vendor link link--accented"]/text()').get()
+        price="".join(sel.xpath('//span[@class="price price--highlight"]//text() | //span[@class="price"]//text()').getall())
+        description=" ".join(sel.xpath('//div[@class="rte text--pull"]//text()').getall())
+        equivalent_part_numbers=",".join(sel.xpath('//div[@class="col-md-4"]//text()').getall())
+        availability=True if sel.xpath('//button[@data-action="add-to-cart"]') else False
+        image_urls=[
+            img.strip() for img in sel.xpath(
                     '//div[@class="product-gallery product-gallery--with-thumbnails"]//img/@src'
                 ).getall()
-            ],
+            ]
+        item = {
+            "url": url,
+            "title": title,
+            "manufacturer": manufacturer,
+            "price": price,
+            "description": description,
+            "equivalent_part_numbers": equivalent_part_numbers,
+            "availability":availability,
+            "image_urls":image_urls,
         }
 
         # Clean and save using ProductItem model
