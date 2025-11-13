@@ -60,11 +60,7 @@ class Crawler:
 
     def close(self):
         """Close function for cleanup"""
-        try:
-            self.mongo.close()
-            self.queue.close()
-        except:
-            pass
+        logging("Url Extraction Completed")
 
 
 if __name__ == "__main__":
