@@ -1,103 +1,142 @@
-import re
-import time
 import logging
+import time
+from mongoengine import connect
 from curl_cffi import requests
 from parsel import Selector
-from mongoengine import connect
-from items import ProductUrlItem, ProductItem
-from settings import MONGO_DB, HOMEPAGE_HEADERS
+from items import ProductUrlItem, ProductItem, ProductFailedItem
+from settings import HOMEPAGE_HEADERS, MONGO_DB
 
-class Parser:
+
+class Crawler:
+    """Crawling Urls"""
+
     def __init__(self):
-        connect(db=MONGO_DB, host="localhost", alias="default")
+        self.mongo = connect(db=MONGO_DB, host="localhost", alias="default")
         self.session = requests.Session()
 
-    def start(self, limit=None):
-        """
-        Iterate over ProductUrlItem entries and parse them.
-        """
-        qs = ProductUrlItem.objects()
-        total = qs.count()
+    def start(self):
+        """Requesting Start url"""
+
+        products = ProductUrlItem.objects()
+        total = products.count()
         logging.info(f"Parser started – total urls: {total}")
-        counter = 0
-        for entry in qs:
-            if limit and counter >= limit:
-                break
-            url = entry.url or ""
-            self.parse_item(url,entry)
-            time.sleep(0.3)
-            counter += 1
 
-    def parse_item(self, url,entry):
-        """
-        Parse a single product URL and return a ProductItem document (not saved),
-        or None on failure.
-        """
-        logging.info(f"Parsing → {url}")
-        try:
-            resp = self.session.get(url, headers=HOMEPAGE_HEADERS, impersonate="chrome")
-            if resp.status_code not in (200, 404):  # homepage peculiarity earlier; still attempt
-                logging.warning(f"Non-200 status for {url}: {resp.status_code}")
-            sel = Selector(resp.text)
+        for product in products:
 
+            url = product.url or ""
+            if not url:
+                continue
+
+            meta = {}
+            meta['product'] = product
+
+            logging.info(f"Parsing → {url}")
+
+            response = self.session.get(url, headers=HOMEPAGE_HEADERS, impersonate="chrome", timeout=60)
+
+            if response.status_code == 200:
+                self.parse_item(response, meta)
+            else:
+                logging.warning(f"Non-200 status for {url}: {response.status_code}")
+                
+                ProductFailedItem(url=url).save()
+                logging.info(f"Saved failed URL: {url}")
+
+            time.sleep(0.5)
+
+    def parse_item(self, response, meta):
+        """item part"""
+
+        sel = Selector(response.text)
+        product = meta.get('product')
+
+        # XPATH
+        ATTRIBUTE_GROUPS_XPATH = "//div[contains(@class,'attribute-group-v2')]"
+        GROUP_TITLE_XPATH = ".//p[contains(@class,'attribute-group-title')]/text()"
+        HORIZONTAL_ATTR_XPATH = ".//div[contains(@class,'attribute-group-desc-horizontal1')]//div[contains(@class,'attribute-v2')]"
+        ATTR_NAME_XPATH = ".//p[contains(@class,'attribute-v2-name')]/text()"
+        ATTR_VALUE_XPATH = ".//p[contains(@class,'attribute-v2-value')]/text()"
+        TABLE_ROW_XPATH = ".//div[contains(@class,'attribute-group-desc-table')]//div[contains(@class,'row')]"
+        TABLE_KEY_XPATH = ".//div[contains(@class,'attribute-table-key')]/text()"
+        TABLE_VALUE_XPATH = ".//div[contains(@class,'attribute-table-value')]/text()"
+        COLOR_XPATH = "//li[@id='filter-form-colo-item-0']/input/@data-product-color"
+        BREADCRUMB_XPATH = "//ol[@id='breadcrumb']/li//text()"
+        STOCK_XPATH = "//strong[@id='product-stock']//text()"
+
+        # EXTRACT
+        groups = sel.xpath(ATTRIBUTE_GROUPS_XPATH)
+        if groups:
             # Product specs grouped
             product_specs = {}
-            groups = sel.xpath("//div[contains(@class,'attribute-group-v2')]")
             for group in groups:
-                heading = group.xpath(".//p[contains(@class,'attribute-group-title')]/text()").get()
+                heading = group.xpath(GROUP_TITLE_XPATH).get()
                 heading = heading.strip() if heading else None
 
                 kv_pairs = {}
                 # horizontal attrs
-                for attr in group.xpath(".//div[contains(@class,'attribute-group-desc-horizontal1')]//div[contains(@class,'attribute-v2')]"):
-                    k = attr.xpath(".//p[contains(@class,'attribute-v2-name')]/text()").get()
-                    v = attr.xpath(".//p[contains(@class,'attribute-v2-value')]/text()").get()
+                for attr in group.xpath(HORIZONTAL_ATTR_XPATH):
+                    k = attr.xpath(ATTR_NAME_XPATH).get()
+                    v = attr.xpath(ATTR_VALUE_XPATH).get()
                     if k and v:
                         kv_pairs[k.strip()] = v.strip()
                 # table attrs
-                for row in group.xpath(".//div[contains(@class,'attribute-group-desc-table')]//div[contains(@class,'row')]"):
-                    k = row.xpath(".//div[contains(@class,'attribute-table-key')]/text()").get()
-                    v = row.xpath(".//div[contains(@class,'attribute-table-value')]/text()").get()
+                for row in group.xpath(TABLE_ROW_XPATH):
+                    k = row.xpath(TABLE_KEY_XPATH).get()
+                    v = row.xpath(TABLE_VALUE_XPATH).get()
                     if k and v:
                         kv_pairs[k.strip()] = v.strip()
 
                 if heading and kv_pairs:
                     product_specs[heading] = kv_pairs
 
-           
-            quantity=product_specs.get("الوزن والأبعاد")
-            material=product_specs.get("الخامة")
-            specifications=product_specs.get("المواصفات العامة")
-            color=sel.xpath("//strong[@id='product-title-01']//text()").get().strip()
-            breadcrumbs=" > ".join(sel.xpath("//ol[@id='breadcrumb']/li//text()").getall())
-            stock=sel.xpath("//strong[@id='product-stock']//text()").get().strip()
+            quantity = product_specs.get("الوزن والأبعاد")
+            material = product_specs.get("الخامة")
+            specifications = product_specs.get("المواصفات العامة")
 
-            # Build product item and save
-            product = ProductItem(
-                url =entry.url,
-                product_id =entry.product_id,
-                product_name =entry.product_name, 
-                product_color= color,
-                material= material,
-                quantity=quantity,
-                details_string=entry.details_string,
-                specification=specifications,
-                price=entry.price,
-                wasprice = entry.wasprice,
-                product_type=entry.product_type,
-                breadcrumb = breadcrumbs,
-                stock = stock,
-                image =entry.image,
-   
-            )
-            product.save()
-            logging.info(f"Saved product: {url}")
-            return product
+            color = sel.xpath(COLOR_XPATH).get()
+            color = color.strip() if color else ""
 
-        except Exception:
-            logging.exception(f"Failed to parse {url}")
-            return None
+            breadcrumbs = " > ".join(sel.xpath(BREADCRUMB_XPATH).getall())
+
+            stock = sel.xpath(STOCK_XPATH).get()
+            stock = stock.strip() if stock else ""
+
+            product_type = specifications.get("النوع") if specifications else ""
+
+            # ITEM YEILD
+            item = {}
+            item['url'] = product.url
+            item['product_id'] = product.product_id
+            item['product_name'] = product.product_name
+            item['product_color'] = color
+            item['material'] = material
+            item['quantity'] = quantity
+            item['details_string'] = product.details_string
+            item['specification'] = specifications
+            item['price'] = product.price
+            item['wasprice'] = product.wasprice
+            item['product_type'] = product_type
+            item['breadcrumb'] = breadcrumbs
+            item['stock'] = stock
+            item['image'] = product.image
+
+            #logging.info(item)
+            try:
+                ProductItem(**item).save()
+            except:
+                pass
+
+            return True
+
+        return False
+
+    def close(self):
+        """Close function for all module object closing"""
+
+        self.mongo.close()
+
 
 if __name__ == "__main__":
-    parser = Parser()
-    parser.start()
+    crawler = Crawler()
+    crawler.start()
+    crawler.close()

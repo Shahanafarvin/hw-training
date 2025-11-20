@@ -1,8 +1,12 @@
-from mongoengine import Document, StringField, IntField, ListField, DictField
-from settings import MONGO_PRODUCTS_COLLECTION, MONGO_DATA_COLLECTION      
+from mongoengine import DynamicDocument, StringField, IntField, ListField, DictField
+from settings import MONGO_COLLECTION_CATEGORY, MONGO_COLLECTION_PRODUCTS, MONGO_COLLECTION_DATA, MONGO_COLLECTION_URL_FAILED
 
-class ProductUrlItem(Document):
-    meta = {"collection": MONGO_PRODUCTS_COLLECTION}
+class CategoryUrlItem(DynamicDocument):
+    meta = {"collection": MONGO_COLLECTION_CATEGORY}
+    category = StringField(unique=True)
+
+class ProductUrlItem(DynamicDocument):
+    meta = {"collection": MONGO_COLLECTION_PRODUCTS}
     url = StringField(required=True, unique=True)
     category = StringField()      
     product_id = StringField() 
@@ -13,8 +17,8 @@ class ProductUrlItem(Document):
     image=ListField()
     product_type=StringField()
 
-class ProductItem(Document):
-    meta = {"collection":MONGO_DATA_COLLECTION}
+class ProductItem(DynamicDocument):
+    meta = {"collection":MONGO_COLLECTION_DATA}
     url = StringField()
     product_id = StringField()
     product_name = StringField()
@@ -29,6 +33,11 @@ class ProductItem(Document):
     breadcrumb = StringField()
     stock = StringField()
     image = ListField(StringField())
+
+
+class ProductFailedItem(DynamicDocument):
+    meta = {"db_alias": "default", "collection": MONGO_COLLECTION_URL_FAILED}
+    url = StringField(required=True)
    
     
     
