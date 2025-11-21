@@ -1,102 +1,117 @@
+import logging
 import time
 import requests
 from mongoengine import connect
-from settings import logging, MONGO_DB, HEADERS, QUERY, API_URL 
+from settings import MONGO_DB, HEADERS, QUERY, API_URL 
 from items import ProductItem, CategoryItem
 
 
 class Crawler:
-    """Crawler for Matalan products via GraphQL using UIDs stored in MongoDB."""
-
+    """Crawling Matalan products via GraphQL"""
+    
     def __init__(self):
-        connect(db=MONGO_DB, alias="default", host="localhost", port=27017)
-
+        self.mongo = connect(db=MONGO_DB, alias="default", host="localhost", port=27017)
+    
     def start(self):
-        """Start crawling by reading UIDs from MongoDB."""
+        """Requesting Start url"""
+        
         categories = CategoryItem.objects()
         for cat in categories:
             if not cat.uids:
                 continue
-
+            
             for uid in cat.uids:
                 logging.info(f"Processing UID: {uid}")
+                meta = {}
+                meta['category_name'] = cat.category_name
+                meta['subcategory_name'] = cat.sub_category_name
+                meta['category_uid'] = uid
+                page = meta.get("page", 1)  
+                # Fetch first page to get total pages
                 variables = {
                     "filter": {"category_uid": {"in": [uid]}},
                     "pageSize": 40,
-                    "currentPage": 1,
+                    "currentPage": page,
                     "sort": {}
                 }
+                response = requests.post(API_URL, headers=HEADERS, json={"query": QUERY, "variables": variables})
                 
-                # Fetch first page to get total pages
-                resp = requests.post(API_URL, headers=HEADERS, json={"query": QUERY, "variables": variables})
-                if resp.status_code != 200:
+                if response.status_code == 200:
+                    data = response.json()
+                    total_pages = data.get("data", {}).get("products", {}).get("page_info", {}).get("total_pages", 1)
+                    
+                    # Loop through all pages
+                    while page <= total_pages:
+                        if page > 1:
+                            variables["currentPage"] = page
+                            response = requests.post(API_URL, headers=HEADERS, json={"query": QUERY, "variables": variables})
+                        
+                        if response.status_code == 200:
+                            is_next = self.parse_item(response, meta)
+                            if not is_next:
+                                logging.info("Pagination completed")
+                                break
+                            # pagination crawling
+                            page += 1
+                            meta["page"] = page
+                            time.sleep(1.5)  
+                       
+                else:
                     logging.warning(f"Request failed for UID {uid}")
-                    continue
-
-                data = resp.json()
-               
-                total_pages = data.get("data", {}).get("products", {}).get("page_info", {}).get("total_pages", 1)
-
-                # Loop through all pages
-                for page in range(1, total_pages + 1):
-                    variables["currentPage"] = page
-                    resp = requests.post(API_URL, headers=HEADERS, json={"query": QUERY, "variables": variables})
-                    self.parse_item(resp, {"category_name" : cat.category_name, "subcategory_name" : cat.sub_category_name, "category_uid": uid, "page": page})
-                    time.sleep(1.5)  # polite delay
-
+    
     def parse_item(self, response, meta):
-        """Extract products from GraphQL response and save to MongoDB."""
+        """item part"""
         data = response.json()
         items = data.get("data", {}).get("products", {}).get("items", [])
-
-        if not items:
-            logging.info(f"No items found for {meta}")
-            return False
-
-        for item in items:
-            product_id = item.get("id")
-            name= item.get("name")
-            url_key= item.get("url_key")
-            brand_name= item.get("brand_name")
-            stock_status= item.get("stock_status")
-            image_url=item.get("thumbnail",{}).get("url")
-            price = item.get("price_range").get("minimum_price").get("final_price").get("value")
-            price_before_discount = item.get("price_range").get("minimum_price").get("regular_price").get("value")
-            currency=item.get("price_range").get("minimum_price").get("regular_price").get("currency")
-            labeling=item.get("product_label")
-
-            # Construct breadcrumbs
-            category_name = meta.get("category_name", "").title()
-            subcategory_name = meta.get("subcategory_name", "").title()
-            breadcrumbs = f"Home / {category_name} / {subcategory_name} / {name}"
-            product_data = {
-
-                    "product_id": product_id,
-                    "name":name,
-                    "url_key": url_key,
-                    "brand_name": brand_name,
-                    "stock_status": stock_status,
-                    "image_url":image_url,
-                    "price" : price,
-                    "price_before_discount" : price_before_discount,
-                    "currency":currency,
-                    "labeling":labeling,
-                    "category_name":category_name,
-                    "breadcrumbs" :breadcrumbs,
-                }
-          
-            try:
-                product_item = ProductItem(**product_data)
-                product_item.save()
-            except Exception as e:
-                logging.warning(f"Mongo insert failed: {e}")
-
-        logging.info(f"Saved {len(items)} products for UID {meta['category_uid']} page {meta['page']}")
-        return True
-
+        
+        if items:
+            for product in items:
+                # EXTRACT
+                product_id = product.get("id")
+                name = product.get("name")
+                url_key = product.get("url_key")
+                brand_name = product.get("brand_name")
+                stock_status = product.get("stock_status")
+                image_url = product.get("thumbnail", {}).get("url")
+                price = product.get("price_range", {}).get("minimum_price", {}).get("final_price", {}).get("value")
+                price_before_discount = product.get("price_range", {}).get("minimum_price", {}).get("regular_price", {}).get("value")
+                currency = product.get("price_range", {}).get("minimum_price", {}).get("regular_price", {}).get("currency")
+                labeling = product.get("product_label")
+                
+                # Construct breadcrumbs
+                category_name = meta.get("category_name", "").title()
+                subcategory_name = meta.get("subcategory_name", "").title()
+                breadcrumbs = f"Home / {category_name} / {subcategory_name} / {name}"
+                
+                # ITEM YEILD
+                item = {}
+                item['product_id'] = product_id
+                item['name'] = name
+                item['url_key'] = url_key
+                item['brand_name'] = brand_name
+                item['stock_status'] = stock_status
+                item['image_url'] = image_url
+                item['price'] = price
+                item['price_before_discount'] = price_before_discount
+                item['currency'] = currency
+                item['labeling'] = labeling
+                item['category_name'] = category_name
+                item['breadcrumbs'] = breadcrumbs
+                logging.info(item)
+                try:
+                    product_item = ProductItem(**item)
+                    product_item.save()
+                except Exception as e:
+                    logging.warning(f"Mongo insert failed: {e}")
+            
+            return True
+        return False
+    
     def close(self):
-        """Optional cleanup method."""
-        logging.info(" product crawling completed.")
+        """Close function for all module object closing"""
+        logging.info("Product crawling completed.")
+        self.mongo.close()
+        
 
 
 if __name__ == "__main__":
