@@ -77,27 +77,30 @@ class Crawler:
             compound_slug = prop.get("compound", {}).get("slug") 
             property_slug = prop.get("slug") 
             url = f"https://www.nawy.com/compound/{compound_slug}/property/{property_slug}" 
-            broker_display_name = prop.get("developer", {}).get("name") 
-            currency = prop.get("currency") 
-            price = prop.get("max_price") 
+            price=prop.get("min_price")
+            max_price = prop.get("max_price") 
             title = prop.get("name") 
             bathrooms = prop.get("number_of_bathrooms") 
             bedrooms = prop.get("number_of_bedrooms") 
             property_type = prop.get("property_type", {}).get("name") 
+            min_unit_area=prop.get("min_unit_area")
+            max_unit_area=prop.get("max_unit_area")
+            details=f"{min_unit_area}m²~{max_unit_area}m²" if max_unit_area != min_unit_area else f"{max_unit_area}m²"
+            ready_by=prop.get("min_ready_by")
             
             # ITEM YEILD 
             item = {} 
             item['id'] = id 
             item['refernce_number'] = id 
             item['url'] = url 
-            item['broker_display_name'] = broker_display_name 
-            item['broker']= broker_display_name 
-            item['currency'] = currency 
             item['price'] = price 
+            item['max_price'] = max_price
             item['title'] = title 
             item['bathrooms'] = bathrooms 
             item['bedrooms'] = bedrooms 
             item['property_type'] = property_type
+            item['details']=details
+            item['ready_by']=ready_by
 
             #product_item = ProductUrlItem(**item)
             #self.mongo.process(product_item, collection=MONGO_COLLECTION_URLS)

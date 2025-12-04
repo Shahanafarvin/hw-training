@@ -26,7 +26,7 @@ DAY = datetime_obj.strftime("%d")
 MONTH_VALUE = calendar.month_abbr[int(MONTH.lstrip("0"))]
 WEEK = (int(DAY) - 1) // 7 + 1
 
-FILE_NAME = f"nawy_{iteration}.csv"
+FILE_NAME = f"nawy_egy_2025_11_28_sample.csv"
 
 # Mongo db and collections
 MONGO_DB = f"nawy_{iteration}"
