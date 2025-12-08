@@ -229,7 +229,78 @@ url="https://www.asda.com/groceries/product/sausages/exceptional-by-asda-excepti
 response=requests.get(url,impersonate="chrome")
 sel=Selector(response.text)
 description=sel.xpath("//div[@data-testid='content']//text()").get()
+image=sel.xpath("//script[@type='application/ld+json']//text()").get()#image containing script
 print(description)
+
+
+#---------------------------------extra api requests for breadcrumbs,upc etc------------------
+from curl_cffi import requests
+
+cookies = {
+    '__cf_bm': '9ZZhVRToIYKVNG3lgG3mEkLwzEvGldcAgIEu5NwbAic-1765194552-1.0.1.1-ussUu.KMFu7cVYivO_bHkmaNaRRAigJ670_JTj6WEd2kJYZfcrGv.jRQlv_dVxE8Jji6OIdzl18K48xXHLuYZ6aEq6ZTNSe2j52DKy3QFn0',
+    '_cfuvid': 'tz8cvUpNPZr2YQCqvOO7ZYdoToCRZ2_uflb6_LTYCo0-1765194552727-0.0.1.1-604800000',
+    'SLAS.REFRESH_TOKEN': 'l6b6lvhgsxXuIxhwq99LK2d2h0S1SJT7GSnaEFIrJIw',
+    'SLAS.ENC_USER_ID': 'adb831a7fdd83dd1e2a309ce7591dff8',
+    'SLAS.USID': '91fd1c0b-9fdc-46b8-a6d0-6a50cb7dd783',
+    'SLAS.CUSTOMER_ID': 'abmrdKxbdHkegRmuxIwWYYlKg2',
+    'SLAS.AUTH_TOKEN': 'Bearer%20eyJ2ZXIiOiIxLjAiLCJqa3UiOiJzbGFzL3Byb2QvYmpnc19wcmQiLCJraWQiOiIxNmIwNWEwMS1iMGJlLTQ2ZWUtOTFmNS00ODQzMDkwZDAwOTAiLCJ0eXAiOiJqd3QiLCJjbHYiOiJKMi4zLjQiLCJhbGciOiJFUzI1NiJ9.eyJhdXQiOiJHVUlEIiwic2NwIjoic2ZjYy5zaG9wcGVyLW15YWNjb3VudC5iYXNrZXRzIHNmY2Muc2hvcHBlci1wcm9kdWN0cyBzZmNjLmludmVudG9yeS5hdmFpbGFiaWxpdHkucncgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5ydyBzZmNjLnNob3BwZXItY3VzdG9tZXJzLmxvZ2luIHNmY2Muc2hvcHBlci1jb250ZXh0LnJ3IHNmY2Muc2hvcHBlci1jdXN0b21lcnMucmVnaXN0ZXIgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5hZGRyZXNzZXMucncgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5wcm9kdWN0bGlzdHMucncgc2ZjYy5zaG9wcGVyLXByb21vdGlvbnMgc2ZjYy5zaG9wcGVyLWJhc2tldHMtb3JkZXJzLnJ3IHNmY2Muc2hvcHBlci1teWFjY291bnQucGF5bWVudGluc3RydW1lbnRzLnJ3IHNmY2Muc2hvcHBlci1jYXRlZ29yaWVzIGNfY3VzdG9tYXBpX3IiLCJzdWIiOiJjYy1zbGFzOjpiamdzX3ByZDo6c2NpZDplNjhjYTM2ZC02NTE2LTQ3MDQtYjcwNS0wNmI3NGY4NWVmMmU6OnVzaWQ6OTFmZDFjMGItOWZkYy00NmI4LWE2ZDAtNmE1MGNiN2RkNzgzIiwiY3R4Ijoic2xhcyIsImlzcyI6InNsYXMvcHJvZC9iamdzX3ByZCIsImlzdCI6MSwiZG50IjoiMCIsImF1ZCI6ImNvbW1lcmNlY2xvdWQvcHJvZC9iamdzX3ByZCIsIm5iZiI6MTc2NTE5NDcxNiwic3R5IjoiVXNlciIsImlzYiI6InVpZG86c2xhczo6dXBuOkd1ZXN0Ojp1aWRuOkd1ZXN0IFVzZXI6OmdjaWQ6YWJtcmRLeGJkSGtlZ1JtdXhJd1dZWWxLZzI6OmNoaWQ6QVNEQV9HUk9DRVJJRVMiLCJleHAiOjE3NjUxOTY1NDYsImlhdCI6MTc2NTE5NDc0NiwianRpIjoiQzJDLTEwMTYzMTg5MDE5MDg1MDUwMTg3NTA0MjAyMTA5NzMyMjg5In0.Kv_UiLnjebLF2cwbTM0SSb1Sahcf4FfNuXxpITCIoUkIwYZraqZCQ0e5K57KbvucRz9IUPpwXDsoQlcIQNXe4g',
+    'cf_clearance': 'k12U.l0NspReRUBNX7HjDBlqPotRgtfE8ffwRCSCdUY-1765194750-1.2.1.1-xaufjQz6o_xzRQZ5KUHHItqeP.6OOBfce1Jcogvh_CPKXbxFiwRYwA9l0yGtILZmQSE7iM4.LLjDC0DKgvVAuzqQfN6dADlMx2gC_SxptO4F4TJiTa1X.trnq9hemxgXMGnVvGAbqDJd5NCOoZQOsgpp58YbExjbB4muYlaMXG5RfZywb9GTJ2qeFX5kXoQGhMEtMmrFbrVaI6p512q7XC4CaXJAiY3mKYdf439JJJ8',
+    '_mibhv': 'anon-1765194750438-9242323532_8338',
+    'BVImplmain_site': '11603',
+    'kndctr_B9CB1CFE53309CAD0A490D45_AdobeOrg_consent': 'general=out',
+    'kndctr_B9CB1CFE53309CAD0A490D45_AdobeOrg_identity': 'CiY2OTg0OTc4ODE1MzMwMjM2NTk1MjU2OTIwMzQwMzIxMjk2ODI2MlIRCIOwue6vMxgBKgRJTkQxMAHwAYOwue6vMw==',
+    'kndctr_B9CB1CFE53309CAD0A490D45_AdobeOrg_cluster': 'ind1',
+    'OptanonAlertBoxClosed': '2025-12-08T11:52:37.143Z',
+    'eupubconsent-v2': 'CQcI1f9QcI1f9AcABBENDgCgAAAAAAAAAChQAAAAAAAA.YAAAAAAAAAAA',
+    'previousPageName': 'pdp-page',
+    'visitorId': 'ea562eb0-ebfa-41ce-9967-cf6b9290b98f',
+    'OptanonConsent': 'isIABGlobal=false&datestamp=Mon+Dec+08+2025+17%3A29%3A41+GMT%2B0530+(India+Standard+Time)&version=6.29.0&hosts=&landingPath=NotLandingPage&groups=1%3A1%2C2%3A0%2C4%3A0%2C5%3A0%2CSTACK42%3A0&geolocation=IN%3BKL&AwaitingReconsent=false',
+    'da_sid': 'C315BA7B8EADAE10721AAA13AEABB6744D.0|4|0|3',
+    'da_lid': 'F02689489AEDEA8BE74BBB99ECA9FC7FFE|0|0|0',
+    'da_intState': '',
+}
+
+headers = {
+    'accept': '*/*',
+    'accept-language': 'en-US,en;q=0.9',
+    'authorization': 'Bearer eyJ2ZXIiOiIxLjAiLCJqa3UiOiJzbGFzL3Byb2QvYmpnc19wcmQiLCJraWQiOiIxNmIwNWEwMS1iMGJlLTQ2ZWUtOTFmNS00ODQzMDkwZDAwOTAiLCJ0eXAiOiJqd3QiLCJjbHYiOiJKMi4zLjQiLCJhbGciOiJFUzI1NiJ9.eyJhdXQiOiJHVUlEIiwic2NwIjoic2ZjYy5zaG9wcGVyLW15YWNjb3VudC5iYXNrZXRzIHNmY2Muc2hvcHBlci1wcm9kdWN0cyBzZmNjLmludmVudG9yeS5hdmFpbGFiaWxpdHkucncgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5ydyBzZmNjLnNob3BwZXItY3VzdG9tZXJzLmxvZ2luIHNmY2Muc2hvcHBlci1jb250ZXh0LnJ3IHNmY2Muc2hvcHBlci1jdXN0b21lcnMucmVnaXN0ZXIgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5hZGRyZXNzZXMucncgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5wcm9kdWN0bGlzdHMucncgc2ZjYy5zaG9wcGVyLXByb21vdGlvbnMgc2ZjYy5zaG9wcGVyLWJhc2tldHMtb3JkZXJzLnJ3IHNmY2Muc2hvcHBlci1teWFjY291bnQucGF5bWVudGluc3RydW1lbnRzLnJ3IHNmY2Muc2hvcHBlci1jYXRlZ29yaWVzIGNfY3VzdG9tYXBpX3IiLCJzdWIiOiJjYy1zbGFzOjpiamdzX3ByZDo6c2NpZDplNjhjYTM2ZC02NTE2LTQ3MDQtYjcwNS0wNmI3NGY4NWVmMmU6OnVzaWQ6OTFmZDFjMGItOWZkYy00NmI4LWE2ZDAtNmE1MGNiN2RkNzgzIiwiY3R4Ijoic2xhcyIsImlzcyI6InNsYXMvcHJvZC9iamdzX3ByZCIsImlzdCI6MSwiZG50IjoiMCIsImF1ZCI6ImNvbW1lcmNlY2xvdWQvcHJvZC9iamdzX3ByZCIsIm5iZiI6MTc2NTE5NDcxNiwic3R5IjoiVXNlciIsImlzYiI6InVpZG86c2xhczo6dXBuOkd1ZXN0Ojp1aWRuOkd1ZXN0IFVzZXI6OmdjaWQ6YWJtcmRLeGJkSGtlZ1JtdXhJd1dZWWxLZzI6OmNoaWQ6QVNEQV9HUk9DRVJJRVMiLCJleHAiOjE3NjUxOTY1NDYsImlhdCI6MTc2NTE5NDc0NiwianRpIjoiQzJDLTEwMTYzMTg5MDE5MDg1MDUwMTg3NTA0MjAyMTA5NzMyMjg5In0.Kv_UiLnjebLF2cwbTM0SSb1Sahcf4FfNuXxpITCIoUkIwYZraqZCQ0e5K57KbvucRz9IUPpwXDsoQlcIQNXe4g',
+    'cache-control': 'no-store',
+    'content-type': 'application/json',
+    'correlation-id': '60f3d977-af5a-4a88-b2bb-19a3e1d3f075',
+    'newrelic': 'eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjM4NjYwNzciLCJhcCI6IjExMjAyNDk5MjUiLCJpZCI6IjQwMTMwMDg3ZjAxM2IyZjEiLCJ0ciI6ImY2Y2RjMzNlZmU4MDg5YmE3NWRmYmM5ZDNiOTg3ODFjIiwidGkiOjE3NjUxOTUyMDE2ODIsInRrIjoiMzgzNTIyNSJ9fQ==',
+    'pragma': 'no-store',
+    'priority': 'u=1, i',
+    'referer': 'https://www.asda.com/groceries/product/baby-new-potatoes/exceptional-by-asda-british-baby-potatoes-1kg/9247574',
+    'sec-ch-ua': '"Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Linux"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-origin',
+    'traceparent': '00-f6cdc33efe8089ba75dfbc9d3b98781c-40130087f013b2f1-01',
+    'tracestate': '3835225@nr=0-1-3866077-1120249925-40130087f013b2f1----1765195201682',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36',
+    'x-apisession-id': '0db7e7e2-00ff-4240-9b11-9939cfc07fec',
+    # 'cookie': '__cf_bm=9ZZhVRToIYKVNG3lgG3mEkLwzEvGldcAgIEu5NwbAic-1765194552-1.0.1.1-ussUu.KMFu7cVYivO_bHkmaNaRRAigJ670_JTj6WEd2kJYZfcrGv.jRQlv_dVxE8Jji6OIdzl18K48xXHLuYZ6aEq6ZTNSe2j52DKy3QFn0; _cfuvid=tz8cvUpNPZr2YQCqvOO7ZYdoToCRZ2_uflb6_LTYCo0-1765194552727-0.0.1.1-604800000; SLAS.REFRESH_TOKEN=l6b6lvhgsxXuIxhwq99LK2d2h0S1SJT7GSnaEFIrJIw; SLAS.ENC_USER_ID=adb831a7fdd83dd1e2a309ce7591dff8; SLAS.USID=91fd1c0b-9fdc-46b8-a6d0-6a50cb7dd783; SLAS.CUSTOMER_ID=abmrdKxbdHkegRmuxIwWYYlKg2; SLAS.AUTH_TOKEN=Bearer%20eyJ2ZXIiOiIxLjAiLCJqa3UiOiJzbGFzL3Byb2QvYmpnc19wcmQiLCJraWQiOiIxNmIwNWEwMS1iMGJlLTQ2ZWUtOTFmNS00ODQzMDkwZDAwOTAiLCJ0eXAiOiJqd3QiLCJjbHYiOiJKMi4zLjQiLCJhbGciOiJFUzI1NiJ9.eyJhdXQiOiJHVUlEIiwic2NwIjoic2ZjYy5zaG9wcGVyLW15YWNjb3VudC5iYXNrZXRzIHNmY2Muc2hvcHBlci1wcm9kdWN0cyBzZmNjLmludmVudG9yeS5hdmFpbGFiaWxpdHkucncgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5ydyBzZmNjLnNob3BwZXItY3VzdG9tZXJzLmxvZ2luIHNmY2Muc2hvcHBlci1jb250ZXh0LnJ3IHNmY2Muc2hvcHBlci1jdXN0b21lcnMucmVnaXN0ZXIgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5hZGRyZXNzZXMucncgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5wcm9kdWN0bGlzdHMucncgc2ZjYy5zaG9wcGVyLXByb21vdGlvbnMgc2ZjYy5zaG9wcGVyLWJhc2tldHMtb3JkZXJzLnJ3IHNmY2Muc2hvcHBlci1teWFjY291bnQucGF5bWVudGluc3RydW1lbnRzLnJ3IHNmY2Muc2hvcHBlci1jYXRlZ29yaWVzIGNfY3VzdG9tYXBpX3IiLCJzdWIiOiJjYy1zbGFzOjpiamdzX3ByZDo6c2NpZDplNjhjYTM2ZC02NTE2LTQ3MDQtYjcwNS0wNmI3NGY4NWVmMmU6OnVzaWQ6OTFmZDFjMGItOWZkYy00NmI4LWE2ZDAtNmE1MGNiN2RkNzgzIiwiY3R4Ijoic2xhcyIsImlzcyI6InNsYXMvcHJvZC9iamdzX3ByZCIsImlzdCI6MSwiZG50IjoiMCIsImF1ZCI6ImNvbW1lcmNlY2xvdWQvcHJvZC9iamdzX3ByZCIsIm5iZiI6MTc2NTE5NDcxNiwic3R5IjoiVXNlciIsImlzYiI6InVpZG86c2xhczo6dXBuOkd1ZXN0Ojp1aWRuOkd1ZXN0IFVzZXI6OmdjaWQ6YWJtcmRLeGJkSGtlZ1JtdXhJd1dZWWxLZzI6OmNoaWQ6QVNEQV9HUk9DRVJJRVMiLCJleHAiOjE3NjUxOTY1NDYsImlhdCI6MTc2NTE5NDc0NiwianRpIjoiQzJDLTEwMTYzMTg5MDE5MDg1MDUwMTg3NTA0MjAyMTA5NzMyMjg5In0.Kv_UiLnjebLF2cwbTM0SSb1Sahcf4FfNuXxpITCIoUkIwYZraqZCQ0e5K57KbvucRz9IUPpwXDsoQlcIQNXe4g; cf_clearance=k12U.l0NspReRUBNX7HjDBlqPotRgtfE8ffwRCSCdUY-1765194750-1.2.1.1-xaufjQz6o_xzRQZ5KUHHItqeP.6OOBfce1Jcogvh_CPKXbxFiwRYwA9l0yGtILZmQSE7iM4.LLjDC0DKgvVAuzqQfN6dADlMx2gC_SxptO4F4TJiTa1X.trnq9hemxgXMGnVvGAbqDJd5NCOoZQOsgpp58YbExjbB4muYlaMXG5RfZywb9GTJ2qeFX5kXoQGhMEtMmrFbrVaI6p512q7XC4CaXJAiY3mKYdf439JJJ8; _mibhv=anon-1765194750438-9242323532_8338; BVImplmain_site=11603; kndctr_B9CB1CFE53309CAD0A490D45_AdobeOrg_consent=general=out; kndctr_B9CB1CFE53309CAD0A490D45_AdobeOrg_identity=CiY2OTg0OTc4ODE1MzMwMjM2NTk1MjU2OTIwMzQwMzIxMjk2ODI2MlIRCIOwue6vMxgBKgRJTkQxMAHwAYOwue6vMw==; kndctr_B9CB1CFE53309CAD0A490D45_AdobeOrg_cluster=ind1; OptanonAlertBoxClosed=2025-12-08T11:52:37.143Z; eupubconsent-v2=CQcI1f9QcI1f9AcABBENDgCgAAAAAAAAAChQAAAAAAAA.YAAAAAAAAAAA; previousPageName=pdp-page; visitorId=ea562eb0-ebfa-41ce-9967-cf6b9290b98f; OptanonConsent=isIABGlobal=false&datestamp=Mon+Dec+08+2025+17%3A29%3A41+GMT%2B0530+(India+Standard+Time)&version=6.29.0&hosts=&landingPath=NotLandingPage&groups=1%3A1%2C2%3A0%2C4%3A0%2C5%3A0%2CSTACK42%3A0&geolocation=IN%3BKL&AwaitingReconsent=false; da_sid=C315BA7B8EADAE10721AAA13AEABB6744D.0|4|0|3; da_lid=F02689489AEDEA8BE74BBB99ECA9FC7FFE|0|0|0; da_intState=',
+}
+
+params = {
+    'siteId': 'ASDA_GROCERIES',
+    'allImages': 'true',
+    'c_isPDP': 'true',
+}
+
+response = requests.get(
+    'https://www.asda.com/mobify/proxy/ghs-api/product/shopper-products/v1/organizations/f_ecom_bjgs_prd/products/4778498',
+    
+    params=params,
+    #cookies=cookies,
+    headers=headers,
+    impersonate='chrome110',
+)
+
+print("Status Code:", response.status_code)
+print(response.json())
 
 
 #-------------------findings-------------------------------------------------------------
