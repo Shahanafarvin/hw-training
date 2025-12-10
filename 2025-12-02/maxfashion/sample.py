@@ -84,7 +84,7 @@ class Export:
                 break
 
             product_name = item.get("product_name") or ""
-            product_details = dict_to_string(item.get("product_details")) or ""
+            product_details = clean_html(dict_to_string(item.get("product_details"))) or ""
             color = item.get("color") or ""
             quantity = item.get("quantity") or ""
             size = ", ".join(item.get("size")) if isinstance(item.get("size"), list) else ""
