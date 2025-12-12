@@ -1,9 +1,6 @@
 from curl_cffi import requests
 from pymongo import MongoClient
-from settings import logging,HEADERS,MONGO_DB,MONGO_COLLECTION_CATEGORY
-
-BASE_URL = "https://ghs-mm.asda.com/static"
-
+from settings import logging, BASE_URL, HEADERS, MONGO_DB, MONGO_COLLECTION_CATEGORY
 
 class CategoryCrawler:
     """Crawling Asda Categories"""
@@ -18,13 +15,9 @@ class CategoryCrawler:
         # Fetch main JSON
         url = f"{BASE_URL}/4565.json"
         response = requests.get(url, headers=HEADERS, impersonate="chrome")
-        logging.info(f"Main response: {response.status_code}")
         
         if response.status_code == 200:
-            data = response.json()
-            # Extract categories 3, 4, 7 (fresh and frozen products categories)
-            categories = [data[3], data[4], data[7]]
-            
+            categories = response.json()
             for cat in categories:
                 meta = {
                     'category': cat,
@@ -43,7 +36,6 @@ class CategoryCrawler:
             cat_id = response.get("id")
             cat_name = response.get("name")
             cat_url = response.get("url")
-            logging.info(f"CATEGORY → {cat_id}: {cat_name} | {cat_url}")
             
             cat_dict = {
                 "id": cat_id,
@@ -59,7 +51,6 @@ class CategoryCrawler:
                 sub_id = subcat.get("id")
                 sub_name = subcat.get("name")
                 sub_url = subcat.get("url")
-                logging.info(f"  SUB-CATEGORY → {depts}|{sub_id}: {sub_name} | {sub_url}")
                 
                 sub_dict = {
                     "id": sub_id,
@@ -71,7 +62,6 @@ class CategoryCrawler:
                 # Build URL for sub-sub categories
                 if depts:
                     next_json_url = f"{BASE_URL}/{depts}.json"
-                    logging.info(f"    Fetching sub-sub categories: {next_json_url}")
                     
                     try:
                         sub_response = requests.get(next_json_url, headers=HEADERS, impersonate="chrome")
@@ -82,7 +72,6 @@ class CategoryCrawler:
                                 sub_sub_id = sub_sub.get("id")
                                 sub_sub_name = sub_sub.get("name")
                                 sub_sub_url = sub_sub.get("url")
-                                logging.info(f"      SUB-SUB → {sub_sub_id}: {sub_sub_name} | {sub_sub_url}")
                                 
                                 sub_sub_dict = {
                                     "id": sub_sub_id,
@@ -97,7 +86,6 @@ class CategoryCrawler:
                                     ssub_sub_id = dept.get("id")
                                     ssub_sub_name = dept.get("name")
                                     ssub_sub_url = dept.get("url")
-                                    logging.info(f"        NEXT LEVEL → {ssub_sub_id}: {ssub_sub_name} | {ssub_sub_url}")
                                     
                                     sub_sub_dict["sub_subcategories"].append({
                                         "id": ssub_sub_id,
@@ -115,11 +103,12 @@ class CategoryCrawler:
 
             item={}
             item=cat_dict
-            
+
+            logging.info(item)
             # Save to MongoDB
             try:
                 self.db[MONGO_COLLECTION_CATEGORY].insert_one(item)
-                logging.info(f"Inserted category: {cat_dict['name']}")
+                
             except Exception as e:
                 logging.error(f"Error saving to MongoDB: {e}")
     
@@ -127,7 +116,6 @@ class CategoryCrawler:
         """Close MongoDB connection"""
         self.mongo.close()
           
-
 
 if __name__ == "__main__":
     crawler = CategoryCrawler()

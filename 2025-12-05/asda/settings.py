@@ -7,6 +7,10 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s %(levelname)s:%(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
+    handlers=[
+        logging.StreamHandler(),               # terminal
+        logging.FileHandler("asda_scraping.log")     # file
+    ]
 )
 
 # Basic details
@@ -27,14 +31,18 @@ MONTH_VALUE = calendar.month_abbr[int(MONTH.lstrip("0"))]
 WEEK = (int(DAY) - 1) // 7 + 1
 
 # MongoDB collections
-MONGO_DB = f"{PROJECT_NAME}_2025_12_09"
+MONGO_DB = f"{PROJECT_NAME}_{iteration}"
 MONGO_COLLECTION_CATEGORY = f"{PROJECT_NAME}_category_url"
 MONGO_COLLECTION_PRODUCTS = f"{PROJECT_NAME}_product"
 MONGO_COLLECTION_URL_FAILED = f"{PROJECT_NAME}_url_failed"
 MONGO_COLLECTION_DATA = f"product_data_item"
 
+
 # File settings
 FILE_NAME = f"{PROJECT_NAME}_{YEAR}_{MONTH}_{DAY}_sample.csv"
+
+#category crawler headers
+BASE_URL="https://ghs-mm.asda.com/static"
 
 HEADERS = {
     "accept": "*/*",
@@ -51,51 +59,27 @@ HEADERS = {
     "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 }
 
-
+#CRAWLER PART
+ALGOLIA_URL = "https://8i6wskccnv-dsn.algolia.net/1/indexes/ASDA_PRODUCTS/query"
 
 ALGOLIA_HEADERS = {
-    'Accept': '*/*',
-    'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8',
-    'Connection': 'keep-alive',
-    'Origin': 'https://www.asda.com',
-    'Referer': 'https://www.asda.com/',
-    'Sec-Fetch-Dest': 'empty',
-    'Sec-Fetch-Mode': 'cors',
-    'Sec-Fetch-Site': 'cross-site',
-    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
-    'content-type': 'application/x-www-form-urlencoded',
-    'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-platform': '"Linux"',
-    'x-algolia-api-key': '03e4272048dd17f771da37b57ff8a75e',
-    'x-algolia-application-id': '8I6WSKCCNV',
+    "accept": "*/*",
+    "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+    "content-type": "application/x-www-form-urlencoded",
+    "origin": "https://www.asda.com",
+    "referer": "https://www.asda.com/",
+    "sec-ch-ua": '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": '"Linux"',
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "x-algolia-api-key": "03e4272048dd17f771da37b57ff8a75e",
+    "x-algolia-application-id": "8I6WSKCCNV"
 }
 
-
-
-extra_headers = {
-    'accept': '*/*',
-    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-    'authorization': 'Bearer eyJ2ZXIiOiIxLjAiLCJqa3UiOiJzbGFzL3Byb2QvYmpnc19wcmQiLCJraWQiOiIxNmIwNWEwMS1iMGJlLTQ2ZWUtOTFmNS00ODQzMDkwZDAwOTAiLCJ0eXAiOiJqd3QiLCJjbHYiOiJKMi4zLjQiLCJhbGciOiJFUzI1NiJ9.eyJhdXQiOiJHVUlEIiwic2NwIjoic2ZjYy5zaG9wcGVyLW15YWNjb3VudC5iYXNrZXRzIHNmY2Muc2hvcHBlci1wcm9kdWN0cyBzZmNjLmludmVudG9yeS5hdmFpbGFiaWxpdHkucncgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5ydyBzZmNjLnNob3BwZXItY3VzdG9tZXJzLmxvZ2luIHNmY2Muc2hvcHBlci1jb250ZXh0LnJ3IHNmY2Muc2hvcHBlci1jdXN0b21lcnMucmVnaXN0ZXIgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5hZGRyZXNzZXMucncgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5wcm9kdWN0bGlzdHMucncgc2ZjYy5zaG9wcGVyLXByb21vdGlvbnMgc2ZjYy5zaG9wcGVyLWJhc2tldHMtb3JkZXJzLnJ3IHNmY2Muc2hvcHBlci1teWFjY291bnQucGF5bWVudGluc3RydW1lbnRzLnJ3IHNmY2Muc2hvcHBlci1jYXRlZ29yaWVzIGNfY3VzdG9tYXBpX3IiLCJzdWIiOiJjYy1zbGFzOjpiamdzX3ByZDo6c2NpZDplNjhjYTM2ZC02NTE2LTQ3MDQtYjcwNS0wNmI3NGY4NWVmMmU6OnVzaWQ6OGNhN2FhNjItMzg3NS00NGFlLTk1YzYtZjk1Y2UzZjBmYjg2IiwiY3R4Ijoic2xhcyIsImlzcyI6InNsYXMvcHJvZC9iamdzX3ByZCIsImlzdCI6MSwiZG50IjoiMCIsImF1ZCI6ImNvbW1lcmNlY2xvdWQvcHJvZC9iamdzX3ByZCIsIm5iZiI6MTc2NTMwMDIwNiwic3R5IjoiVXNlciIsImlzYiI6InVpZG86c2xhczo6dXBuOkd1ZXN0Ojp1aWRuOkd1ZXN0IFVzZXI6OmdjaWQ6YWJtZWxGbDBkRmxIZ1JrWEUxbHFZWWxlZEo6OmNoaWQ6QVNEQV9HUk9DRVJJRVMiLCJleHAiOjE3NjUzMDIwMzYsImlhdCI6MTc2NTMwMDIzNiwianRpIjoiQzJDLTEwMTYzMTg5MDE5MDg1MDUwMTg3NjA5NjkyNTczMzQ5MTE4In0.B33qZn62366KcbkAuGRwQRWOD9yjrEjmEMZoHhSsJZocCnrXEragm5NTRsf4-_SkZOhScHXHSvTMBYh-P1LU1Q', 
-    'cache-control': 'no-store',
-    'content-type': 'application/json',
-    'pragma': 'no-store',
-    'priority': 'u=1, i',
-    'referer': 'https://www.asda.com/',
-    'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-platform': '"Linux"',
-    'sec-fetch-dest': 'empty',
-    'sec-fetch-mode': 'cors',
-    'sec-fetch-site': 'same-origin',
-    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
-}
-
-params = {
-    'siteId': 'ASDA_GROCERIES',
-    'allImages': 'true',
-    'c_isPDP': 'true',
-}
+ALGOLIA_PARAMS = "x-algolia-agent=Algolia%20for%20JavaScript%20(4.25.2)%3B%20Browser"
 
 FILE_HEADERS = [
     "unique_id", "competitor_name", "store_name", "store_addressline1", "store_addressline2",
@@ -124,3 +108,4 @@ FILE_HEADERS = [
     "product_unique_key", "multibuy_items_pricesingle", "perfect_match", "servings_per_pack",
     "warning", "suitable_for", "standard_drinks", "environmental", "grape_variety", "retail_limit"
 ]
+

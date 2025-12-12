@@ -24,173 +24,64 @@ class Export:
         self.writer.writerow(FILE_HEADERS)
         logging.info("File headers written successfully.")
 
-        def dict_to_string(d):
-            if not d:
-                return ""
-            return ", ".join(f"{k}: {v}" for k, v in d.items())
 
         cursor = self.mongo[MONGO_COLLECTION_DATA].find(no_cursor_timeout=True)
-        unique_ids = set()
-        unique_urls = set()
-
-        filtered_items = []
+       
         for item in cursor:
            
-            uid = item.get("product_id")
-            url = item.get("url")
-            upc = item.get("upc")
-
-            if not uid or uid in unique_ids:
-                continue
-
-            if not url or url in unique_urls:
-                continue
-
-            if upc in [None, "", "None"]:
-                continue
-            unique_ids.add(uid)
-            unique_urls.add(url)
-
-            filtered_items.append(item)
-
-            if len(filtered_items) >= 200:
-                break
-        for item in filtered_items:
-            def remove_css(text):
-                if not text:
-                    return ""
-                else:
-                    # Remove all `.something{...}` patterns (CSS rules)
-                    text = re.sub(r'\.[\w\-]+\s*[^}]*\{[^}]*\}\s*', '', text)
-
-                    # Optionally remove multiple CSS blocks in a row
-                    text = re.sub(r'(\.[\w\-]+\s*[^}]*\{[^}]*\}\s*)+', '', text)
-
-                    return text.strip()
             try:
-                # === BASIC FIELDS ===
-                unique_id=item.get("product_id","")#not null
-                competitor_name="asda"#not null
-                store_name="asda"
-                extraction_date=datetime.now().strftime("%Y-%m-%d")#not null
-                product_name=item.get("name").replace("|","")#notnull
-                brand=item.get("brand")
-                #-----------------------------------------------------
-                size = item.get("package_size")
-                if size:
-                    size_value = str(size).strip().upper()
+                unique_id = item.get("unique_id")
+                competitor_name = item.get("competitor_name")
+                extraction_date = item.get("extraction_date")
+                product_name = item.get("product_name")
+                brand = item.get("brand")
+                grammage_quantity = item.get("grammage_quantity")
+                grammage_unit = item.get("grammage_unit")
+                producthierarchy_level1 = item.get("producthierarchy_level1")
+                producthierarchy_level2 = item.get("producthierarchy_level2")
+                producthierarchy_level3 = item.get("producthierarchy_level3")
+                producthierarchy_level4 = item.get("producthierarchy_level4")
+                producthierarchy_level5 = item.get("producthierarchy_level5")
+                producthierarchy_level6 = item.get("producthierarchy_level6")
+                producthierarchy_level7 = item.get("producthierarchy_level7")
+                regular_price = item.get("regular_price")
+                selling_price = item.get("selling_price")
+                promotion_price = item.get("promotion_price")
+                price_was = item.get("price_was")
+                promotion_description = item.get("promotion_description")
+                price_per_unit = item.get("price_per_unit")
+                currency = item.get("currency")
+                breadcrumb = item.get("breadcrumb")
+                pdp_url = item.get("pdp_url")
+                product_description = item.get("product_description")
+                storage_instructions = item.get("storage_instructions")
+                preparation_instructions = item.get("preparation_instructions")
+                instructionforuse = item.get("instructionforuse")
+                country_of_origin = item.get("country_of_origin")
+                allergens = item.get("allergens")
+                nutritional_information = item.get("nutritional_information")
+                labelling = item.get("labelling")
+                frozen = item.get("frozen")
+                rating = item.get("rating")
+                review = item.get("review")
+                image_url_1 = item.get("image_url_1")
+                competitor_product_key = item.get("competitor_product_key")
+                upc = item.get("upc")
+                Features = item.get("Features")
+                dietary_lifestyle = item.get("dietary_lifestyle")
+                manufacturer_address = item.get("manufacturer_address")
+                recycling_information = item.get("recycling_information")
+                site_shown_uom = item.get("site_shown_uom")
+                ingredients = item.get("ingredients")
+                instock = item.get("instock")
+                product_unique_key = item.get("product_unique_key")
+                warning = item.get("warning")
+                netcontent = item.get("netcontent")
 
-                    # Normalize separators like 'x', 'X', '*'
-                    size_clean = re.sub(r'[\*X]', 'x', size_value)
-
-                    grammage_quantity = ""
-                    grammage_unit = ""
-
-                    # ------------------------------
-                    # CASE 1: PATTERN LIKE "2x10ML", "2*10ML", "2 X 10 ML"
-                    # ------------------------------
-                    multi_pattern = r"^\s*([0-9]+)\s*x\s*([0-9]+)\s*([A-Z]+)\s*$"
-                    multi_match = re.match(multi_pattern, size_clean)
-                    if multi_match:
-                        grammage_quantity = f"{multi_match.group(1)}x{multi_match.group(2)}"
-                        grammage_unit = multi_match.group(3)
-                    
-                    else:
-                        # ------------------------------
-                        # CASE 2: SIMPLE NUMBER + UNIT (e.g., "250G", "10 ML")
-                        # ------------------------------
-                        simple_pattern = r"^\s*([0-9]+)\s*([A-Z]+)\s*$"
-                        simple_match = re.match(simple_pattern, size_clean)
-
-                        if simple_match:
-                            grammage_quantity = simple_match.group(1)
-                            grammage_unit = simple_match.group(2)
-
-                        else:
-                            # ------------------------------
-                            # CASE 3: WORDS ONLY (EACH, BOX, PER GB, PCS)
-                            # ------------------------------
-                            word_pattern = r"^\s*([A-Z ]+)\s*$"
-                            word_match = re.match(word_pattern, size_clean)
-
-                            if word_match:
-                                grammage_quantity = size_clean
-                                grammage_unit = ""
-                            else:
-                                # fallback
-                                grammage_quantity = size_clean
-                                grammage_unit = ""
-                else:
-                    grammage_quantity = ""
-                    grammage_unit = ""
-                #-----------------------------------------------level 1 not null
-                breadcrumb=item.get("breadcrumbs")
-                # Split breadcrumb by '>' and clean each part
-                hierarchy_parts = [b.strip() for b in breadcrumb.split(">") if b.strip()]
-
-                # Create up to 7 hierarchy levels (fill missing ones with "")
-                hierarchy_levels = {}
-                for i in range(7):
-                    hierarchy_levels[f"producthierarchy_level{i+1}"] = hierarchy_parts[i] if i < len(hierarchy_parts) else ""
-                #------------------------------------------------------
-                price=item.get("price")
-                was_price=item.get("wasprice")
-                #print(price,was_price)
-                if not was_price:
-                    regular_price=f"{float(price):.2f}"
-                    selling_price=f"{float(price):.2f}"
-                    promotion_price=""
-                    price_was=""
-                else:
-                    regular_price=f"{float(was_price):.2f}"
-                    price_was=f"{float(was_price):.2f}"
-                    selling_price=f"{float(price):.2f}"
-                    promotion_price=f"{float(price):.2f}"
-                #--------------------------------------------------------
-                offer=item.get("offer")
-                promo=item.get("promos")
-                if offer == "List": 
-                    promotion_description=promo
-                else:
-                    promotion_description=promo or offer
-                #-------------------------------------------------------------
-                price_per_unit=item.get("priceperuom")
-                currency=item.get("currency")
-                pdp_url=item.get("url")
-                product_description=remove_css(dict_to_string(item.get("description",{})))
-                storage_instructions=remove_css((item.get("description",{})).get("Storage"))
-                preparation_instructions=remove_css((item.get("description",{})).get("Cooking Guidelines"))
-                instructionforuse=remove_css((item.get("description",{})).get("Preparation and Usage"))
-                country_of_origin=remove_css((item.get("description",{})).get("Country of Origin"))
-                allergens =item.get("allergy")
-                nutritional_information=remove_css(item.get("nutritional_values"))
-                #-----------------------------------------------------------------
-                frozens=item.get("frozen")
-                if frozens == "Frozen":
-                    frozen=frozens 
-                else: 
-                    frozen=""
-                #--------------------------------------------------------------
-                rating=item.get("avg_rating")
-                review=item.get("rating_count")
-                image_url_1=item.get("images")
-                competitor_product_key=unique_id
-                upc=item.get("upc")
-                features=remove_css((item.get("description",{})).get("Features"))
-                dietary_lifestyle=item.get("lifestyle")
-                manufacturer_address=remove_css((item.get("description",{})).get("Manufacturer Address"))
-                recycling_information=remove_css((item.get("description",{})).get("Recycling Info"))
-                site_shown_uom=size
-                ingredients=remove_css((item.get("description",{})).get("Ingredients"))
-                instock= True if item.get("stock") == "A" or item.get("stock") == "I" else False
-                product_unique_key=f"{unique_id}P"
-                Warning=remove_css((item.get("description",{})).get("Safety Warning"))
-                
-
-                # === BUILD CLEAN RECORD ===
+                #
                 cleaned_data = {
-                    "unique_id": unique_id,
-                    "competitor_name": competitor_name,
+                    "unique_id":unique_id,
+                    "competitor_name":competitor_name,
                     "store_name": "",
                     "store_addressline1": "",
                     "store_addressline2": "",
@@ -198,14 +89,20 @@ class Export:
                     "store_state": "",
                     "store_postcode": "",
                     "store_addressid": "",
-                    "extraction_date": extraction_date,
+                    "extraction_date":extraction_date,
                     "product_name": product_name,
-                    "brand": brand or "",
+                    "brand": brand,
                     "brand_type": "",
-                    "grammage_quantity": grammage_quantity or "",
-                    "grammage_unit": grammage_unit.lower() or "",
+                    "grammage_quantity":grammage_quantity,
+                    "grammage_unit":grammage_unit,
                     "drained_weight": "",
-                    **hierarchy_levels,
+                    "producthierarchy_level1":producthierarchy_level1,
+                    "producthierarchy_level2":producthierarchy_level2,
+                    "producthierarchy_level3":producthierarchy_level3,
+                    "producthierarchy_level4":producthierarchy_level4,
+                    "producthierarchy_level5":producthierarchy_level5,
+                    "producthierarchy_level6":producthierarchy_level6,
+                    "producthierarchy_level7":producthierarchy_level7,
                     "regular_price": regular_price,
                     "selling_price": selling_price,
                     "price_was":price_was,
@@ -214,38 +111,38 @@ class Export:
                     "promotion_valid_upto": "",
                     "promotion_type": "",
                     "percentage_discount": "",
-                    "promotion_description": promotion_description or "",
+                    "promotion_description": promotion_description,
                     "package_sizeof_sellingprice": "",
                     "per_unit_sizedescription": "",
                     "price_valid_from": "",
-                    "price_per_unit": price_per_unit or "",
+                    "price_per_unit": price_per_unit,
                     "multi_buy_item_count": "",
                     "multi_buy_items_price_total": "",
                     "currency": currency,
                     "breadcrumb": breadcrumb,
                     "pdp_url": pdp_url,
                     "variants": "",
-                    "product_description": product_description or "",
+                    "product_description": product_description ,
                     "instructions":"" ,
-                    "storage_instructions": storage_instructions or "",
-                    "preparationinstructions": preparation_instructions or "",
-                    "instructionforuse": instructionforuse or "",
-                    "country_of_origin": country_of_origin or "",
-                    "allergens": allergens or "",
+                    "storage_instructions": storage_instructions ,
+                    "preparationinstructions": preparation_instructions,
+                    "instructionforuse": instructionforuse ,
+                    "country_of_origin": country_of_origin,
+                    "allergens": allergens,
                     "age_of_the_product": "",
                     "age_recommendations": "",
                     "flavour": "",
                     "nutritions": "",
                     "nutritional_information": nutritional_information or "",
                     "vitamins": "",
-                    "labelling": frozens or "",
+                    "labelling": labelling,
                     "grade": "",
                     "region": "",
                     "packaging": "",
                     "receipies": "",
                     "processed_food": "",
                     "barcode": "",
-                    "frozen": frozen or "",
+                    "frozen": frozen,
                     "chilled": "",
                     "organictype": "",
                     "cooking_part": "",
@@ -265,15 +162,15 @@ class Export:
                     "tasting_note": "",
                     "food_preservation": "",
                     "size": "",
-                    "rating": rating or "",
-                    "review": review or "",
+                    "rating": rating ,
+                    "review": review ,
                     "file_name_1":"",
-                    "image_url_1":image_url_1 or "",
+                    "image_url_1":image_url_1,
                     "file_name_2":"",
                     "image_url_2":"",
                     "file_name_3":"",
                     "image_url_3":"",
-                    "competitor_product_key": competitor_product_key or "",
+                    "competitor_product_key": competitor_product_key ,
                     "fit_guide": "",
                     "occasion": "",
                     "material_composition": "",
@@ -282,28 +179,28 @@ class Export:
                     "heel_type": "",
                     "heel_height": "",
                     "upc": upc or "",
-                    "features": features or "",
-                    "dietary_lifestyle": dietary_lifestyle or "",
-                    "manufacturer_address": manufacturer_address or "",
+                    "features": Features,
+                    "dietary_lifestyle": dietary_lifestyle,
+                    "manufacturer_address": manufacturer_address,
                     "importer_address": "",
                     "distributor_address": "",
                     "vinification_details": "",
-                    "recycling_information": recycling_information or "",
+                    "recycling_information": recycling_information,
                     "return_address": "",
                     "alchol_by_volume": "",
                     "beer_deg": "",
-                    "netcontent": "",
+                    "netcontent": netcontent,
                     "netweight": "",
-                    "site_shown_uom": site_shown_uom or "",
-                    "ingredients": ingredients or "",
+                    "site_shown_uom": site_shown_uom ,
+                    "ingredients": ingredients,
                     "random_weight_flag": "",
-                    "instock": instock or "",
+                    "instock": instock,
                     "promo_limit": "",
                     "product_unique_key": product_unique_key,
                     "multibuy_items_pricesingle": "",
                     "perfect_match": "",
                     "servings_per_pack": "",
-                    "warning": Warning.replace("WARNING","").strip() or "",
+                    "warning": warning,
                     "suitable_for": "",
                     "standard_drinks": "",
                     "grape_variety": "",
