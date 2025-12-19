@@ -1,5 +1,6 @@
 import requests
 import json
+from parsel import Selector
 
 #---------------------------category--------------------------------------------------------------------------------
 
@@ -97,118 +98,121 @@ for root in roots:
 
             category_tree.append(category)  #main category extracted
 #-------------------------subcategories----------------------------------------
+
 BASE_URL = "https://www.staples.com"
-START_URL = "https://www.staples.com/Office-Supplies/cat_SC1"
+START_URL = "https://www.staples.com/Office-Supplies/cat_SC1" #MAIN CATEGORY URL TO GET SUB LEVELS
 
 response = requests.get(START_URL)
 sel = Selector(response.text)
 
 category_tree = []
 
-# Level 1: main subcategories
+# Level 1: subcategories
 subcategories = sel.xpath("//a[@class='seo-component__seoLink']/@href").getall()
 
 for subcat in subcategories:
     subcat_url = f"{BASE_URL}{subcat}"
-    response2 = requests.get(subcat_url)
-    sel2 = Selector(response2.text)
+    res2 = requests.get(subcat_url)
+    sel2 = Selector(res2.text)
 
     subcat_node = {
-        "url": subcat_url,
+        "category_url": subcat_url,
         "children": []
     }
 
-    # Level 2: sub-subcategories
-    subsubcategories = sel2.xpath("//a[@class='seo-component__seoLink']/@href").getall()
+    # Level 2: sub-subcategories (same XPath)
+    sub_subcategories = sel2.xpath("//a[@class='seo-component__seoLink']/@href").getall()
 
-    if subsubcategories:
-        for ssub in subsubcategories:
+    if sub_subcategories:
+        for ssub in sub_subcategories:
             ssub_url = f"{BASE_URL}{ssub}"
-            response3 = requests.get(ssub_url)
-            sel3 = Selector(response3.text)
 
-            ssub_node = {
-                "url": ssub_url,
-                "end_level": []
-            }
-
-            # Level 3: end-level categories (carousel items)
-            end_level = sel3.xpath(
-                "//div[starts-with(@id,'offset-carousel-item-')]//a/@href"
-            ).getall()
-
-            ssub_node["end_level"] = [
-                f"{BASE_URL}{e}" for e in end_level
-            ]
-
-            subcat_node["children"].append(ssub_node)
+            subcat_node["children"].append({
+                "subcategory_url": ssub_url
+            })
     else:
-        # If no sub-subcategories, directly extract end-level
-        end_level = sel2.xpath(
-            "//div[starts-with(@id,'offset-carousel-item-')]//a/@href"
-        ).getall()
-
-        subcat_node["end_level"] = [
-            f"{BASE_URL}{e}" for e in end_level
-        ]
+        subcat_node["children"] = []
 
     category_tree.append(subcat_node)
 
+
+
 #--------------------------------crawler-------------------------------------------------------
-from curl_cffi import requests
+import requests
 import json
+import math
+from parsel import Selector
 
-url = "https://www.staples.com/searchux/common/api/v1/All-In-One-Printers/cat_CL167883/8v6qy?isVF=true"
+BASE_URL = "https://www.staples.com"
+START_URL = "https://www.staples.com/Pens/cat_CL110001"
 
-headers = {
-    "accept": "application/json, text/plain, */*",
-    "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
-    "cache-control": "no-cache",
-    "pragma": "no-cache",
-    "referer": "https://www.staples.com/Ballpoint-pens/cat_CL110001/87vsv?isVF=true",
-    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-    "sec-fetch-site": "same-origin",
-    "sec-fetch-mode": "cors",
-    "sec-fetch-dest": "empty"
-}
+all_products = []
+page = 1
 
-cookies = {
-    "zipcode": "01701",
-    "geocode": "42.298643,-71.465635",
-    "ListGridMode": "true"
-}
 
-response = requests.get(url, headers=headers, cookies=cookies, impersonate="chrome")
+# ---- First page (to get total count) ----
+res = requests.get(START_URL)
+sel = Selector(res.text)
 
-print(response.status_code)
+script_text = sel.xpath("//script[@id='__NEXT_DATA__']/text()").get()
+data = json.loads(script_text)
 
-data=response.json()
-products=data.get("searchState",{}).get("productTileData")
-print(len(products))
-for product in products:
-    brand=product.get("brandName")
-    product_title=product.get("title")
-    sku=product.get("compareItemID")
-    category=product.get("hierarchy",{}).get("category").get("name")
-    site_url=f"https://www.staples.com{product.get('url')}"
-    cost=product.get("price")
-    notes=product.get("description")
-    badge_details = product.get("badgeDetails", {})
+search_state = (
+    data.get("props", {})
+        .get("initialStateOrStore", {})
+        .get("searchState", {})
+)
 
-    # badges = []
-    # if badge_details.get("productBadge"):
-    #     badges.append(badge_details["productBadge"])
-    # if badge_details.get("pricingBadge"):
-    #     badges.append(badge_details["pricingBadge"])#checking if best seller available
-    # product_url=site_url
-    # product_cost_brand=cost
+total_products = search_state.get("totalCount", 0)
+page_size=search_state.get("itemsPerPage",40)
+products = search_state.get("productTileData", [])
 
-   
+all_products.extend(products)
+
+total_pages = math.ceil(total_products / page_size)
+
+print(f"Total products: {total_products}")
+print(f"Total pages: {total_pages}")
+
+# ---- Remaining pages ----
+for page in range(2, total_pages + 1):
+    paginated_url = f"{START_URL}?pn={page}"
+    res = requests.get(paginated_url)
+    sel = Selector(res.text)
+
+    script_text = sel.xpath("//script[@id='__NEXT_DATA__']/text()").get()
+    data = json.loads(script_text)
+
+    products = (
+        data.get("props", {})
+            .get("initialStateOrStore", {})
+            .get("searchState", {})
+            .get("productTileData", [])
+    )
+
+    all_products.extend(products)
+    print(f"Fetched page {page} → {len(products)} products")
+
+# ---- Final extraction ----
+for product in all_products:
+    sku = product.get("compareItemID")
+    site_url = product.get("url")
+    product_title = product.get("title")
+    brand = product.get("brandName")
+    category = product.get("baseCatName")
+    cost = product.get("price")
+    notes = product.get("description")
+
+    # Example output
+    # print(sku, site_url, product_title)
+
+print(f"\nTotal collected products: {len(all_products)}")
+
+#TAKE BADGES IF NEEDED?
 
 #------------------------------------findings--------------------------------------------------------
 #.category API responses have a dynamic structure, which can lead to parsing errors.
 #.Main categories are extracted from APIs, and subcategories are extracted recursively from each category’s HTML response
 #  until the final category level.
-#.Products are extracted directly from each PLP API response, and no parser-based extraction is currently required.
 
-#Products are available within the scripts of PLP pages, and selecting this option may require a parser
+#Products are available within the scripts of PLP pages, and no parser-based extraction is currently required.
