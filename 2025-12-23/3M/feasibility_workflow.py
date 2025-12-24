@@ -135,8 +135,6 @@ for script in script_tag:
 images=",".join(sel.xpath("//div[@class='sps2-pdp_outerGallery--container']//img/@src").getall())
 print(images)  #all images are not extracted,some  are missing or js rendered
 
-
-
 #------------------------------------findings---------------------------------------------------#
 #1. Breadcrumbs,highlights,description,suggested application,classification attributes are extracted successfully.
 #2. Some images are missing because they are js rendered.
@@ -146,3 +144,11 @@ print(images)  #all images are not extracted,some  are missing or js rendered
 #4.The PLP page uses a Show More pattern, so the API approach was selected.
 
 #5.Specifications, resources, and rating details are JavaScript-rendered.
+
+
+
+#rating api - https://apps.bazaarvoice.com/bfd/v1/clients/3m-country-catalog/api-products/cv2/resources/data/statistics.json?apiversion=5.4&stats=Reviews&filter=ContentLocale%3Aen_US&filter=ProductId%3A7100290433%7C3m-country-catalog%7Cfuzeexperience%7Cen_us
+#resources key words in script of html response  and give extra request for each resources except first one 
+#resources api -https://www.3m.com/snaps2/api/pdp/moreResources/https/www.3m.com/3M/en_US/p/d/v000194562/?size=4&start=0&contentType=brochures
+#mediaOffset":2,"mediaMoreCount":9-------found in script,use in next images api request
+#imges api - https://www.3m.com/snaps2/api/pdp/moreMedia/https/www.3m.com/3M/en_US/p/d/v000194562/?mediaSize=9&start=2
