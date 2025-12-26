@@ -76,7 +76,6 @@ for category in category_slugs:
                 product_info = {
                     "name": product.get("name"),
                     "sku": product.get("sku"),
-                    "price": product.get("price", {}).get("current"),
                     "url": f"https://www.lorespresso.com/en_gb/p/{product.get('url_key')}",
                     "rating": product.get("rating_summary"),
                     "review": product.get("review_count"),
