@@ -1,8 +1,8 @@
 import requests
 import math
 from pymongo import MongoClient
-from settings import MONGO_DB,MONGO_COLLECTION_CATEGORY,MONGO_COLLECTION_PRODUCTS, logging
-
+from settings import MONGO_DB,MONGO_COLLECTION_CATEGORY,MONGO_COLLECTION_PRODUCTS
+import logging
 
 class Crawler:
     """Crawling Product URLs"""
