@@ -1,11 +1,11 @@
+import logging
 import requests
 from parsel import Selector
 from pymongo import MongoClient
-from .settings import (
+from settings import (
     MONGO_DB,
     MONGO_COLLECTION_CATEGORY,
-    BASE_URL,
-    logging,
+    BASE_URL
 )
 
 class CategoryCrawler:
