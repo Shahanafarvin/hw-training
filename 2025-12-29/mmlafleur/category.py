@@ -12,7 +12,7 @@ class CategoryCrawler:
     """Crawling Category URLs"""
     
     def __init__(self):
-        self.mongo_client = MongoClient('mongodb://localhost:27017/')
+        self.mongo_client = MongoClient('mongodb://mongotraining:a4892e52373844dc4862e6c468d11b6df7938e16@167.172.244.21:27017/?authSource=admin')
         self.mongo = self.mongo_client[MONGO_DB]
         
     def start(self):
