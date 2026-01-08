@@ -22,10 +22,17 @@ headers = {
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
 }
 
+MAX_ITEMS = 100
+count = 0
 
-with open(INPUT_FILE,"r", encoding="utf-8") as fin:
+with open(INPUT_FILE, "r", encoding="utf-8") as fin:
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        f.write("[\n")  # start JSON array
+
         for line in fin:
+            if count >= MAX_ITEMS:
+                break
+
             product = json.loads(line)
 
             article_number = product.get("article_number")
@@ -295,6 +302,11 @@ with open(INPUT_FILE,"r", encoding="utf-8") as fin:
             }
         # save all products into ONE json file
             print(f"saving url : {item.get('pdp_url')}")
+
+            if count > 0:
+                f.write(",\n")  # comma between items
+
             json.dump(item, f, ensure_ascii=False, indent=2)
+            count += 1
 
-
+        f.write("\n]")  # end JSON array
